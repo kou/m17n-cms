@@ -1,0 +1,28 @@
+<p>
+  <b>Page:</b>
+  <%=h @content.page_id %>
+</p>
+
+<p>
+  <b>Locale:</b>
+  <%=h @content.locale %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @content.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @content.content %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%=h @content.published %>
+</p>
+
+
+<%= link_to 'Edit', edit_content_path(@content) %> |
+<%= link_to 'Back', contents_path %>

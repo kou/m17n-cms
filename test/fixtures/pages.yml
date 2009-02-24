@@ -8,17 +8,17 @@ introduction:
   name: introduction
   published: true
 
-introduction-summary:
+introduction_summary:
   parent: introduction
   name: summary
   published: true
 
-introduction-gallery:
+introduction_gallery:
   parent: introduction
   name: gallery
   published: true
 
-introduction-join:
+introduction_join:
   parent: introduction
   name: join
   published: false

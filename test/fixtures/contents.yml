@@ -1,0 +1,36 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+index_ja:
+  page: index
+  locale: ja
+  title: ようこそ
+  content: <p>はじめまして</p>
+  published: true
+
+index_en:
+  page: index
+  locale: en
+  title: Welcome
+  content: <p>Nice to meat you</p>
+  published: true
+
+introduction_summary_ja:
+  page: introduction_summary
+  locale: ja
+  title: 概要
+  content: だいたいこんな感じです。
+  published: true
+
+introduction_summary_en:
+  page: introduction_summary
+  locale: en
+  title: Summary
+  content: Under constructed.
+  published: false
+
+hidden_ja:
+  page: hidden
+  locale: ja
+  title: 非公開ページ
+  content: ページは公開設定
+  published: true
