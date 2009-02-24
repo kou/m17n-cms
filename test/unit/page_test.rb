@@ -9,4 +9,9 @@ class PageTest < ActiveSupport::TestCase
     assert_equal(["gallery", "join", "summary"],
                  pages(:introduction).children.collect(&:name))
   end
+
+  def test_contents
+    assert_equal([contents(:index_en), contents(:index_ja)],
+                 pages(:index).contents.sort_by(&:locale))
+  end
 end
