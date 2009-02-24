@@ -1,0 +1,26 @@
+<h1>Listing pages</h1>
+
+<table>
+  <tr>
+    <th>Parent</th>
+    <th>Children count</th>
+    <th>Name</th>
+    <th>Published</th>
+  </tr>
+
+<% for page in @pages %>
+  <tr>
+    <td><%=h page.parent_id %></td>
+    <td><%=h page.children_count %></td>
+    <td><%=h page.name %></td>
+    <td><%=h page.published %></td>
+    <td><%= link_to 'Show', page %></td>
+    <td><%= link_to 'Edit', edit_page_path(page) %></td>
+    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New page', new_page_path %>

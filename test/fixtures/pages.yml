@@ -1,0 +1,28 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+index:
+  name: index
+  published: true
+
+introduction:
+  name: introduction
+  published: true
+
+introduction-summary:
+  parent: introduction
+  name: summary
+  published: true
+
+introduction-gallery:
+  parent: introduction
+  name: gallery
+  published: true
+
+introduction-join:
+  parent: introduction
+  name: join
+  published: false
+
+hidden:
+  name: hidden
+  published: false
