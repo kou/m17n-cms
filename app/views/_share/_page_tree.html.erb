@@ -1,5 +1,12 @@
-<ul>
-<% Page.roots.each do |page| -%>
-  <li><%=h page.name %></li>
-<% end -%>
-</ul>
+<div id="page-tree"></div>
+
+<%= javascript_tag("
+var root = new Ext.tree.AsyncTreeNode({id: 'root',
+                                       expanded: true,
+                                       children: #{page_tree_data.to_json}});
+var tree = new Ext.tree.TreePanel({root: root,
+                                   renderTo: 'page-tree',
+                                   rootVisible: false,
+                                   autoScroll: true,
+                                   title: 'Pages'});
+") %>
