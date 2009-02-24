@@ -31,10 +31,10 @@ module ApplicationHelper
       content_expanded = current_page?(content_path(content))
       expanded = true if content_expanded
       {
-        "text" => "#{content.locale}: #{content.title}",
+        "text" => "#{content.language}: #{content.title}",
         "href" => content_path(content),
         "expanded" => content_expanded,
-        "isLeaf" => true,
+        "leaf" => true,
       }
     end
     children += page.children.collect do |child|
@@ -46,9 +46,20 @@ module ApplicationHelper
       "text" => page.name,
       "href" => page_path(page),
       "children" => children,
-      "isLeaf" => false,
+      "leaf" => false,
     }
     tree_data["expanded"] = true if expanded or current_page?(page_path(page))
     tree_data
+  end
+
+  def content_tabs_data(page)
+    AVAILABLE_LANGUAGES.collect do |language|
+      content = page.contents.find_or_create_by_language(language)
+      content.update_attribute(:title, page.name) if content.title.blank?
+      {
+        "title" => "#{language}: #{h(content.title)}",
+        "html" => content.body,
+      }
+    end
   end
 end

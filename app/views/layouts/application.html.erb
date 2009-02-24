@@ -9,6 +9,10 @@
   <%= javascript_include_tag(:defaults) %>
   <%= extjs_include_tag %>
   <%= stylesheet_link_tag('base') %>
+  <%= javascript_tag("
+Ext.onReady(function() {
+  Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+});") %>
 </head>
 <body>
 
