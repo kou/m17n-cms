@@ -1,16 +1,14 @@
 <div id='content'>
-<h1>Listing pages</h1>
+<h2>Listing pages</h2>
 
 <table>
   <tr>
-    <th>Parent</th>
     <th>Name</th>
     <th>Published</th>
   </tr>
 
 <% for page in @pages %>
   <tr>
-    <td><%=h page.parent_id %></td>
     <td><%=h page.name %></td>
     <td><%=h page.published %></td>
     <td><%= link_to 'Show', page %></td>
@@ -24,7 +22,3 @@
 
 <%= link_to 'New page', new_page_path %>
 </div>
-
-<%= javascript_tag("
-  content = {xtype: 'panel', contentEl: 'content', region: 'center'};
-") %>

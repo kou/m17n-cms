@@ -18,7 +18,7 @@ var content = null;
 <body>
 
 <div id="header">
-<h1>M17N CMS</h1>
+<h1><%= link_to("M17N CMS", root_path) %></h1>
 </div>
 
 <%= yield  %>
@@ -49,8 +49,13 @@ Ext.onReady(function() {
     }
   });
 
-  if (content == null)
-    content = {xtype: 'panel', html: 'select from the left', region: 'center'};
+  if (content == null) {
+    if (Ext.get('content')) {
+      content = {xtype: 'panel', contentEl: 'content', region: 'center'};
+    } else {
+      content = {xtype: 'panel', html: 'select from the left', region: 'center'};
+    }
+  }
   var viewport = new Ext.Viewport({
     layout: 'border',
     items: [{xtype: 'box', el: 'header', region: 'north'},

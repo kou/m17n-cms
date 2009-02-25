@@ -1,22 +1,15 @@
 <div id='page-info'>
-<p>
-  <b>Parent:</b>
-  <%=h @page.parent_id %>
-</p>
+<h2><%=h @page.name %></h2>
 
 <p>
-  <b>Name:</b>
-  <%=h @page.name %>
+<% if @page.published? %>
+  Published
+<% else %>
+  Draft
+<% end %>
 </p>
 
-<p>
-  <b>Published:</b>
-  <%=h @page.published %>
-</p>
-
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<%= link_to 'Edit', edit_page_path(@page) %>
 </div>
 
 <%= javascript_tag("

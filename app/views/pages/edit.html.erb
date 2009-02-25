@@ -1,24 +1,18 @@
-<h1>Editing page</h1>
+<div id='content'>
+<h2>Editing page</h2>
 
 <% form_for(@page) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %>:
     <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :published %><br />
+
+    <%= f.label :published %>:
     <%= f.check_box :published %>
   </p>
   <p>
     <%= f.submit "Update" %>
   </p>
 <% end %>
-
-<%= link_to 'Show', @page %> |
-<%= link_to 'Back', pages_path %>
+</div>
