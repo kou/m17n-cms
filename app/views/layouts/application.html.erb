@@ -10,12 +10,54 @@
   <%= extjs_include_tag %>
   <%= javascript_tag("
 Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+
+var content = null;
 ") %>
   <%= stylesheet_link_tag('base') %>
 </head>
 <body>
 
+<div id="header">
+<h1>M17N CMS</h1>
+</div>
+
 <%= yield  %>
+
+<%= javascript_tag("
+Ext.onReady(function() {
+  var root = new Ext.tree.AsyncTreeNode({
+    id: 'root',
+    expanded: true,
+    children: #{page_tree_data.to_json}
+  });
+  var tree = new Ext.tree.TreePanel({
+    root: root,
+    id: 'page-tree',
+    rootVisible: false,
+    autoScroll: true,
+    region: 'west',
+    split: true,
+    collapsible : true,
+    title: 'Pages',
+    listeners: {
+      'render': function(tree_panel) {
+        tree_panel.getSelectionModel().on('selectionchange',
+                                          function(_tree, node) {
+          // alert(node.attributes.href);
+        });
+      }
+    }
+  });
+
+  if (content == null)
+    content = {xtype: 'panel', html: 'select from the left', region: 'center'};
+  var viewport = new Ext.Viewport({
+    layout: 'border',
+    items: [{xtype: 'box', el: 'header', region: 'north'},
+            content,
+            tree]
+  });
+});") %>
 
 </body>
 </html>

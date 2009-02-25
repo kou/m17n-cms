@@ -1,3 +1,4 @@
+<div id='content'>
 <h1>Listing pages</h1>
 
 <table>
@@ -22,3 +23,8 @@
 <br />
 
 <%= link_to 'New page', new_page_path %>
+</div>
+
+<%= javascript_tag("
+  content = {xtype: 'panel', contentEl: 'content', region: 'center'};
+") %>

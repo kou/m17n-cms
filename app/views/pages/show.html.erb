@@ -1,3 +1,4 @@
+<div id='page-info'>
 <p>
   <b>Parent:</b>
   <%=h @page.parent_id %>
@@ -16,14 +17,30 @@
 
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Back', pages_path %>
-
-<div id="content-tabs"></div>
+</div>
 
 <%= javascript_tag("
 Ext.onReady(function() {
+  var page = new Ext.Panel({
+    region: 'north',
+    split: true,
+    contentEl: 'page-info'
+  });
+
   var contents = new Ext.TabPanel({
-    renderTo: 'content-tabs',
     defaults: {autoScroll: true},
+    region: 'center',
+    enableTabScroll: true,
+    resizeTabs: true,
+    minTabWidth: 40,
+    tabWidth: 40,
+    activeTab: 0,
     items: #{content_tabs_data(@page).to_json}
+  });
+
+  content = new Ext.Panel({
+    layout: 'border',
+    region: 'center',
+    items: [page, contents]
   });
 });") %>
