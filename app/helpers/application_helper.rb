@@ -69,7 +69,8 @@ module ApplicationHelper
       content = page.contents.find_or_create_by_language(language)
       content.update_attribute(:title, page.name) if content.title.blank?
       {
-        "title" => language,
+        "title" => t(language, :locale => language, :default => language),
+        "iconCls" => "tab-language-icon tab-language-icon-#{language}",
         "contentEl" => "content-#{language}",
       }
     end

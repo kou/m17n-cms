@@ -59,3 +59,58 @@ iframe.content-preview
   height: 100%;
   border: none;
 }
+
+span.tab-language-icon
+{
+  background-position: center left !important;
+}
+
+span.tab-language-icon-bn
+{
+  background: url(../images/bn-icon.gif);
+}
+
+span.tab-language-icon-en
+{
+  background: url(../images/en-icon.gif);
+}
+
+span.tab-language-icon-es
+{
+  background: url(../images/es-icon.gif);
+}
+
+span.tab-language-icon-ja
+{
+  background: url(../images/ja-icon.gif);
+}
+
+span.tab-language-icon-ko
+{
+  background: url(../images/ko-icon.gif);
+}
+
+span.tab-language-icon-ms
+{
+  background: url(../images/ms-icon.gif);
+}
+
+span.tab-language-icon-ru
+{
+  background: url(../images/ru-icon.gif);
+}
+
+span.tab-language-icon-th
+{
+  background: url(../images/th-icon.gif);
+}
+
+span.tab-language-icon-vi
+{
+  background: url(../images/vi-icon.gif);
+}
+
+span.tab-language-icon-zh
+{
+  background: url(../images/zh-icon.gif);
+}
