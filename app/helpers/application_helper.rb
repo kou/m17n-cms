@@ -26,30 +26,22 @@ module ApplicationHelper
   end
 
   def page_to_tree_data(page)
-    expanded = false
     children = page.contents.collect do |content|
-      content_expanded = current_page?(content_path(content))
-      expanded = true if content_expanded
       {
-        "text" => "#{content.language}: #{content.title}",
+        "text" => "#{content.language}: #{h(content.title)}",
         "href" => content_path(content),
-        "expanded" => content_expanded,
         "leaf" => true,
       }
     end
     children += page.children.collect do |child|
-      child_tree_data = page_to_tree_data(child)
-      expanded = true if child_tree_data["expanded"]
-      child_tree_data
+      page_to_tree_data(child)
     end
-    tree_data = {
+    {
       "text" => page.name,
       "href" => page_path(page),
       "children" => children,
       "leaf" => false,
     }
-    tree_data["expanded"] = true if expanded or current_page?(page_path(page))
-    tree_data
   end
 
   def content_tabs_data(page)
@@ -57,8 +49,8 @@ module ApplicationHelper
       content = page.contents.find_or_create_by_language(language)
       content.update_attribute(:title, page.name) if content.title.blank?
       {
-        "title" => "#{language}: #{h(content.title)}",
-        "html" => content.body,
+        "title" => language,
+        "html" => "<h2>#{h(content.title)}</h2>\n#{content.body}",
       }
     end
   end
