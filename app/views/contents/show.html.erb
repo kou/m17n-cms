@@ -1,28 +1,40 @@
-<p>
-  <b>Page:</b>
-  <%=h @content.page_id %>
-</p>
+<div id='page-info'>
+<h2><%=h @content.page.name %></h2>
 
 <p>
-  <b>Language:</b>
-  <%=h @content.language %>
+<% if @content.page.published? %>
+  Published
+<% else %>
+  Draft
+<% end %>
 </p>
 
+<%= link_to 'Edit', edit_page_path(@content.page) %>
+</div>
+
+<div id="content-<%= @content.language %>">
+<%=h @content.language %>: <%= @content.body %>
 <p>
-  <b>Title:</b>
-  <%=h @content.title %>
+<%= link_to 'Edit', edit_content_path(@content) %>
 </p>
+</div>
 
-<p>
-  <b>Body:</b>
-  <%=h @content.body %>
-</p>
+<%= javascript_tag("
+Ext.onReady(function() {
+  var page = new Ext.Panel({
+    region: 'north',
+    split: true,
+    contentEl: 'page-info'
+  });
 
-<p>
-  <b>Published:</b>
-  <%=h @content.published %>
-</p>
+  var contents = new Ext.TabPanel({
+    region: 'center',
+    contentEl: 'content-#{@content.language}',
+  });
 
-
-<%= link_to 'Edit', edit_content_path(@content) %> |
-<%= link_to 'Back', contents_path %>
+  content = new Ext.Panel({
+    layout: 'border',
+    region: 'center',
+    items: [page, contents]
+  });
+});") %>

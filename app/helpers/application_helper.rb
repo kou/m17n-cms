@@ -19,6 +19,13 @@ module ApplicationHelper
     end.join("\n")
   end
 
+  def tiny_mce_include_tag
+    tag = TinyMceAssetTagHelper::TinyMceTag.new(@template, @controller,
+                                                "tiny_mce.js")
+    path = tag.public_path
+    javascript_include_tag(path)
+  end
+
   def page_tree_data
     Page.roots.collect do |page|
       page_to_tree_data(page)
@@ -50,7 +57,7 @@ module ApplicationHelper
       content.update_attribute(:title, page.name) if content.title.blank?
       {
         "title" => language,
-        "html" => "<h2>#{h(content.title)}</h2>\n#{content.body}",
+        "contentEl" => "content-#{language}",
       }
     end
   end

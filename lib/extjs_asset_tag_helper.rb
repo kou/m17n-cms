@@ -1,5 +1,6 @@
 module ExtjsAssetTagHelper
   EXTJS_DIR = "#{ActionView::Helpers::AssetTagHelper::ASSETS_DIR}/extjs"
+
   module ExtjsAsset
     DIRECTORY = 'extjs'.freeze
 

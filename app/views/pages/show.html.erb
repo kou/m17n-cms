@@ -21,7 +21,14 @@ Ext.onReady(function() {
   });
 
   var contents = new Ext.TabPanel({
-    defaults: {autoScroll: true},
+    defaults: {
+      autoScroll: true,
+      listeners: {
+        activate: function(tab) {
+          Ext.get(tab.contentEl).show();
+        }
+      }
+    },
     region: 'center',
     enableTabScroll: true,
     resizeTabs: true,
@@ -37,3 +44,12 @@ Ext.onReady(function() {
     items: [page, contents]
   });
 });") %>
+
+<% @page.contents.each do |content| -%>
+<div id="content-<%= content.language %>" style="display: none">
+<%=h content.language %>: <%= content.body %>
+<p>
+<%= link_to 'Edit', edit_content_path(content) %>
+</p>
+</div>
+<% end -%>
