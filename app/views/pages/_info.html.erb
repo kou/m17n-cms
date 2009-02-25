@@ -11,3 +11,15 @@
 
 <%= link_to 'Edit', edit_page_path(page) %>
 </div>
+
+<%= javascript_tag("
+var page_info = null;
+Ext.onReady(function() {
+  page_info = new Ext.Panel({
+    region: 'north',
+    title: 'ページ情報',
+    split: true,
+    contentEl: 'page-info'
+  });
+})
+") %>

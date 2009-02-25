@@ -2,12 +2,6 @@
 
 <%= javascript_tag("
 Ext.onReady(function() {
-  var page = new Ext.Panel({
-    region: 'north',
-    split: true,
-    contentEl: 'page-info'
-  });
-
   var contents = new Ext.TabPanel({
     defaults: {
       autoScroll: true,
@@ -29,7 +23,7 @@ Ext.onReady(function() {
   content = new Ext.Panel({
     layout: 'border',
     region: 'center',
-    items: [page, contents]
+    items: [page_info, contents]
   });
 });") %>
 

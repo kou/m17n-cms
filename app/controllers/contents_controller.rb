@@ -82,4 +82,9 @@ class ContentsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def static
+    @content = Content.find(params[:id])
+    render :layout => false
+  end
 end

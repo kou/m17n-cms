@@ -1,28 +1,26 @@
 <%= render(:partial => "pages/info", :locals => {:page => @content.page}) %>
 
-<div id="content-<%= @content.language %>">
-<p><%=h @content.title %>: <%= link_to 'Edit', edit_content_path(@content) %></p>
-<%= @content.body %>
-</div>
+<%= render(:partial => "preview", :locals => {:content => @content}) %>
 
 <%= javascript_tag("
 Ext.onReady(function() {
-  var page = new Ext.Panel({
-    region: 'north',
-    title: 'ページ情報',
-    split: true,
-    contentEl: 'page-info'
-  });
-
-  var contents = new Ext.Panel({
-    region: 'center',
-    title: #{@content.language.to_json},
-    contentEl: 'content-#{@content.language}',
-  });
-
   content = new Ext.Panel({
     layout: 'border',
     region: 'center',
-    items: [page, contents]
+    items: [page_info,
+            {
+              region: 'center',
+              title: #{@content.language.to_json},
+              tbar: [
+                {
+                  text: 'Edit',
+                  handler: function() {
+                    document.location = #{edit_content_path(@content).to_json}
+                  }
+                }
+              ],
+              contentEl: 'content-#{@content.language}-preview'
+            }
+           ]
   });
 });") %>

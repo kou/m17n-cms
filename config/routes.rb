@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :contents
+  map.resources :contents, :member => {:static => :get}
 
   map.resources :pages
 

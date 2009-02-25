@@ -13,3 +13,8 @@ AVAILABLE_LANGUAGES = [
                        "vi", # ベトナム語
                        "zh", # 中国語
                       ]
+
+langs = Dir[File.join(RAILS_ROOT, "public", "tiny_mce", "langs", "*.js")]
+TINY_MCE_AVAILABLE_LANGUAGES = langs.collect do |path|
+  File.basename(path, ".*")
+end
