@@ -1,16 +1,4 @@
-<div id='page-info'>
-<h2><%=h @page.name %></h2>
-
-<p>
-<% if @page.published? %>
-  Published
-<% else %>
-  Draft
-<% end %>
-</p>
-
-<%= link_to 'Edit', edit_page_path(@page) %>
-</div>
+<%= render(:partial => "info", :locals => {:page => @page}) %>
 
 <%= javascript_tag("
 Ext.onReady(function() {

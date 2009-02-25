@@ -1,16 +1,4 @@
-<div id='page-info'>
-<h2><%=h @content.page.name %></h2>
-
-<p>
-<% if @content.page.published? %>
-  Published
-<% else %>
-  Draft
-<% end %>
-</p>
-
-<%= link_to 'Edit', edit_page_path(@content.page) %>
-</div>
+<%= render(:partial => "pages/info", :locals => {:page => @content.page}) %>
 
 <div id="content-<%= @content.language %>">
 <p><%=h @content.title %>: <%= link_to 'Edit', edit_content_path(@content) %></p>
