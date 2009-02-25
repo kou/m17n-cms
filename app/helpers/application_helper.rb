@@ -40,10 +40,11 @@ module ApplicationHelper
                                    :id => content.id)
       expanded = true if current_page
       {
-        "text" => "#{content.language}: #{h(content.title)}",
+        "text" => h(content.title),
         "href" => content_path(content),
         "leaf" => true,
         "cls" => current_page ? "current" : "",
+        "iconCls" => "language-icon-#{content.language}",
         "expanded" => current_page,
       }
     end
@@ -70,7 +71,7 @@ module ApplicationHelper
       content.update_attribute(:title, page.name) if content.title.blank?
       {
         "title" => t(language, :locale => language, :default => language),
-        "iconCls" => "tab-language-icon tab-language-icon-#{language}",
+        "iconCls" => "tab-language-icon language-icon-#{language}",
         "contentEl" => "content-#{language}",
       }
     end

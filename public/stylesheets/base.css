@@ -65,52 +65,52 @@ span.tab-language-icon
   background-position: center left !important;
 }
 
-span.tab-language-icon-bn
+.language-icon-bn
 {
-  background: url(../images/bn-icon.gif);
+  background-image: url(../images/bn-icon.gif) !important;
 }
 
-span.tab-language-icon-en
+.language-icon-en
 {
-  background: url(../images/en-icon.gif);
+  background-image: url(../images/en-icon.gif) !important;
 }
 
-span.tab-language-icon-es
+.language-icon-es
 {
-  background: url(../images/es-icon.gif);
+  background-image: url(../images/es-icon.gif) !important;
 }
 
-span.tab-language-icon-ja
+.language-icon-ja
 {
-  background: url(../images/ja-icon.gif);
+  background-image: url(../images/ja-icon.gif) !important;
 }
 
-span.tab-language-icon-ko
+.language-icon-ko
 {
-  background: url(../images/ko-icon.gif);
+  background-image: url(../images/ko-icon.gif) !important;
 }
 
-span.tab-language-icon-ms
+.language-icon-ms
 {
-  background: url(../images/ms-icon.gif);
+  background-image: url(../images/ms-icon.gif) !important;
 }
 
-span.tab-language-icon-ru
+.language-icon-ru
 {
-  background: url(../images/ru-icon.gif);
+  background-image: url(../images/ru-icon.gif) !important;
 }
 
-span.tab-language-icon-th
+.language-icon-th
 {
-  background: url(../images/th-icon.gif);
+  background-image: url(../images/th-icon.gif) !important;
 }
 
-span.tab-language-icon-vi
+.language-icon-vi
 {
-  background: url(../images/vi-icon.gif);
+  background-image: url(../images/vi-icon.gif) !important;
 }
 
-span.tab-language-icon-zh
+.language-icon-zh
 {
-  background: url(../images/zh-icon.gif);
+  background-image: url(../images/zh-icon.gif) !important;
 }
