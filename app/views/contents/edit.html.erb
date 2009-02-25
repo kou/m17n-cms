@@ -13,26 +13,30 @@
 </div>
 
 <div id="content-<%= @content.language %>">
+<%= link_to 'Show', @content %>
 <% form_for(@content) do |f| %>
-  <%= f.text_area :body %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+
   <p>
-    <%= f.submit "Update" %>
+    <%= f.text_area :body %>
   </p>
 <% end %>
 </div>
-
-<%= link_to 'Show', @content %>
 
 <%= javascript_tag(<<-EOC
 Ext.onReady(function() {
   var page = new Ext.Panel({
     region: 'north',
+    title: "ページ情報",
     split: true,
     contentEl: 'page-info'
   });
 
   var contents = new Ext.Panel({
     region: 'center',
+    title: #{@content.language.to_json},
+    autoScroll: true,
     contentEl: "content-#{@content.language}"
   });
 

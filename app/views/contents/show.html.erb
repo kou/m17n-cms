@@ -13,22 +13,22 @@
 </div>
 
 <div id="content-<%= @content.language %>">
-<%=h @content.language %>: <%= @content.body %>
-<p>
-<%= link_to 'Edit', edit_content_path(@content) %>
-</p>
+<p><%=h @content.title %>: <%= link_to 'Edit', edit_content_path(@content) %></p>
+<%= @content.body %>
 </div>
 
 <%= javascript_tag("
 Ext.onReady(function() {
   var page = new Ext.Panel({
     region: 'north',
+    title: 'ページ情報',
     split: true,
     contentEl: 'page-info'
   });
 
-  var contents = new Ext.TabPanel({
+  var contents = new Ext.Panel({
     region: 'center',
+    title: #{@content.language.to_json},
     contentEl: 'content-#{@content.language}',
   });
 

@@ -33,21 +33,27 @@ module ApplicationHelper
   end
 
   def page_to_tree_data(page)
+    expanded = false
     children = page.contents.collect do |content|
+      content_expanded = current_page?(content_path(content))
+      expanded = true if content_expanded
       {
         "text" => "#{content.language}: #{h(content.title)}",
         "href" => content_path(content),
         "leaf" => true,
+        "expanded" => content_expanded,
       }
     end
     children += page.children.collect do |child|
       page_to_tree_data(child)
     end
+    expanded = true if !expanded and current_page?(page_path(page))
     {
       "text" => page.name,
       "href" => page_path(page),
       "children" => children,
       "leaf" => false,
+      "expanded" => expanded,
     }
   end
 
