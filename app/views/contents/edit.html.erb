@@ -11,11 +11,15 @@
 
 <%= javascript_tag(<<-EOC
 Ext.onReady(function() {
-  var contents = new Ext.Panel({
-    region: 'center',
-    title: #{@content.language.to_json},
-    contentEl: "content-#{@content.language}"
-  });
+  var toolbar = [
+    {
+      text: 'Show',
+      href: #{content_path(@content).to_json}
+    },
+    "-"
+  ]
+  toolbar = toolbar.concat(#{content_edit_toolbar_data(@content).to_json});
+  toolbarItemsSetLinkHandler(toolbar);
 
   content = new Ext.Panel({
     layout: 'border',
@@ -23,16 +27,9 @@ Ext.onReady(function() {
     items: [page_info,
             {
               region: 'center',
-              title: #{@content.language.to_json},
+              title: #{(t(@content.language) + ": " + @content.title).to_json},
               autoScroll: true,
-              tbar: [
-                {
-                  text: 'Show',
-                  handler: function() {
-                    document.location = #{content_path(@content).to_json}
-                  }
-                }
-              ],
+              tbar: toolbar,
               contentEl: "content-#{@content.language}"
             }
            ]

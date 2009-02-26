@@ -2,6 +2,12 @@
 
 <%= javascript_tag("
 Ext.onReady(function() {
+  var items = #{content_tabs_data(@page).to_json};
+  Ext.each(items, function (item) {
+    if (item.tbar)
+      toolbarItemsSetLinkHandler(item.tbar);
+  });
+
   var contents = new Ext.TabPanel({
     defaults: {
       autoScroll: true,
@@ -15,7 +21,7 @@ Ext.onReady(function() {
     enableTabScroll: true,
     resizeTabs: true,
     activeTab: 0,
-    items: #{content_tabs_data(@page).to_json}
+    items: items
   });
 
   content = new Ext.Panel({
@@ -26,10 +32,5 @@ Ext.onReady(function() {
 });") %>
 
 <% @page.contents.each do |content| -%>
-<div id="content-<%= content.language %>" style="display: none">
-<%=h content.language %>: <%= content.body %>
-<p>
-<%= link_to 'Edit', edit_content_path(content) %>
-</p>
-</div>
+<%= render(:partial => "/contents/preview", :locals => {:content => content}) %>
 <% end -%>

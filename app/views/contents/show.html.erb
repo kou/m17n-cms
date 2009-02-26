@@ -2,25 +2,30 @@
 
 <%= render(:partial => "preview", :locals => {:content => @content}) %>
 
-<%= javascript_tag("
+<%= javascript_tag(<<-EOC
 Ext.onReady(function() {
+  var toolbar = [
+    {
+      text: 'Edit',
+      href: #{edit_content_path(@content).to_json}
+    },
+    '-'
+  ]
+  toolbar = toolbar.concat(#{content_show_toolbar_data(@content).to_json});
+  toolbarItemsSetLinkHandler(toolbar);
+
   content = new Ext.Panel({
     layout: 'border',
     region: 'center',
     items: [page_info,
             {
               region: 'center',
-              title: #{@content.language.to_json},
-              tbar: [
-                {
-                  text: 'Edit',
-                  handler: function() {
-                    document.location = #{edit_content_path(@content).to_json}
-                  }
-                }
-              ],
+              title: #{(t(@content.language) + ": " + @content.title).to_json},
+              tbar: toolbar,
               contentEl: 'content-#{@content.language}-preview'
             }
            ]
   });
-});") %>
+});
+EOC
+) %>

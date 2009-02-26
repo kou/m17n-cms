@@ -64,16 +64,4 @@ module ApplicationHelper
       "expanded" => expanded,
     }
   end
-
-  def content_tabs_data(page)
-    AVAILABLE_LANGUAGES.collect do |language|
-      content = page.contents.find_or_create_by_language(language)
-      content.update_attribute(:title, page.name) if content.title.blank?
-      {
-        "title" => t(language, :locale => language, :default => language),
-        "iconCls" => "tab-language-icon language-icon-#{language}",
-        "contentEl" => "content-#{language}",
-      }
-    end
-  end
 end
