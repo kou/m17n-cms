@@ -1,6 +1,4 @@
 <div id='page-info'>
-<h2><%=h page.name %></h2>
-
 <p>
 <% if page.published? %>
   Published
@@ -8,8 +6,6 @@
   Draft
 <% end %>
 </p>
-
-<%= link_to 'Edit', edit_page_path(page) %>
 </div>
 
 <%= javascript_tag("
@@ -17,8 +13,14 @@ var page_info = null;
 Ext.onReady(function() {
   page_info = new Ext.Panel({
     region: 'north',
-    title: 'ページ情報',
+    title: #{h(page.name).to_json},
     split: true,
+    tbar: [
+      {
+        text: 'Edit',
+        handler: function() {document.location = #{edit_page_path(page).to_json}}
+      }
+    ],
     contentEl: 'page-info'
   });
 })

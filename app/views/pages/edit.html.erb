@@ -1,13 +1,12 @@
-<div id='content'>
-<h2>Editing page</h2>
-
+<div id='page-form'>
 <% form_for(@page) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :name %>:
     <%= f.text_field :name %>
-
+  </p>
+  <p>
     <%= f.label :published %>:
     <%= f.check_box :published %>
   </p>
@@ -16,3 +15,19 @@
   </p>
 <% end %>
 </div>
+
+<%= javascript_tag("
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    region: 'center',
+    title: #{(h(@page.name) + ": Edit").to_json},
+    tbar: [
+      {
+        text: 'Show',
+        handler: function() {document.location = #{page_path(@page).to_json}}
+      }
+    ],
+    contentEl: 'page-form'
+  });
+})
+") %>
