@@ -16,6 +16,7 @@ ja:
   "Page Admin": ページ管理
   "Page Administration": ページ管理
   "Site Admin": サイト管理
+  "Site Information": サイト情報
 
   Name: 名前
   Published: 公開
@@ -23,6 +24,10 @@ ja:
   Title: タイトル
   Actions: 操作
   "New Page": 新しいページ
+
+  Site: "サイト"
+  "FTP host": "FTPホスト"
+  "FTP path": "FTPパス"
 
   Show: 表示
   Edit: 編集

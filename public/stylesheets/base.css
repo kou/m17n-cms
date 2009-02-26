@@ -34,6 +34,11 @@
   list-style: square;
 }
 
+span.translation_missing
+{
+  color: red;
+}
+
 div.main
 {
   margin-left: 21%;
