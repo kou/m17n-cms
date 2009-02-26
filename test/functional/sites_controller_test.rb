@@ -3,8 +3,8 @@ require 'test_helper'
 class SitesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
-    assert_response :success
-    assert_not_nil assigns(:sites)
+    assert_response :redirect
+    assert_redirected_to Site.default
   end
 
   test "should get new" do

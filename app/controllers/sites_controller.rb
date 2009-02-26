@@ -2,12 +2,7 @@ class SitesController < ApplicationController
   # GET /sites
   # GET /sites.xml
   def index
-    @sites = Site.find(:all)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @sites }
-    end
+    redirect_to(Site.default)
   end
 
   # GET /sites/1
