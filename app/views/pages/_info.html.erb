@@ -1,6 +1,3 @@
-<div id='page-info' class='main-content'>
-</div>
-
 <%= javascript_tag(<<-EOC
 var page_info = null;
 Ext.onReady(function() {
@@ -20,8 +17,7 @@ Ext.onReady(function() {
           document.location = #{pages_path.to_json}
         }
       }
-    ],
-    contentEl: 'page-info'
+    ]
   });
 })
 EOC
