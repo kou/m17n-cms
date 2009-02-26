@@ -27,7 +27,7 @@ module ApplicationHelper
   end
 
   def page_tree_data
-    Page.roots.collect do |page|
+    Page.sorted.find(:all).collect do |page|
       page_to_tree_data(page)
     end
   end
@@ -47,9 +47,6 @@ module ApplicationHelper
         "iconCls" => "language-icon-#{content.language}",
         "expanded" => current_page,
       }
-    end
-    children += page.children.collect do |child|
-      page_to_tree_data(child)
     end
     expanded ||= !children.find {|child| child["expanded"]}.nil?
     expanded ||= current_page?(:controller => "pages",

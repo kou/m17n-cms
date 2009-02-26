@@ -2,27 +2,6 @@
 
 index:
   name: index
-  published: true
 
 introduction:
   name: introduction
-  published: true
-
-introduction_summary:
-  parent: introduction
-  name: summary
-  published: true
-
-introduction_gallery:
-  parent: introduction
-  name: gallery
-  published: true
-
-introduction_join:
-  parent: introduction
-  name: join
-  published: false
-
-hidden:
-  name: hidden
-  published: false

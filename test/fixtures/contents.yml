@@ -5,32 +5,21 @@ index_ja:
   language: ja
   title: ようこそ
   body: <p>はじめまして</p>
-  published: true
 
 index_en:
   page: index
   language: en
   title: Welcome
   body: <p>Nice to meat you</p>
-  published: true
 
 introduction_summary_ja:
   page: introduction_summary
   language: ja
   title: 概要
   body: だいたいこんな感じです。
-  published: true
 
 introduction_summary_en:
   page: introduction_summary
   language: en
   title: Summary
   body: Under constructed.
-  published: false
-
-hidden_ja:
-  page: hidden
-  language: ja
-  title: 非公開ページ
-  body: ページは公開設定
-  published: true

@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
-  acts_as_tree :order => "name"
   has_many :contents
+  named_scope :sorted, :order => "name"
 
   def sorted_contents
     AVAILABLE_LANGUAGES.collect do |language|

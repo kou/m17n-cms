@@ -6,7 +6,6 @@
     <th>Language</th>
     <th>Title</th>
     <th>Body</th>
-    <th>Published</th>
   </tr>
 
 <% for content in @contents %>
@@ -15,7 +14,6 @@
     <td><%=h content.language %></td>
     <td><%=h content.title %></td>
     <td><%=h content.body %></td>
-    <td><%=h content.published %></td>
     <td><%= link_to 'Show', content %></td>
     <td><%= link_to 'Edit', edit_content_path(content) %></td>
     <td><%= link_to 'Destroy', content, :confirm => 'Are you sure?', :method => :delete %></td>

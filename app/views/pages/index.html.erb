@@ -2,15 +2,12 @@
 <table>
   <tr>
     <th><%= t("Name") %></th>
-    <th><%= t("Published") %></th>
     <th colspan="3"><%= t("Actions") %></th>
   </tr>
 
 <% @pages.each do |page| %>
   <tr>
     <td><%=h page.name %></td>
-    <td><%= check_box_tag('published', '1', page.published?,
-                          :disabled => true) %></td>
     <td><%= link_to(t('Show'), page) %></td>
     <td><%= link_to(t('Edit'), edit_page_path(page)) %></td>
     <td><%= link_to(t('Destroy'), page,
@@ -21,7 +18,7 @@
 </table>
 
 <p>
-<%= link_to(t('New page'), new_page_path) %>
+<%= link_to(t('New Page'), new_page_path) %>
 </p>
 </div>
 
