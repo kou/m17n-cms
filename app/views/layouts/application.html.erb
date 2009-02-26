@@ -18,9 +18,7 @@ var content = null;
 </head>
 <body>
 
-<div id="header">
-<h1><%= link_to("M17N CMS", root_path) %></h1>
-</div>
+<%= render(:partial => "/_share/header") %>
 
 <%= yield %>
 
@@ -50,9 +48,15 @@ Ext.onReady(function() {
     },
     tbar: [
       {
-         text: #{t('Admin').to_json},
+         text: #{t('Page Admin').to_json},
          handler: function() {
            document.location = #{pages_path.to_json};
+         }
+      },
+      {
+         text: #{t('Site Admin').to_json},
+         handler: function() {
+           document.location = #{sites_path.to_json};
          }
       }
     ]

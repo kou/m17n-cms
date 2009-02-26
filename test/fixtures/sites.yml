@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  ftp_host: MyString
+  ftp_path: MyString
+
+two:
+  name: MyString
+  ftp_host: MyString
+  ftp_path: MyString
