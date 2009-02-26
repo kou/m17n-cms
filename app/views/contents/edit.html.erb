@@ -13,7 +13,7 @@
 Ext.onReady(function() {
   var toolbar = [
     {
-      text: 'Show',
+      text: #{t('Show').to_json},
       href: #{content_path(@content).to_json}
     },
     "-"
@@ -55,10 +55,8 @@ Ext.onReady(function() {
     // content_css : "css/content.css",
 
     // Drop lists for link/image/media/template dialogs
-    template_external_list_url : "lists/template_list.js",
-    external_link_list_url : "lists/link_list.js",
+    external_link_list_url : #{}"lists/link_list.js",
     external_image_list_url : "lists/image_list.js",
-    media_external_list_url : "lists/media_list.js",
 
     language: #{@content.tiny_mcs_language.to_json}
   });

@@ -33,4 +33,5 @@ Ext.onReady(function() {
 
 <% @page.contents.each do |content| -%>
 <%= render(:partial => "/contents/preview", :locals => {:content => content}) %>
+<%= javascript_tag("Ext.get(#{content_preview_id(content).to_json}).hide()") %>
 <% end -%>

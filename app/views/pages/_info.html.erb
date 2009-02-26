@@ -17,7 +17,7 @@ Ext.onReady(function() {
     split: true,
     tbar: [
       {
-        text: 'Edit',
+        text: #{t('Edit').to_json},
         handler: function() {document.location = #{edit_page_path(page).to_json}}
       }
     ],

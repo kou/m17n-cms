@@ -24,7 +24,7 @@ var content = null;
 
 <%= yield %>
 
-<%= javascript_tag("
+<%= javascript_tag(<<-EOC
 Ext.onReady(function() {
   var root = new Ext.tree.AsyncTreeNode({
     id: 'root',
@@ -39,7 +39,7 @@ Ext.onReady(function() {
     region: 'west',
     split: true,
     collapsible : true,
-    title: 'Pages',
+    title: #{t('Pages').to_json},
     listeners: {
       render: function(tree_panel) {
         tree_panel.getSelectionModel().on('selectionchange',
@@ -47,7 +47,15 @@ Ext.onReady(function() {
           // alert(node.attributes.href);
         });
       }
-    }
+    },
+    tbar: [
+      {
+         text: #{t('Admin').to_json},
+         handler: function() {
+           document.location = #{pages_path.to_json};
+         }
+      }
+    ]
   });
 
   if (content == null) {
@@ -63,7 +71,9 @@ Ext.onReady(function() {
             content,
             tree]
   });
-});") %>
+});
+EOC
+) %>
 
 </body>
 </html>

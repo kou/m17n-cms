@@ -1,4 +1,4 @@
-<iframe id="content-<%= content.language %>-preview"
+<iframe id="<%= content_preview_id(content) %>"
         class="content-preview"
         src="<%= static_content_path(content) %>">
 </iframe>

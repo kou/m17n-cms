@@ -1,24 +1,37 @@
-<div id='content'>
-<h2>Listing pages</h2>
-
+<div id='page-administration' class='main-content'>
 <table>
   <tr>
-    <th>Name</th>
-    <th>Published</th>
+    <th><%= t("Name") %></th>
+    <th><%= t("Published") %></th>
+    <th colspan="3"><%= t("Actions") %></th>
   </tr>
 
-<% for page in @pages %>
+<% @pages.each do |page| %>
   <tr>
     <td><%=h page.name %></td>
-    <td><%=h page.published %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= check_box_tag('published', '1', page.published?,
+                          :disabled => true) %></td>
+    <td><%= link_to(t('Show'), page) %></td>
+    <td><%= link_to(t('Edit'), edit_page_path(page)) %></td>
+    <td><%= link_to(t('Destroy'), page,
+                    :confirm => t('Are you sure?'),
+                    :method => :delete) %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New page', new_page_path %>
+<p>
+<%= link_to(t('New page'), new_page_path) %>
+</p>
 </div>
+
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{t("Page Administration").to_json},
+    region: 'center',
+    contentEl: 'page-administration'
+  });
+});
+EOC
+) %>

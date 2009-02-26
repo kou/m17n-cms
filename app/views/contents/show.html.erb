@@ -6,7 +6,7 @@
 Ext.onReady(function() {
   var toolbar = [
     {
-      text: 'Edit',
+      text: #{t('Edit').to_json},
       href: #{edit_content_path(@content).to_json}
     },
     '-'

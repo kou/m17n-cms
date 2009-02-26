@@ -57,7 +57,7 @@ iframe.content-preview
 {
   width: 100%;
   height: 100%;
-  border: none;
+  border-style: none;
 }
 
 span.tab-language-icon
@@ -115,7 +115,36 @@ span.tab-language-icon
   background-image: url(../images/zh-icon.gif) !important;
 }
 
-div.class textarea
+div.content textarea
 {
   width: 100%;
+}
+
+div.main-content
+{
+  padding: 1em;
+}
+
+div.main-content table,
+div.main-content table tr,
+div.main-content table tr th,
+div.main-content table tr td
+{
+  border: 1px solid #ccc;
+}
+
+div.main-content table tr th
+{
+  padding: 5px;
+  text-align: center;
+}
+
+div.main-content table tr td
+{
+  padding: 5px;
+}
+
+div.main-content p
+{
+  padding: 1em 0;
 }

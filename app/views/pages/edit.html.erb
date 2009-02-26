@@ -16,18 +16,19 @@
 <% end %>
 </div>
 
-<%= javascript_tag("
+<%= javascript_tag(<<-EOC
 Ext.onReady(function() {
   content = new Ext.Panel({
     region: 'center',
-    title: #{(h(@page.name) + ": Edit").to_json},
+    title: #{(h(@page.name) + ": " + t('Edit')).to_json},
     tbar: [
       {
-        text: 'Show',
+        text: #{t('Show').to_json},
         handler: function() {document.location = #{page_path(@page).to_json}}
       }
     ],
     contentEl: 'page-form'
   });
 })
-") %>
+EOC
+) %>
