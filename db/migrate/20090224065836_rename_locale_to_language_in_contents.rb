@@ -1,4 +1,4 @@
-class RenameLocaleToLanguageInContent < ActiveRecord::Migration
+class RenameLocaleToLanguageInContents < ActiveRecord::Migration
   def self.up
     rename_column :contents, :locale, :language
   end

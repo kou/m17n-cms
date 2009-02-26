@@ -1,4 +1,4 @@
-class RemoveChildrenCountFromPage < ActiveRecord::Migration
+class RemoveChildrenCountFromPages < ActiveRecord::Migration
   def self.up
     remove_column :pages, :children_count
   end

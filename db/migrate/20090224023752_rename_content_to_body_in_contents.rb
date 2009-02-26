@@ -1,4 +1,4 @@
-class RenameContentToBodyInContent < ActiveRecord::Migration
+class RenameContentToBodyInContents < ActiveRecord::Migration
   def self.up
     rename_column(:contents, :content, :body)
   end
