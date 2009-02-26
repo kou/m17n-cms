@@ -1,7 +1,7 @@
 <div id='page-info' class='main-content'>
 </div>
 
-<%= javascript_tag("
+<%= javascript_tag(<<-EOC
 var page_info = null;
 Ext.onReady(function() {
   page_info = new Ext.Panel({
@@ -12,9 +12,17 @@ Ext.onReady(function() {
       {
         text: #{t('Edit').to_json},
         handler: function() {document.location = #{edit_page_path(page).to_json}}
+      },
+      "-",
+      {
+        text: #{t('Admin').to_json},
+        handler: function() {
+          document.location = #{pages_path.to_json}
+        }
       }
     ],
     contentEl: 'page-info'
   });
 })
-") %>
+EOC
+) %>

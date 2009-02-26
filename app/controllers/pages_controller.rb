@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.xml
   def index
-    @pages = Page.find(:all)
+    @pages = Page.find(:all, :order => "name")
 
     respond_to do |format|
       format.html # index.html.erb
