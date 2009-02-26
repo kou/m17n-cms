@@ -1,3 +1,5 @@
+# -*- indent-tabs-mode: nil -*-
+
 ja:
   bn: ベンガル語
   en: 英語
@@ -15,11 +17,21 @@ ja:
   "Page Administration": ページ管理
   Name: 名前
   Published: 公開
+  Draft: 下書き
+  Title: タイトル
   Actions: 操作
   "New page": 新しいページ
   Show: 表示
   Edit: 編集
   Destroy: 削除
+  Update: 更新
   "Are you sure?": 本当に実行しますか？
   Pages: ページ一覧
 
+  activerecord:
+    models:
+      page: ページ
+    attributes:
+      page:
+        name: 名前
+        published: 公開

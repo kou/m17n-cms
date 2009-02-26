@@ -1,11 +1,4 @@
-<div id='page-info'>
-<p>
-<% if page.published? %>
-  Published
-<% else %>
-  Draft
-<% end %>
-</p>
+<div id='page-info' class='main-content'>
 </div>
 
 <%= javascript_tag("
@@ -13,7 +6,7 @@ var page_info = null;
 Ext.onReady(function() {
   page_info = new Ext.Panel({
     region: 'north',
-    title: #{h(page.name).to_json},
+    title: #{(h(page.name) + ": " + page_published_label(page)).to_json},
     split: true,
     tbar: [
       {

@@ -115,14 +115,14 @@ span.tab-language-icon
   background-image: url(../images/zh-icon.gif) !important;
 }
 
-div.content textarea
-{
-  width: 100%;
-}
-
 div.main-content
 {
   padding: 1em;
+}
+
+div.main-content textarea
+{
+  width: 100%;
 }
 
 div.main-content table,
@@ -146,5 +146,5 @@ div.main-content table tr td
 
 div.main-content p
 {
-  padding: 1em 0;
+  padding: 0.25em 0;
 }
