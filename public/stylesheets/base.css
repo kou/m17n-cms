@@ -114,3 +114,8 @@ span.tab-language-icon
 {
   background-image: url(../images/zh-icon.gif) !important;
 }
+
+div.class textarea
+{
+  width: 100%;
+}

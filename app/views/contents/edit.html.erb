@@ -1,6 +1,6 @@
 <%= render(:partial => "pages/info", :locals => {:page => @content.page}) %>
 
-<div id="content-<%= @content.language %>">
+<div id="content-<%= @content.language %>" class="content">
 <% form_for(@content) do |f| %>
   <%= f.label :title %>:
   <%= f.text_field :title %>
