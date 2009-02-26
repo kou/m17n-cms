@@ -1,18 +1,31 @@
-<p>
-  <b>Name:</b>
-  <%=h @site.name %>
-</p>
+<div id="site-info" class="main-content">
+  <dl>
+    <dt><%= t("Title") %></dt>
+    <dd><%=h @site.title %></dd>
 
-<p>
-  <b>Ftp host:</b>
-  <%=h @site.ftp_host %>
-</p>
+    <dt><%= t("FTP host") %></dt>
+    <dd><%=h @site.ftp_host %></dd>
 
-<p>
-  <b>Ftp path:</b>
-  <%=h @site.ftp_path %>
-</p>
+    <dt><%= t("FTP path") %></dt>
+    <dd><%=h @site.ftp_path %></dd>
+  </dl>
+</div>
 
-
-<%= link_to 'Edit', edit_site_path(@site) %> |
-<%= link_to 'Back', sites_path %>
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{t("Site Information").to_json},
+    region: 'center',
+    contentEl: 'site-info',
+    tbar: [
+      {
+         text: #{t("Edit").to_json},
+         handler: function () {
+           document.location = #{edit_site_path(@site).to_json};
+         }
+      }
+    ]
+  });
+});
+EOC
+) %>

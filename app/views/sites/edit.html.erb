@@ -1,24 +1,46 @@
-<h1>Editing site</h1>
-
+<div id="site-form" class="main-content">
 <% form_for(@site) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label(:title, t("Title")) %>
+    <span class="example"><%= t("(example: My Site)") %></span>
+    <br />
+    <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :ftp_host %><br />
+    <%= f.label(:ftp_host, t("FTP host")) %>
+    <span class="example"><%= t("(example: ftp.example.com)") %></span>
+    <br />
     <%= f.text_field :ftp_host %>
   </p>
   <p>
-    <%= f.label :ftp_path %><br />
+    <%= f.label(:ftp_path, t("FTP path")) %>
+    <span class="example"><%= t("(example: /my-site)") %></span>
+    <br />
     <%= f.text_field :ftp_path %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit(t("Update")) %>
   </p>
 <% end %>
+</div>
 
-<%= link_to 'Show', @site %> |
-<%= link_to 'Back', sites_path %>
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{(t("Site") + ": " + t("Edit")).to_json},
+    region: 'center',
+    contentEl: 'site-form',
+    tbar: [
+      {
+         text: #{t("Show").to_json},
+         handler: function () {
+           document.location = #{site_path(@site).to_json};
+         }
+      }
+    ]
+  });
+});
+EOC
+) %>
