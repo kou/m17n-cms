@@ -1,23 +1,37 @@
-<h1>New page</h1>
-
+<div id='new-page' class='main-content'>
 <% form_for(@page) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
+    <%= f.label(:name, t("Name")) %>:
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :published %><br />
+    <%= f.label(:published, t("Published")) %>:
     <%= f.check_box :published %>
   </p>
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit(t("Create")) %>
   </p>
 <% end %>
+</div>
 
-<%= link_to 'Back', pages_path %>
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{t("New Page").to_json},
+    region: 'center',
+    contentEl: 'new-page',
+    tbar: [
+      {
+        text: #{t("Pages").to_json},
+        handler: function () {
+          document.location = #{pages_path.to_json};
+        }
+      }
+    ]
+  });
+});
+EOC
+) %>
+
