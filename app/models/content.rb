@@ -8,4 +8,8 @@ class Content < ActiveRecord::Base
       "en"
     end
   end
+
+  def html_path(directory=nil)
+    File.join(*[directory, "#{page.name}-#{language}.html"].compact)
+  end
 end
