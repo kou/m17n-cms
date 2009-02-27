@@ -61,4 +61,8 @@ module ApplicationHelper
       "expanded" => expanded,
     }
   end
+
+  def icon_tag(language)
+    image_tag("icons/#{language}-icon.gif", :alt => language)
+  end
 end

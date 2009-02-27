@@ -15,7 +15,7 @@
   <ul class="language-links">
 <% @content.page.sorted_contents.each do |content| -%>
     <li class="language-icon">
-      <%= link_to_unless_current(image_tag("#{content.language}-icon.gif"),
+      <%= link_to_unless_current(icon_tag(content.language),
                                  content_path(content)) %>
     </li>
 <% end -%>
