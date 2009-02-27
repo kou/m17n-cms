@@ -29,6 +29,10 @@ ja:
   "FTP host": "FTPホスト"
   "FTP path": "FTPパス"
 
+  "(example: My Site)": "（例: 私のサイト）"
+  "(example: ftp.example.com)": "（例: ftp.example.com）"
+  "(example: /my-site)": "（例: /my-site）"
+
   Show: 表示
   Edit: 編集
   Destroy: 削除
