@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  has_many :contents
+  has_many :contents,:dependent => :destroy
   named_scope :sorted, :order => "name"
 
   def sorted_contents
