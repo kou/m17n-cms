@@ -13,7 +13,7 @@
   <h1><%= link_to(h(Site.default.title || "Site Title"), root_path) %></h1>
 
   <ul class="language-links">
-<% @content.page.sorted_contents.each do |content| -%>
+<% @content.page.sorted_available_contents.each do |content| -%>
     <li class="language-icon">
       <%= link_to_unless_current(icon_tag(content.language),
                                  content_path(content)) %>

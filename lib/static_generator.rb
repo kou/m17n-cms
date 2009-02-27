@@ -12,7 +12,7 @@ class StaticGenerator
     prepare_objects
 
     Page.find(:all).each do |page|
-      page.contents.each do |content|
+      page.sorted_available_contents.each do |content|
         output_file_name = generate_content(content)
         if content.language == "ja"
           FileUtils.cp(output_file_name, page.html_path(@output_dir))

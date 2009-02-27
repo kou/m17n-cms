@@ -10,6 +10,12 @@ class Page < ActiveRecord::Base
     end
   end
 
+  def sorted_available_contents
+    sorted_contents.reject do |content|
+      content.body.blank?
+    end
+  end
+
   def html_path(directory=nil)
     File.join(*[directory, "#{name}.html"].compact)
   end
