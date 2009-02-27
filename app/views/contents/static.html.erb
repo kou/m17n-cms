@@ -10,7 +10,7 @@
 <body>
 
 <div id="header">
-  <h1><%= link_to("M17N CMS", root_path) %></h1>
+  <h1><%= link_to(h(Site.default.title || "Site Title"), root_path) %></h1>
 
   <ul class="language-links">
 <% @content.page.sorted_contents.each do |content| -%>
@@ -24,7 +24,7 @@
 
 <div id="main">
 <h2><%=h @content.title %></h2>
-<%= @content.body %>
+<%= normalize_content_body(@content.body) %>
 </div>
 
 </body>

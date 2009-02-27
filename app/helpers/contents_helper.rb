@@ -30,6 +30,10 @@ module ContentsHelper
     end
   end
 
+  def normalize_content_body(body)
+    body
+  end
+
   private
   def content_toolbar_data(current_content)
     page = current_content.page
