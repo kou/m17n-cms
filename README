@@ -13,9 +13,13 @@ site. (i.e. no CGI site) It provides the following features:
 * Upload static HTML to FTP server.
 * WYSIWYG HTML edit interface.
 
-== Copyright
+== Author
 
 Kouhei Sutou <kou@clear-code.com>
+
+== Copyright
+
+ClearCode Inc.
 
 == License
 

@@ -14,9 +14,13 @@ M17N CMSは静的なHTMLのサイト用のコンテンツ管理システムで�
 * 静的なHTMLをFTPサーバにアップロードする機能。
 * コンテンツをWYSIWYGで編集できるインターフェイス。
 
-== 著作権者
+== 作者
 
-Kouhei Sutou <kou@clear-code.com>
+須藤功平 <kou@clear-code.com>
+
+== 著作権所有者
+
+株式会社クリアコード
 
 == ライセンス
 
