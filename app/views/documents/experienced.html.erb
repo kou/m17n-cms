@@ -1,0 +1,60 @@
+<div id="usage-for-the-experienced" class="main-content">
+  <p>
+    上級者向けにこのサイトの使い方を説明します。まずは、通常の使い方<%= link_to(t("Usage"), usage_path) %>を見てください。
+  </p>
+  <div class="index">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#page-name">ページ名</a></li>
+    </ul>
+  </div>
+
+  <h2 id="page-name">ページ名</h2>
+  <p>
+    ページ名について説明します。
+    まず、ページ名とURLの関係を示した以下の図を見てください。
+    コンテンツのURLでは、ページ名が共有されていることに注意してください。
+  </p>
+  <p>
+    <%= image_tag("documents/site-components-url.png",
+                  :title => "「サイト」・「ページ」・「コンテンツ」のURLの関係") %>
+  </p>
+  <p>
+    各ページは他のページと区別をするために名前を持っています。
+    ページの名前はコンテンツが予想できる名前にします。
+    例えば、「このサイトについて」書かれたページは「about」という名前がよいでしょう。「手続き」について書かれたページは「procedure」がよいでしょう。
+  </p>
+  <p>
+    ページ名をつけるときに注意すること以下の2つです。
+  </p>
+  <ul>
+    <li>トップページ（最初に表示されるページ）は「index」というページ名にすること</li>
+    <li>ページ名には日本語を使わずにアルファベット・数字などのみを使うこと</li>
+  </ul>
+  <p>
+    トップページに「index」という名前をつけるということは、長い間使われてきた習慣だからです。
+  </p>
+  <p>
+    ページ名に日本語を使わないのは、すべての言語のコンテンツで「ページ名」が共有されるからです。
+    例えば、「このサイトについて」書かれた「about」という名前のページでは、日本語のコンテンツは「http://.../site/about-ja.html」というURLになり、英語では「.../about-en.html」となります。
+    もし、ページ名が「about」ではなく「紹介」だった場合は、「.../紹介-ja.html」や「.../紹介-en.html」となります。英語ページは日本語が表示・使用できない環境で見られることも多いでしょう。そのような環境でも問題なく扱えるように、URLには日本語などは含めずに、アルファベットや数字などだけを使って下さい。
+  </p>
+
+  <p>
+    <%= image_tag("documents/site-components.png",
+                  :title => "「サイト」・「ページ」・「コンテンツ」の関係") %>
+  </p>
+</div>
+
+
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{t("Usage for the experienced").to_json},
+    region: 'center',
+    contentEl: 'usage-for-the-experienced',
+    autoScroll: true
+  });
+});
+EOC
+) %>

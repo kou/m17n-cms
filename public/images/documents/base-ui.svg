@@ -70,11 +70,11 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="240.16017"
-     inkscape:cy="254.30254"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="452.75882"
+     inkscape:cy="268.82102"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3200"
      showgrid="false"
      inkscape:window-width="812"
      inkscape:window-height="649"
@@ -139,7 +139,7 @@
            y="314.64792"
            x="335.92859"
            id="tspan4548"
-           sodipodi:role="line">(2)</tspan></text>
+           sodipodi:role="line">(3)</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
@@ -150,7 +150,7 @@
            sodipodi:role="line"
            id="tspan4552"
            x="335.92859"
-           y="314.64792">(2)</tspan></text>
+           y="314.64792">(3)</tspan></text>
     </g>
     <g
        id="g3206"
@@ -165,7 +165,7 @@
            sodipodi:role="line"
            id="tspan4556"
            x="337.35715"
-           y="363.79077">(3)</tspan></text>
+           y="363.79077">(4)</tspan></text>
       <text
          sodipodi:linespacing="100%"
          id="text4558"
@@ -176,7 +176,7 @@
            y="363.79077"
            x="337.35715"
            id="tspan4560"
-           sodipodi:role="line">(3)</tspan></text>
+           sodipodi:role="line">(4)</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -210,7 +210,7 @@
          y="486.64792"
          x="211.92857"
          id="tspan4572"
-         sodipodi:role="line">(4)</tspan></text>
+         sodipodi:role="line">(2)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
@@ -221,7 +221,7 @@
          sodipodi:role="line"
          id="tspan4576"
          x="211.92857"
-         y="486.64792">(4)</tspan></text>
+         y="486.64792">(2)</tspan></text>
     <rect
        y="332.64789"
        x="220.00002"

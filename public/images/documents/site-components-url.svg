@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="551.57141"
+   height="552.67078"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="site-components-url.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible">
+      <path
+         id="path3229"
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z"
+         style="fill:#a40000;fill-rule:evenodd;stroke:#a40000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective4107"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4174"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4241"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4308"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4375"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4442"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4509"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4593"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4660"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="365.88426"
+     inkscape:cy="361.32386"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="812"
+     inkscape:window-height="649"
+     inkscape:window-x="404"
+     inkscape:window-y="303" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-87.071426,-216.57646)">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#4e9a06;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2383"
+       width="548.57141"
+       height="463.95651"
+       x="88.571426"
+       y="218.07646" />
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="360.56854"
+       y="253.79076"
+       id="text2385"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2387"
+         x="360.56854"
+         y="253.79076">サイト</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2389"
+       width="231.64001"
+       height="369.02502"
+       x="103.14286"
+       y="300.93362" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="217.57143"
+       y="326.64789"
+       id="text2391"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2393"
+         x="217.57143"
+         y="326.64789">ページ1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#f57900;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPAゴシック';-inkscape-font-specification:'IPAゴシック'"
+       x="609.14288"
+       y="383.79074"
+       id="text2407"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2409"
+         x="609.14288"
+         y="383.79074">…</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="182.00002"
+       y="346.64789"
+       id="text2411"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2413"
+         x="182.00002"
+         y="346.64789">名前: page1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="364.83319"
+       y="280.05472"
+       id="text2415"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2417"
+         x="364.83319"
+         y="280.05472">http://.../site/</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="127.71201"
+       y="446.81787"
+       id="text2427"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2429"
+         x="127.71201"
+         y="446.81787">http://.../site/page1-ja.html</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 212.44349,352.64591 L 235.17192,365.27282"
+       id="path2439"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 128.26907,453.03715 L 215.14219,453.03715"
+       id="path3991" />
+    <path
+       id="path3995"
+       d="M 222.26907,453.03715 L 261.15994,453.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path3999"
+       d="M 281.70308,287.03715 L 433.22596,287.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="126"
+       y="413.2193"
+       id="text4001"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4003"
+         x="126"
+         y="413.2193">コンテンツ（日本語）</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4005"
+       width="202.41409"
+       height="70.94709"
+       x="116.85715"
+       y="391.79074" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text4011"
+       y="428.93362"
+       x="126.5"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="428.93362"
+         x="126.5"
+         id="tspan4013"
+         sodipodi:role="line">言<tspan
+   style="font-size:14px"
+   id="tspan4019">語</tspan>: ja</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="208.56915"
+       y="378.24643"
+       id="text4021"
+       sodipodi:linespacing="100%"><tspan
+         id="tspan4023"
+         sodipodi:role="line"
+         x="208.56915"
+         y="378.24643">http://.../site/page1.html</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 123.0856,384.46572 L 213.99933,384.46572"
+       id="path4025"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path4027"
+       d="M 219.12621,384.46572 L 258.01708,384.46572"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path4029"
+       d="M 180.60881,424.14086 L 264.27815,435.69633"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 266.8405,453.03715 L 278.93695,453.03715"
+       id="path4031" />
+    <image
+       y="402.75287"
+       x="285.51358"
+       id="image4310"
+       height="9"
+       width="15"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
+    <image
+       y="482.75287"
+       x="285.51358"
+       id="image4444"
+       height="7"
+       width="15"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif" />
+    <image
+       y="559.75287"
+       x="285.51358"
+       id="image4662"
+       height="10"
+       width="15"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text4779"
+       y="234.14943"
+       x="-663.46283"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         y="234.14943"
+         x="-663.46283"
+         id="tspan4781"
+         sodipodi:role="line">…</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3038"
+       y="526.81787"
+       x="127.71201"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="526.81787"
+         x="127.71201"
+         id="tspan3040"
+         sodipodi:role="line">http://.../site/page1-en.html</tspan></text>
+    <path
+       id="path3042"
+       d="M 128.26907,533.03715 L 215.14219,533.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 222.26907,533.03715 L 261.15994,533.03715"
+       id="path3044" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3046"
+       y="493.2193"
+       x="126"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="493.2193"
+         x="126"
+         id="tspan3048"
+         sodipodi:role="line">コンテンツ（英語）</tspan></text>
+    <rect
+       y="471.79074"
+       x="116.85715"
+       height="70.94709"
+       width="202.41409"
+       id="rect3050"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="126.5"
+       y="508.93362"
+       id="text3052"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3054"
+         x="126.5"
+         y="508.93362">言<tspan
+   id="tspan3056"
+   style="font-size:14px">語</tspan>: en</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 180.60881,504.14086 L 264.27815,515.69633"
+       id="path3058" />
+    <path
+       id="path3060"
+       d="M 266.8405,533.03715 L 284.49279,533.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="127.71201"
+       y="606.81787"
+       id="text3066"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3068"
+         x="127.71201"
+         y="606.81787">http://.../site/page1-zh.html</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 128.26907,613.03715 L 215.14219,613.03715"
+       id="path3070" />
+    <path
+       id="path3072"
+       d="M 222.26907,613.03715 L 261.15994,613.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="126"
+       y="573.2193"
+       id="text3074"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3076"
+         x="126"
+         y="573.2193">コンテンツ（中国語）</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3078"
+       width="202.41409"
+       height="70.94709"
+       x="116.85715"
+       y="551.79077" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3080"
+       y="588.93359"
+       x="126.5"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="588.93359"
+         x="126.5"
+         id="tspan3082"
+         sodipodi:role="line">言<tspan
+   style="font-size:14px"
+   id="tspan3084">語</tspan>: zh</tspan></text>
+    <path
+       id="path3086"
+       d="M 180.60881,584.14086 L 264.27815,595.69633"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 266.8405,613.03715 L 281.96741,613.03715"
+       id="path3088" />
+    <rect
+       y="300.93362"
+       x="351.14285"
+       height="369.02502"
+       width="231.64001"
+       id="rect3090"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3092"
+       y="326.64789"
+       x="465.57141"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="326.64789"
+         x="465.57141"
+         id="tspan3094"
+         sodipodi:role="line">ページ2</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3096"
+       y="346.64789"
+       x="430"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="346.64789"
+         x="430"
+         id="tspan3098"
+         sodipodi:role="line">名前: index</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3100"
+       y="446.81787"
+       x="375.71201"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="446.81787"
+         x="375.71201"
+         id="tspan3102"
+         sodipodi:role="line">http://.../site/index-ja.html</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3104"
+       d="M 460.44349,352.64591 L 483.17192,365.27282"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path3106"
+       d="M 376.26907,453.03715 L 463.14219,453.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 470.26907,453.03715 L 504.61425,453.03715"
+       id="path3108" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3110"
+       y="413.2193"
+       x="374"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="413.2193"
+         x="374"
+         id="tspan3112"
+         sodipodi:role="line">コンテンツ（日本語）</tspan></text>
+    <rect
+       y="391.79074"
+       x="364.85715"
+       height="70.94709"
+       width="202.41409"
+       id="rect3114"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="374.5"
+       y="428.93362"
+       id="text3116"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3118"
+         x="374.5"
+         y="428.93362">言<tspan
+   id="tspan3120"
+   style="font-size:14px">語</tspan>: ja</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3122"
+       y="378.24643"
+       x="454.56915"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="378.24643"
+         x="454.56915"
+         sodipodi:role="line"
+         id="tspan3124">http://.../site/index.html</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3126"
+       d="M 371.0856,384.46572 L 461.99933,384.46572"
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 467.12621,384.46572 L 506.01708,384.46572"
+       id="path3128" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 428.60881,424.14086 L 512.27815,435.69633"
+       id="path3130" />
+    <path
+       id="path3132"
+       d="M 510.8405,453.03715 L 522.93695,453.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <image
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+       width="15"
+       height="9"
+       id="image3134"
+       x="533.51355"
+       y="402.75287" />
+    <image
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
+       width="15"
+       height="7"
+       id="image3136"
+       x="533.51355"
+       y="482.75287" />
+    <image
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+       width="15"
+       height="10"
+       id="image3138"
+       x="533.51355"
+       y="559.75287" />
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="-663.46283"
+       y="482.14941"
+       id="text3140"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3142"
+         x="-663.46283"
+         y="482.14941">…</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="375.71201"
+       y="526.81787"
+       id="text3144"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3146"
+         x="375.71201"
+         y="526.81787">http://.../site/index-en.html</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 376.26907,533.03715 L 463.14219,533.03715"
+       id="path3148" />
+    <path
+       id="path3150"
+       d="M 470.26907,533.03715 L 504.61425,533.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="374"
+       y="493.2193"
+       id="text3152"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3154"
+         x="374"
+         y="493.2193">コンテンツ（英語）</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3156"
+       width="202.41409"
+       height="70.94709"
+       x="364.85715"
+       y="471.79074" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3158"
+       y="508.93362"
+       x="374.5"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="508.93362"
+         x="374.5"
+         id="tspan3160"
+         sodipodi:role="line">言<tspan
+   style="font-size:14px"
+   id="tspan3162">語</tspan>: en</tspan></text>
+    <path
+       id="path3164"
+       d="M 428.60881,504.14086 L 512.27815,515.69633"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 510.8405,533.03715 L 528.49279,533.03715"
+       id="path3166" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3168"
+       y="606.81787"
+       x="375.71201"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="606.81787"
+         x="375.71201"
+         id="tspan3170"
+         sodipodi:role="line">http://.../site/index-zh.html</tspan></text>
+    <path
+       id="path3172"
+       d="M 376.26907,613.03715 L 463.14219,613.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 470.26907,613.03715 L 504.61425,613.03715"
+       id="path3174" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3176"
+       y="573.2193"
+       x="374"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       xml:space="preserve"><tspan
+         y="573.2193"
+         x="374"
+         id="tspan3178"
+         sodipodi:role="line">コンテンツ（中国語）</tspan></text>
+    <rect
+       y="551.79077"
+       x="364.85715"
+       height="70.94709"
+       width="202.41409"
+       id="rect3180"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="374.5"
+       y="588.93359"
+       id="text3182"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3184"
+         x="374.5"
+         y="588.93359">言<tspan
+   id="tspan3186"
+   style="font-size:14px">語</tspan>: zh</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 428.60881,584.14086 L 512.27815,595.69633"
+       id="path3188" />
+    <path
+       id="path3190"
+       d="M 510.8405,613.03715 L 525.96741,613.03715"
+       style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#a40000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
+       x="565.29706"
+       y="339.95016"
+       id="text3192"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3194"
+         x="565.29706"
+         y="339.95016">indexは</tspan><tspan
+         sodipodi:role="line"
+         x="565.29706"
+         y="359.95016"
+         id="tspan3198">トップページ</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 511.7292,341.08785 L 490.88621,341.12996"
+       id="path3196"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

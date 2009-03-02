@@ -193,6 +193,11 @@ div.main-content h2
   margin: 0.5em 0;
 }
 
+div.main-content li
+{
+  margin: 0.25em 0;
+}
+
 div.main-content ul
 {
   list-style-type: disc;
@@ -204,4 +209,10 @@ div.main-content ol
   list-style-type: decimal;
   margin-left: 1.5em;
   margin-top: 0.5em;
+}
+
+div.main-content div.index
+{
+  margin-left: 1em;
+  margin-bottom: 1em;
 }

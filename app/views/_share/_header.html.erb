@@ -2,6 +2,7 @@
 <h1><%= link_to(t("Contents Management") + ": " + h(Site.default.title),
                 root_path) %></h1>
 <ul>
+  <li><%= link_to(t("Site Admin"), sites_path) %></li>
   <li><%= link_to(t("Usage"), usage_path) %></li>
 </ul>
 </div>
