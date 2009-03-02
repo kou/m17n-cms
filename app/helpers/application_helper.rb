@@ -16,7 +16,9 @@ module ApplicationHelper
       else
         path
       end
-    end.join("\n")
+    end
+    tags << javascript_include_tag("prototype-patch.js")
+    tags.join("\n")
   end
 
   def tiny_mce_include_tag
