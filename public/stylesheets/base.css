@@ -171,6 +171,9 @@ div.main-content table tr td
 div.main-content p
 {
   padding: 0.25em 0;
+  margin-top: 0.25m;
+  margin-bottom: 0.25m;
+  line-height: 125%;
 }
 
 span.example
@@ -187,11 +190,18 @@ div.main-content dl dd
 div.main-content h2
 {
   font-size: large;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 
 div.main-content ul
 {
   list-style-type: disc;
   margin-left: 1em;
+}
+
+div.main-content ol
+{
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
 }
