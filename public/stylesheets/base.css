@@ -42,7 +42,7 @@ span.translation_missing
 
 div#header h1
 {
-  font-size: x-large;
+  font-size: xx-large;
   padding: 10px;
 }
 
@@ -187,10 +187,22 @@ div.main-content dl dd
   margin-bottom: 0.5em;
 }
 
+div.main-content h2,
+div.main-content h3,
+div.main-content h4
+{
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
 div.main-content h2
 {
+  font-size: x-large;
+}
+
+div.main-content h3
+{
   font-size: large;
-  margin: 0.5em 0;
 }
 
 div.main-content li

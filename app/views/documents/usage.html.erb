@@ -11,8 +11,9 @@
       <ul>
         <li><a href="#create-page">ページの作成方法</a></li>
         <li><a href="#edit-content">コンテンツの編集方法</a></li>
-        <li><a href="#preview-content">コンテンツのプレビュー方法</a></li>
       </li>
+      <li><a href="#confirm-contents">コンテンツ確認</a></li>
+      <li><a href="#upload">アップロード</a></li>
     </ul>
   </div>
 
@@ -89,9 +90,7 @@
   <ol>
     <li>ページ作成</li>
     <li>コンテンツ編集</li>
-    <li>コンテンツプレビュー</li>
     <li>コンテンツ編集</li>
-    <li>コンテンツプレビュー</li>
     <li>...</li>
   </ol>
 
@@ -126,6 +125,85 @@
   <p>
     ページが作成されるとそれぞれの言語用のコンテンツが自動で作成されます。
   </p>
+  <p>
+    コンテンツを編集するには、まず、編集したい言語のコンテンツを選択します。
+    それぞれの言語は「タブ」で選択できるようになっています。
+  </p>
+  <p>
+    言語を選択したら、「ツールバー」にある「編集」メニューで編集画面に移動できます。
+  </p>
+  <p>
+    <%= image_tag("documents/move-to-content-edit-page.png",
+                  :title => "ページ作成直後") %>
+  </p>
+  <ol>
+    <li>日本語の「タブ」をクリックし、日本語コンテンツを表示</li>
+    <li>「ツールバー」の「編集」メニューをクリックし編集画面へ移動</li>
+  </ol>
+
+  <p>
+    ブラウザの画面が狭いとコンテンツ編集画面が窮屈です。
+    ページ一覧を非表示にすることで画面を広く使うことができます。
+  </p>
+  <p>
+    <%= image_tag("documents/hide-page-list-in-edit-content-page.png",
+                  :title => "ページ一覧非表示ボタン") %>
+  </p>
+  <ol>
+    <li>ページ一覧表示・非表示切り替えボタン</li>
+  </ol>
+
+  <p>
+    以下の図はページ一覧を非表示にしたところです。
+  </p>
+  <p>
+    <%= image_tag("documents/edit-content-page-without-page-list.png",
+                  :title => "ページ一覧非表示のコンテンツ編集画面") %>
+  </p>
+
+  <p>
+    コンテンツ編集画面では、編集中の言語でのページタイトルと、コンテンツを編集することができます。
+    コンテンツの編集はワープロソフトと同じような操作になります。編集が終わったら保存ボタンでコンテンツを保存します。
+  </p>
+  <p>
+    <%= image_tag("documents/edit-content.png",
+                  :title => "コンテンツ編集") %>
+  </p>
+  <ol>
+    <li>編集中の言語でのページタイトル</li>
+    <li>コンテンツ編集部分</li>
+    <li>保存ボタン</li>
+  </ol>
+
+  <p>
+    ページ一覧部分を非表示にしてもまだ画面が狭い場合はブラウザを大きくすることをおすすめします。
+    あるいは、コンテンツ編集部分を最大化することもできます。
+  </p>
+  <p>
+    <%= image_tag("documents/content-editor-turn-on-fullscreen.png",
+                  :title => "コンテンツ編集画面最大化ボタン") %>
+  </p>
+  <ol>
+    <li>コンテンツ編集画面最大化ボタン</li>
+  </ol>
+
+  <p>
+    コンテンツ編集部分の最大化を解除するには、もう一度最大化ボタンをクリックするか、コンテンツを保存してください。
+  </p>
+  <p>
+    <%= image_tag("documents/content-editor-turn-off-fullscreen.png",
+                  :title => "コンテンツ編集部分最大化解除") %>
+  </p>
+  <ol>
+    <li>コンテンツ編集画面最大化ボタン</li>
+    <li>保存ボタン</li>
+  </ol>
+
+  <h2 id="confirm-content">コンテンツ確認</h2>
+  <p>TODO</p>
+
+  <h2 id="upload">アップロード</h2>
+  <p>TODO</p>
 </div>
 
 
