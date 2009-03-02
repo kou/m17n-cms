@@ -1,0 +1,11 @@
+<% form_for(page) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label(:name, t("Name")) %>:
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit(t("Create")) %>
+  </p>
+<% end %>

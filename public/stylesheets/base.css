@@ -39,6 +39,25 @@ span.translation_missing
   color: red;
 }
 
+
+div#header h1
+{
+  font-size: x-large;
+  padding: 10px;
+}
+
+div#header ul
+{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+div#header ul li
+{
+  display: inline;
+}
+
 div.main
 {
   margin-left: 21%;
@@ -163,4 +182,16 @@ div.main-content dl dd
 {
   text-indent: 1em;
   margin-bottom: 0.5em;
+}
+
+div.main-content h2
+{
+  font-size: large;
+  margin-bottom: 0.5em;
+}
+
+div.main-content ul
+{
+  list-style-type: disc;
+  margin-left: 1em;
 }

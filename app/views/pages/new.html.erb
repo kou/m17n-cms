@@ -1,15 +1,5 @@
 <div id='new-page' class='main-content'>
-<% form_for(@page) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label(:name, t("Name")) %>:
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit(t("Create")) %>
-  </p>
-<% end %>
+<%= render(:partial => "new_form", :locals => {:page => @page}) %>
 </div>
 
 <%= javascript_tag(<<-EOC

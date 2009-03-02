@@ -1,4 +1,6 @@
 <div id='page-administration' class='main-content'>
+<%= render(:partial => "new_form", :locals => {:page => Page.new}) %>
+
 <table>
   <tr>
     <th><%= t("Name") %></th>
@@ -16,10 +18,6 @@
   </tr>
 <% end %>
 </table>
-
-<p>
-<%= link_to(t('New Page'), new_page_path) %>
-</p>
 </div>
 
 <%= javascript_tag(<<-EOC
@@ -27,6 +25,12 @@ Ext.onReady(function() {
   content = new Ext.Panel({
     title: #{t("Page Administration").to_json},
     region: 'center',
+    tbar: [
+      {
+        text: #{t('Create').to_json},
+        handler: function() {document.location = #{new_page_path.to_json}}
+      }
+    ],
     contentEl: 'page-administration'
   });
 });
