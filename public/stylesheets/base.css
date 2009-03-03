@@ -228,3 +228,9 @@ div.main-content div.index
   margin-left: 1em;
   margin-bottom: 1em;
 }
+
+/* TinyMCE */
+.defaultSkin span.mce_ruby
+{
+  background: url(../images/tiny_mce/ruby-icon.png) !important;
+}
