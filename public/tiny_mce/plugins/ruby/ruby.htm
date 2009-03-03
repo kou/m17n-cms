@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#ruby_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
+	<script type="text/javascript" src="../xhtmlxtras/js/element_common.js"></script>
+	<script type="text/javascript" src="js/ruby.js"></script>
+	<link rel="stylesheet" type="text/css" href="../xhtmlxtras/css/popup.css" />
+	<base target="_self" />
+</head>
+<body style="display: none">
+<form onsubmit="insertRuby();return false;" action="#">
+	<div class="tabs">
+	</div>
+
+	<div class="panel_wrapper">
+		<div id="general_panel" class="panel current">
+			<fieldset>
+				<legend>{#ruby_dlg.general_props}</legend>
+				<table border="0" cellpadding="0" cellspacing="4">
+					<tr>
+						<td class="label"><label id="rubylabel" for="ruby">{#ruby_dlg.ruby}</label>:</td> 
+						<td><input id="ruby" name="ruby" type="text" value="" class="field mceFocus" /></td> 
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+	</div>
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="submit" id="insert" name="insert" value="{#update}" />
+		</div>
+		<div style="float: left">
+			<input type="button" id="remove" name="remove" class="button" value="{#xhtmlxtras_dlg.remove}" onclick="removeRuby();" style="display: none;" />
+		</div>
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+
+</form>
+</body>
+</html>
+<!--
+ Local Variables:
+ indent-tabs-mode: t
+ tab-width: 2
+ End:
+-->
