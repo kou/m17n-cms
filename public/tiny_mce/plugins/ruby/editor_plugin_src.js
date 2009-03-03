@@ -23,7 +23,7 @@
 			ed.addButton('ruby', {title: 'ruby.desc', cmd: 'mceRuby'});
 
 			ed.onPreInit.add(function () {
-				ed.serializer.addRules("ruby,rp,rt,rb");
+				ed.serializer.addRules("ruby,rb,rp,rt");
 			});
 
 			ed.onNodeChange.add(function(ed, cm, n, co) {

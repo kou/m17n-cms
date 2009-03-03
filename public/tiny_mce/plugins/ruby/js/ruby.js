@@ -29,11 +29,11 @@ function getFormValue(name)
 function init() {
 	SXE.initElementDialog('ruby');
 	if (SXE.currentAction == "update") {
-		var elm = SXE.inst.dom.getParent(SXE.focusElement, "RUBY");
+		var element = SXE.inst.dom.getParent(SXE.focusElement, "RUBY");
 
-		if (elm) {
+		if (element) {
 			var rt = null;
-			tinymce.each(elm.childNodes, function (node) {
+			tinymce.each(element.childNodes, function (node) {
 				if (node.nodeName.toUpperCase() == "RT") {
 					if (node.textContent)
 						rt = node.textContent;
@@ -49,14 +49,14 @@ function init() {
 	}
 }
 
-function setAllCommonAttribs(elm) {
+function setAllCommonAttribs(element) {
 	var dom = SXE.inst.dom;
 	var parentheses = [];
 	var text = null;
 	var base = null;
 	var bases = [];
 
-	tinymce.each(elm.childNodes, function (node) {
+	tinymce.each(element.childNodes, function (node) {
 		if (node.nodeName.toUpperCase() == "RB") {
 			base = node;
 		} else if (node.nodeName.toUpperCase() == "RT") {
@@ -73,25 +73,25 @@ function setAllCommonAttribs(elm) {
 		tinymce.each(bases, function (node) {
 			base.appendChild(node);
 		});
-		elm.appendChild(base);
+		element.appendChild(base);
 	}
 
 	tinymce.each(parentheses, function (node) {
-		elm.removeChild(node);
+		element.removeChild(node);
 	});
 
 	if (text) {
 		var new_text;
 
 		new_text = dom.create("rt", {}, getFormValue("ruby"));
-		elm.replaceChild(new_text, text);
+		element.replaceChild(new_text, text);
 		text = new_text;
 	} else {
 		text = dom.create("rt", {}, getFormValue("ruby"));
-		elm.appendChild(text);
+		element.appendChild(text);
 	}
 
-	elm.insertBefore(dom.create("rp", {}, "("), text);
+	element.insertBefore(dom.create("rp", {}, "("), text);
 	dom.insertAfter(dom.create("rp", {}, ")"), text);
 }
 
@@ -103,21 +103,36 @@ function insertRuby() {
 function removeRuby() {
 	var ruby;
 	var base = null;
+	var bases = [];
+	var TEXT_NODE = 3;
 
 	ruby = SXE.inst.dom.getParent(SXE.focusElement, "RUBY");
 	if (ruby) {
 		tinymce.each(ruby.childNodes, function (node) {
-			if (node.nodeName.toUpperCase() == "RB") {
+			var normalized_node_name = node.nodeName.toUpperCase();
+			if (normalized_node_name == "RB") {
 				base = node;
 				return;
+			} else if (normalized_node_name == "RP") {
+				/* ignore */
+			} else if (normalized_node_name == "RT") {
+				/* ignore */
+			} else {
+				bases = bases.concat(node);
 			}
 		});
 	}
-	if (base) {
+
+	if (base || bases.length > 0) {
 		var parent = ruby.parentNode;
+		var rest_nodes = [];
 
 		tinyMCEPopup.execCommand('mceBeginUndoLevel');
-		tinymce.each(base.childNodes, function (node) {
+		if (base)
+			rest_nodes = base.childNodes;
+		if (rest_nodes.length == 0)
+			rest_nodes = bases;
+		tinymce.each(rest_nodes, function (node) {
 			parent.insertBefore(node, ruby);
 		});
 		parent.removeChild(ruby);
