@@ -7,6 +7,12 @@
 (function() {
 	tinymce.create('tinymce.plugins.RubyPlugin', {
 		init : function(ed, url) {
+			if (ed.settings.language) {
+				var lang_url;
+				lang_url = url + "/langs/" + ed.settings.language + ".js";
+				tinymce.ScriptLoader.load(lang_url);
+			}
+
 			// Register commands
 			ed.addCommand('mceRuby', function() {
 				ed.windowManager.open({
@@ -59,6 +65,6 @@
 /*
  * Local Variables:
  * indent-tabs-mode: t
- * tab-width: 2
+ * tab-width: 4
  * End:
  */
