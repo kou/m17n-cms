@@ -16,7 +16,7 @@
 <% @content.page.sorted_available_contents.each do |content| -%>
     <li class="language-icon">
       <%= link_to_unless_current(icon_tag(content.language),
-                                 content_path(content)) %>
+                                 static_content_path(content)) %>
     </li>
 <% end -%>
   </ui>

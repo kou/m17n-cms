@@ -75,6 +75,10 @@ class StaticGenerator
       content.html_path
     end
 
+    def static_content_path(content)
+      content.html_path
+    end
+
     def root_path
       "./"
     end
