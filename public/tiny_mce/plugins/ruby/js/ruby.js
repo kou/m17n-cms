@@ -91,20 +91,39 @@ function setAllCommonAttribs(elm) {
 		elm.appendChild(text);
 	}
 
-	elm.insertBefore(dom.create("rp", {}, "（"), text);
-	dom.insertAfter(dom.create("rp", {}, "）"), text);
+	elm.insertBefore(dom.create("rp", {}, "("), text);
+	dom.insertAfter(dom.create("rp", {}, ")"), text);
 }
 
 function insertRuby() {
-	alert("insert");
-	alert(document.forms[0].elements["ruby"].value);
 	SXE.insertElement('ruby');
 	tinyMCEPopup.close();
 }
 
 function removeRuby() {
-	alert("remove");
-	SXE.removeElement('ruby');
+	var ruby;
+	var base = null;
+
+	ruby = SXE.inst.dom.getParent(SXE.focusElement, "RUBY");
+	if (ruby) {
+		tinymce.each(ruby.childNodes, function (node) {
+			if (node.nodeName.toUpperCase() == "RB") {
+				base = node;
+				return;
+			}
+		});
+	}
+	if (base) {
+		var parent = ruby.parentNode;
+
+		tinyMCEPopup.execCommand('mceBeginUndoLevel');
+		tinymce.each(base.childNodes, function (node) {
+			parent.insertBefore(node, ruby);
+		});
+		parent.removeChild(ruby);
+		SXE.inst.nodeChanged();
+		tinyMCEPopup.execCommand('mceEndUndoLevel');
+	}
 	tinyMCEPopup.close();
 }
 
