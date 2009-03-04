@@ -42,4 +42,26 @@ module PagesHelper
       "expanded" => expanded,
     }
   end
+
+  def page_content_tabs_data(page)
+    page.sorted_contents.collect do |content|
+      language = content.language
+      {
+        "title" => t(language, :locale => language, :default => language),
+        "iconCls" => "tab-language-icon language-icon-#{language}",
+        "contentEl" => content_preview_id(content),
+        "tbar" => [{
+                     "text" => t("Edit"),
+                     "href" => edit_content_path(content),
+                   }],
+      }
+    end
+  end
+
+  def page_active_content_tab_index(page)
+    default_content = page.sorted_contents.find do |content|
+      content.language == I18n.locale.to_s
+    end
+    page.sorted_contents.index(default_content) || 0
+  end
 end

@@ -2,7 +2,7 @@
 
 <%= javascript_tag("
 Ext.onReady(function() {
-  var items = #{content_tabs_data(@page).to_json};
+  var items = #{page_content_tabs_data(@page).to_json};
   Ext.each(items, function (item) {
     if (item.tbar)
       toolbarItemsSetLinkHandler(item.tbar);
@@ -20,7 +20,7 @@ Ext.onReady(function() {
     region: 'center',
     enableTabScroll: true,
     resizeTabs: true,
-    activeTab: 0,
+    activeTab: #{page_active_content_tab_index(@page)},
     items: items
   });
 

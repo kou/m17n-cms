@@ -3,21 +3,6 @@ module ContentsHelper
     "content-#{content.language}-preview"
   end
 
-  def content_tabs_data(page)
-    page.sorted_contents.collect do |content|
-      language = content.language
-      {
-        "title" => t(language, :locale => language, :default => language),
-        "iconCls" => "tab-language-icon language-icon-#{language}",
-        "contentEl" => content_preview_id(content),
-        "tbar" => [{
-                     "text" => t("Edit"),
-                     "href" => edit_content_path(content),
-                   }],
-      }
-    end
-  end
-
   def content_edit_toolbar_data(current_content)
     content_toolbar_data(current_content) do |content|
       edit_content_path(content)
