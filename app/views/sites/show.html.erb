@@ -9,6 +9,24 @@
     <dt><%= t("FTP path") %></dt>
     <dd><%=h @site.ftp_path %></dd>
   </dl>
+
+  <h3><%= t("Upload") %></h3>
+  <% form_for(@ftp,
+              :url => upload_site_path(@site),
+              :html => {:method => "post"}) do |f| %>
+    <p>
+      <%= f.label(:user, t("FTP user")) %>
+      <%= f.text_field(:user) %>
+    </p>
+    <p>
+      <%= f.label(:password, t("FTP password")) %>
+      <%= f.password_field(:password) %>
+    </p>
+
+    <p>
+      <%= f.submit(t("Upload")) %>
+    </p>
+  <% end %>
 </div>
 
 <%= javascript_tag(<<-EOC

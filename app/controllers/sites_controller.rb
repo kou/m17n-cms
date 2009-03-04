@@ -9,6 +9,7 @@ class SitesController < ApplicationController
   # GET /sites/1.xml
   def show
     @site = Site.find(params[:id])
+    @ftp = Ftp.new(params[:ftp])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -76,5 +77,24 @@ class SitesController < ApplicationController
       format.html { redirect_to(sites_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def upload
+    @site = Site.find(params[:id])
+    @ftp = Ftp.new(params[:ftp])
+    fork do
+      STDIN.reopen("/dev/null")
+      STDOUT.reopen("/dev/null", "w")
+      STDERR.reopen("/dev/null", "w")
+      Dir.chdir(RAILS_ROOT) do
+        system("rake",
+               "M17N_CMS_FTP_USER=#{@ftp.user}",
+               "M17N_CMS_FTP_PASSWORD=#{@ftp.password}",
+               "ftp:upload")
+        exit!(0)
+      end
+    end
+    @ftp.password = nil
+    render(:action => :show)
   end
 end
