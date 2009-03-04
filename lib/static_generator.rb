@@ -2,6 +2,13 @@ require 'English'
 require 'action_controller/test_process'
 
 class StaticGenerator
+  class << self
+    def output_dir
+      output_dir = ENV["M17N_CMS_OUTPUT_DIR"]
+      output_dir || File.join(RAILS_ROOT, "public", "static")
+    end
+  end
+
   def initialize(output_dir)
     @output_dir = output_dir
   end
