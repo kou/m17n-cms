@@ -47,7 +47,7 @@ module PagesHelper
     page.sorted_contents.collect do |content|
       language = content.language
       {
-        "title" => t(language, :locale => language, :default => language),
+        "title" => language,
         "iconCls" => "tab-language-icon language-icon-#{language}",
         "contentEl" => content_preview_id(content),
         "tbar" => [{
