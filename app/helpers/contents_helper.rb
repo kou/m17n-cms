@@ -19,6 +19,16 @@ module ContentsHelper
     body
   end
 
+  def content_links(content)
+    current_page = content.page
+    Page.sorted.find(:all).reject do |page|
+      page == current_page
+    end.collect do |page|
+      other_content = page.contents.find_or_create_by_language(content.language)
+      [other_content.title, static_content_path(other_content)]
+    end
+  end
+
   private
   def content_toolbar_data(current_content)
     page = current_content.page

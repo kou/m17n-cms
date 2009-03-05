@@ -87,4 +87,9 @@ class ContentsController < ApplicationController
     @content = Content.find(params[:id])
     render :layout => false
   end
+
+  def links
+    @content = Content.find(params[:id])
+    render :layout => false
+  end
 end

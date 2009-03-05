@@ -1,7 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :sites, :member => {:upload => :post}
 
-  map.resources :contents, :member => {:static => :get}
+  map.resources :contents,
+                :member => {:static => :get, :links => :get}
 
   map.resources :pages
 
