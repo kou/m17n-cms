@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  has_many :contents,:dependent => :destroy do
+  has_many :contents, :dependent => :destroy do
     def find_or_create_by_language(language)
       content = method_missing(:find_or_create_by_language, language)
       if content.title.blank?
@@ -17,9 +17,11 @@ class Page < ActiveRecord::Base
   end
 
   def sorted_available_contents
-    sorted_contents.reject do |content|
-      content.body.blank?
-    end
+    AVAILABLE_LANGUAGES.collect do |language|
+      content = contents.find_by_language(language)
+      content = nil if content.blank?
+      content
+    end.compact
   end
 
   def html_path(directory=nil)

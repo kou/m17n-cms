@@ -9,8 +9,8 @@ class StaticGenerator
     end
   end
 
-  def initialize(output_dir)
-    @output_dir = output_dir
+  def initialize(output_dir=nil)
+    @output_dir = output_dir || self.class.output_dir
   end
 
   def generate
@@ -91,15 +91,37 @@ class StaticGenerator
     end
 
     def normalize_content_body(body)
-      body.gsub(/(<img.+?src)="(.+?)"/) do |matched_text|
+      body.gsub(/(<(img|a)\s.*?(?:src|href))="(.+?)"/) do |matched_text|
         prefix = $1
-        value = $2
-        if /\A.*\/tiny_mce\/plugins\// =~ value
-          relative_image_path = $POSTMATCH
-          "#{prefix}=\"images/#{relative_image_path}\""
+        tag = $2
+        value = $3
+        case tag
+        when "img"
+          normalize_image_src(prefix, value) || matched_text
+        when "a"
+          normalize_a_href(prefix, value) || matched_text
         else
           matched_text
         end
+      end
+    end
+
+    def normalize_image_src(prefix, value)
+      if /\A.*\/tiny_mce\/plugins\// =~ value
+        relative_image_path = $POSTMATCH
+        "#{prefix}=\"images/#{relative_image_path}\""
+      else
+        nil
+      end
+    end
+
+    def normalize_a_href(prefix, value)
+      if /\A\.\.\/([^\/]+)-([a-z]{2})\z/ =~ value
+        page_name = $1
+        language = $2
+        "#{prefix}=\"#{page_name}-#{language}.html\""
+      else
+        nil
       end
     end
 

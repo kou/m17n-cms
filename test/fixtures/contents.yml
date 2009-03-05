@@ -4,7 +4,9 @@ index_ja:
   page: index
   language: ja
   title: ようこそ
-  body: <p>はじめまして</p>
+  body: |
+    <p>はじめまして</p>
+    <a href="../introduction-ja">紹介</a>
 
 index_en:
   page: index
@@ -12,14 +14,14 @@ index_en:
   title: Welcome
   body: <p>Nice to meat you</p>
 
-introduction_summary_ja:
-  page: introduction_summary
+introduction_ja:
+  page: introduction
   language: ja
-  title: 概要
+  title: 紹介
   body: だいたいこんな感じです。
 
-introduction_summary_en:
-  page: introduction_summary
+introduction_en:
+  page: introduction
   language: en
-  title: Summary
+  title: Introduction
   body: Under constructed.
