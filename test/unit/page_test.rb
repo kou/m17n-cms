@@ -20,4 +20,10 @@ class PageTest < ActiveSupport::TestCase
       Content.find(index_contents_ids)
     end
   end
+
+  def test_find_or_create_by_language(language)
+    page = Page.create!(:name => "new-page")
+    content = page.find_or_create_by_language("ja")
+    assert_equal(content.title, "new-page")
+  end
 end

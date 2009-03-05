@@ -1,12 +1,18 @@
 class Page < ActiveRecord::Base
-  has_many :contents,:dependent => :destroy
+  has_many :contents,:dependent => :destroy do
+    def find_or_create_by_language(language)
+      content = method_missing(:find_or_create_by_language, language)
+      if content.title.blank?
+        content.update_attribute(:title, content.page.name)
+      end
+      content
+    end
+  end
   named_scope :sorted, :order => "name"
 
   def sorted_contents
     AVAILABLE_LANGUAGES.collect do |language|
-      content = contents.find_or_create_by_language(language)
-      content.update_attribute(:title, name) if content.title.blank?
-      content
+      contents.find_or_create_by_language(language)
     end
   end
 
