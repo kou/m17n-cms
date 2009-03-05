@@ -80,16 +80,10 @@ function setAllCommonAttribs(element) {
 		element.removeChild(node);
 	});
 
-	if (text) {
-		var new_text;
-
-		new_text = dom.create("rt", {}, getFormValue("ruby"));
-		element.replaceChild(new_text, text);
-		text = new_text;
-	} else {
-		text = dom.create("rt", {}, getFormValue("ruby"));
-		element.appendChild(text);
-	}
+	if (text)
+		element.removeChild(text);
+	text = dom.create("rt", {}, getFormValue("ruby"));
+	element.appendChild(text);
 
 	element.insertBefore(dom.create("rp", {}, "("), text);
 	dom.insertAfter(dom.create("rp", {}, ")"), text);
