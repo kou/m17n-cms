@@ -28,6 +28,28 @@
       <%= f.submit(t("Upload")) %>
     </p>
   <% end %>
+  <div id="ftp-upload-status"><%=h @ftp_upload_status_message %></div>
+<% if @ftp_upload_status_message %>
+  <%= javascript_tag(<<-EOC);
+var executer = new PeriodicalExecuter(
+  function () {
+    new Ajax.Updater({
+                       success: 'ftp-upload-status'
+                     },
+                     #{upload_status_site_path(@site).to_json},
+                     {
+                       asynchronous: true,
+                       method: "get",
+                       onFailure: function (request) {
+                         executer.stop();
+                         $('ftp-upload-status').innerHTML = #{t("Finished").to_json};
+                       }
+                     });
+  },
+  1);
+EOC
+%>
+<% end %>
 </div>
 
 <%= javascript_tag(<<-EOC

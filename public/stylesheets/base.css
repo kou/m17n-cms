@@ -229,6 +229,11 @@ div.main-content div.index
   margin-bottom: 1em;
 }
 
+div#ftp-upload-status
+{
+  margin: 1em;
+}
+
 /* TinyMCE */
 .defaultSkin span.mce_ruby
 {

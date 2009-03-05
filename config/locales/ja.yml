@@ -49,6 +49,19 @@ ja:
   "Are you sure?": 本当に実行しますか？
   Pages: ページ一覧
 
+  "Start": "開始"
+  "Finished": "終了"
+
+  "Starting static HTML generation...": "静的HTML生成開始…"
+  "Copying images...": "画像コピー中…"
+  "Copying CSS...": "CSSコピー中…"
+  "Generating static HTML...": "静的HTML生成中…"
+  "Finished static HTML generation": "静的HTML生成終了"
+  "Logging into FTP server...": "FTPサーバにログイン中…"
+  "Removing old contents...": "古いコンテンツの削除中…"
+  "Putting static HTML...": "静的HTMLを送信中…"
+  "Finished to upload": "アップロード終了"
+
   activerecord:
     models:
       page: ページ

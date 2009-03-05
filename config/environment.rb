@@ -52,6 +52,8 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'vendor', 'plugins',
                                          '*', 'rails', 'locale', '*.{rb,yml}')]
+  locale = ENV["M17N_CMS_LOCALE"]
+  config.i18n.default_locale = locale if locale
 
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!

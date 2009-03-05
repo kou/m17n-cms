@@ -2,6 +2,8 @@ require 'English'
 require 'action_controller/test_process'
 
 class StaticGenerator
+  include TaskLogger
+
   class << self
     def output_dir
       output_dir = ENV["M17N_CMS_OUTPUT_DIR"]
@@ -14,10 +16,13 @@ class StaticGenerator
   end
 
   def generate
+    log(t("Starting static HTML generation..."))
+
     ensure_output_dir
     copy_assets
     prepare_objects
 
+    log(t("Generating static HTML..."))
     Page.find(:all).each do |page|
       page.sorted_available_contents.each do |content|
         output_file_name = generate_content(content)
@@ -26,6 +31,7 @@ class StaticGenerator
         end
       end
     end
+    log(t("Finished static HTML generation"))
   end
 
   private
@@ -40,6 +46,7 @@ class StaticGenerator
   end
 
   def copy_images
+    log(t("Copying images..."))
     output_image_dir = File.join(@output_dir, "images")
     FileUtils.mkdir_p(output_image_dir)
     icons_dir = File.join(ActionView::Helpers::AssetTagHelper::ASSETS_DIR,
@@ -51,6 +58,7 @@ class StaticGenerator
   end
 
   def copy_stylesheets
+    log(t("Copying CSS..."))
     output_stylesheets_dir = File.join(@output_dir, "stylesheets")
     FileUtils.cp_r(ActionView::Helpers::AssetTagHelper::STYLESHEETS_DIR,
                    output_stylesheets_dir)
@@ -65,7 +73,8 @@ class StaticGenerator
 
   def generate_content(content)
     controller = ContentsController.new
-    request = ActionController::TestRequest.new("id" => content.id)
+    request = ActionController::TestRequest.new("id" => content.id,
+                                                "lang" => I18n.locale.to_s)
     request.action = "static"
     response = ActionController::TestResponse.new
     controller.process(request, response)

@@ -10,6 +10,7 @@ class SitesController < ApplicationController
   def show
     @site = Site.find(params[:id])
     @ftp = Ftp.new(params[:ftp])
+    @ftp_upload_status_message = nil
 
     respond_to do |format|
       format.html # show.html.erb
@@ -82,18 +83,38 @@ class SitesController < ApplicationController
   def upload
     @site = Site.find(params[:id])
     @ftp = Ftp.new(params[:ftp])
+    @ftp_upload_status_message = t("Start")
+
     fork do
       STDIN.reopen("/dev/null")
-      STDOUT.reopen("/dev/null", "w")
+      STDOUT.reopen(upload_status_file, "w")
       STDERR.reopen("/dev/null", "w")
+      ENV["M17N_CMS_LOCALE"] = I18n.locale.to_s
+      ENV["M17N_CMS_VERBOSE"] = "true"
+      ENV["M17N_CMS_FTP_USER"] = @ftp.user
+      ENV["M17N_CMS_FTP_PASSWORD"] = @ftp.password
       Dir.chdir(RAILS_ROOT) do
-        system("rake",
-               "M17N_CMS_FTP_USER=#{@ftp.user}",
-               "M17N_CMS_FTP_PASSWORD=#{@ftp.password}",
-               "ftp:upload")
-        exit!(0)
+        system("rake", "-s", "ftp:upload")
       end
+      STDOUT.reopen("/dev/null", "w")
+      sleep(2)
+      FileUtils.rm_f(upload_status_file)
+      exit!(0)
     end
     render(:action => :show)
+  end
+
+  def upload_status
+    if File.exist?(upload_status_file)
+      @status = File.read(upload_status_file)
+      render(:layout => false)
+    else
+      head(:not_found)
+    end
+  end
+
+  private
+  def upload_status_file
+    status = File.join(RAILS_ROOT, "tmp", "ftp-upload-status")
   end
 end
