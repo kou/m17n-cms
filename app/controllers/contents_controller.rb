@@ -13,7 +13,17 @@ class ContentsController < ApplicationController
   # GET /contents/1
   # GET /contents/1.xml
   def show
-    @content = Content.find(params[:id])
+    id = params[:id]
+    if /\A(.+)-([a-z]{2})\z/ =~ id
+      page_name = $1
+      language = $2
+      page = Page.find_by_name(page_name)
+      raise ActiveRecord::RecordNotFound, page_name if page.nil?
+      content = page.contents.find_or_create_by_language(language)
+      redirect_to(static_content_url(content))
+      return
+    end
+    @content = Content.find(id)
 
     respond_to do |format|
       format.html # show.html.erb

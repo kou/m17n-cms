@@ -19,14 +19,29 @@ module ContentsHelper
     body
   end
 
+  def named_content_path(content)
+    url_for(:controller => "contents",
+            :id => "#{content.page.name}-#{content.language}",
+            :action => "show")
+  end
+
   def content_links(content)
     current_page = content.page
     Page.sorted.find(:all).reject do |page|
       page == current_page
     end.collect do |page|
       other_content = page.contents.find_or_create_by_language(content.language)
-      [other_content.title, static_content_path(other_content)]
+      [other_content.title, named_content_path(other_content)]
     end
+  end
+
+  def static_root_content(content)
+    index = Page.find_or_create_by_name("index")
+    index.contents.find_or_create_by_language(content.language)
+  end
+
+  def static_root_content_path(content)
+    static_content_path(static_root_content(content))
   end
 
   private
