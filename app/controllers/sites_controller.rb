@@ -94,7 +94,6 @@ class SitesController < ApplicationController
         exit!(0)
       end
     end
-    @ftp.password = nil
     render(:action => :show)
   end
 end

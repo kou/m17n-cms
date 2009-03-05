@@ -11,6 +11,7 @@
   </dl>
 
   <h3><%= t("Upload") %></h3>
+  <% @ftp.password = nil -%>
   <% form_for(@ftp,
               :url => upload_site_path(@site),
               :html => {:method => "post"}) do |f| %>
