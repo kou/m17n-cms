@@ -44,6 +44,13 @@ class StaticGeneratorTest < ActiveSupport::TestCase
 </div>
 EOH
     end
+
+    index = pages(:index)
+    not_available_contents = index.sorted_contents - index.sorted_available_contents
+    not_available_language = not_available_contents[0].language
+    not_available_html = File.join(StaticGenerator.output_dir,
+                                   "index.html.#{not_available_language}")
+    assert_false(File.exist?(not_available_html))
   end
 
   def response_from_page_or_rjs

@@ -19,7 +19,7 @@ class Page < ActiveRecord::Base
   def sorted_available_contents
     AVAILABLE_LANGUAGES.collect do |language|
       content = contents.find_by_language(language)
-      content = nil if content.blank?
+      content = nil if content and content.body.blank?
       content
     end.compact
   end
