@@ -31,4 +31,11 @@ module ApplicationHelper
   def icon_tag(language)
     image_tag("icons/#{language}-icon.gif", :alt => language)
   end
+
+  def title
+    site_title = Site.default.title || t("M17N CMS")
+    controller_title = t("title.controller.#{controller.controller_name}")
+    action_title = t("title.action.#{controller.action_name}")
+    "#{site_title} - #{controller_title} - #{action_title}"
+  end
 end

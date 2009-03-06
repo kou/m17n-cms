@@ -69,3 +69,17 @@ ja:
       page:
         name: 名前
         published: 公開
+
+  title:
+    controller:
+      images: 画像
+      pages: ページ
+      sites: サイト
+      contents: コンテンツ
+      documents: ドキュメント
+    action:
+      index: 一覧
+      new: 作成
+      show: 表示
+      edit: 編集
+      usage: 使用法
