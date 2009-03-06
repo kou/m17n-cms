@@ -1,5 +1,20 @@
 <h1>Listing images</h1>
 
+<%= javascript_tag(<<-EOC)
+function select_image(image_path) {
+  var image_dialog_editor = window.parent.image_dialog_window;
+  var image_source_form = image_dialog_editor.document.getElementById('src');
+  var target_window = window.parent;
+
+  image_source_form.value = image_path;
+  setTimeout(function () {
+    var editor = target_window.tinymce.EditorManager.activeEditor;
+    editor.windowManager.close(window);
+  },
+  0);
+}
+EOC
+%>
 <table>
   <tr>
     <th>Filename</th>
@@ -15,6 +30,7 @@
     <td><%= link_to 'Show', image %></td>
     <td><%= link_to 'Edit', edit_image_path(image) %></td>
     <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to_function("Select", "select_image(#{formatted_image_path(image, :png).to_json})") %></td>
   </tr>
 <% end %>
 </table>
