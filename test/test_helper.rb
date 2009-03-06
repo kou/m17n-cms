@@ -50,3 +50,9 @@ class Test::Unit::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+class ActionController::TestUploadedFile
+  def respond_to?(name)
+    super or @tempfile.respond_to?(name)
+  end
+end

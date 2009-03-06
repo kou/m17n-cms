@@ -1,5 +1,5 @@
 class Image < ActiveRecord::Base
-  acts_as_fleximage :image_directory => File.join("public", "images", "uploaded")
+  acts_as_fleximage :image_directory => IMAGE_DIRECTORY
 
   def image_filename=(filename)
     self.filename = filename

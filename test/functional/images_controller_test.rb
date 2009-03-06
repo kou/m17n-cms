@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class ImagesControllerTest < ActionController::TestCase
+  def setup
+    FileUtils.rm_rf(File.join(RAILS_ENV, IMAGE_DIRECTORY))
+    FileUtils.mkdir_p(File.join(RAILS_ENV, IMAGE_DIRECTORY))
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -12,9 +17,9 @@ class ImagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create image" do
+  def test_should_create_image
     assert_difference('Image.count') do
-      post :create, :image => { }
+      post :create, :image => {:image_file => png("rails.png")}
     end
 
     assert_redirected_to image_path(assigns(:image))
@@ -41,5 +46,11 @@ class ImagesControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to images_path
+  end
+
+  private
+  def png(file)
+    path = File.join(Test::Unit::TestCase.fixture_path, 'images', file)
+    ActionController::TestUploadedFile.new(path, 'image/png', :binary)
   end
 end
