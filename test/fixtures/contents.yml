@@ -8,11 +8,11 @@ index_ja:
     <p>はじめまして</p>
     <a href="../introduction-ja">紹介</a>
 
-index_en:
+index_zh:
   page: index
-  language: en
-  title: Welcome
-  body: <p>Nice to meat you</p>
+  language: zh
+  title: Welcome in Chinese
+  body: <p>Nice to meat you in Chinese</p>
 
 introduction_ja:
   page: introduction
@@ -20,8 +20,8 @@ introduction_ja:
   title: 紹介
   body: だいたいこんな感じです。
 
-introduction_en:
+introduction_zh:
   page: introduction
-  language: en
-  title: Introduction
+  language: zh
+  title: Introduction in Chainiese
   body: Under constructed.

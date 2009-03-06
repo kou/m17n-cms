@@ -2,12 +2,12 @@ require 'test_helper'
 
 class PageTest < ActiveSupport::TestCase
   def test_contents
-    assert_equal([contents(:index_en), contents(:index_ja)],
+    assert_equal([contents(:index_ja), contents(:index_zh)],
                  pages(:index).contents.sort_by(&:language))
   end
 
   def test_sorted_available_contents
-    assert_equal([contents(:index_en), contents(:index_ja)],
+    assert_equal([contents(:index_ja), contents(:index_zh)],
                  pages(:index).sorted_available_contents.sort_by(&:language))
   end
 
@@ -17,8 +17,8 @@ class PageTest < ActiveSupport::TestCase
   end
 
   def test_contents_dependent
-    index_contents_ids = [contents(:index_en).id, contents(:index_ja).id]
-    assert_equal([contents(:index_en), contents(:index_ja)],
+    index_contents_ids = [contents(:index_ja).id, contents(:index_zh).id]
+    assert_equal([contents(:index_ja), contents(:index_zh)],
                  Content.find(index_contents_ids))
     pages(:index).destroy
     assert_raise(ActiveRecord::RecordNotFound) do
