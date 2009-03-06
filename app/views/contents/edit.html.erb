@@ -46,7 +46,7 @@ Ext.onReady(function() {
     // General options
     mode : "textareas",
     theme : "advanced",
-    plugins : "safari,pagebreak,style,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,media,searchreplace,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking#{ruby_plugin},xhtmlxtras,autosave",
+    plugins : "safari,pagebreak,style,table,save,advhr,advimage,imageupload,advlink,emotions,iespell,inlinepopups,insertdatetime,media,searchreplace,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking#{ruby_plugin},xhtmlxtras,autosave",
 
     // Theme options
     theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
@@ -62,8 +62,9 @@ Ext.onReady(function() {
     // content_css : "css/content.css",
 
     // Drop lists for link/image/media/template dialogs
-    external_link_list_url : #{formatted_links_content_path(@content, "js").to_json},
-    external_image_list_url : "lists/image_list.js",
+    external_link_list_url : #{links_content_path(@content, :format => "js").to_json},
+
+    image_upload_url: #{images_url.to_json},
 
     language: #{@content.tiny_mcs_language.to_json}
   });

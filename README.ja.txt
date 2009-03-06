@@ -31,3 +31,4 @@ M17N CMSは静的なHTMLのサイト用のコンテンツ管理システムで�
 * public_html/extjs/: GPL 3.0。public_html/extjs/license.txtを見てください。
 * public_html/javascripts/ ただしaplication.jsを除く（つまりPrototype Javascript frameworkのこと）: MITライセンス。http://www.prototypejs.org/を見てください。
 * vendor/plugins/rails-i18n/: MITライセンス？
+* vendor/plugins/fleximage/: MITライセンス

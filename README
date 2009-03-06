@@ -29,3 +29,4 @@ GPLv3 or AGPLv3 excepted the following softwares:
 * public_html/extjs/: GPL 3.0. See public_html/extjs/license.txt.
 * public_html/javascripts/ except aplication.js (i.e. Prototype Javascript framework): MIT license. See http://www.prototypejs.org/.
 * vendor/plugins/rails-i18n/: MIT license?
+* vendor/plugins/fleximage/: MIT license
