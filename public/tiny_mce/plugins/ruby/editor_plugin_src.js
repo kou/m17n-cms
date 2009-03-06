@@ -1,7 +1,7 @@
 /**
  * @author Kouhei Sutou
  * @copyright Copyright 2009, ClearCode Inc. All rights reserved.
- * @license AGPLv3
+ * @license GPLv3 or AGPLv3
  */
 
 (function() {
