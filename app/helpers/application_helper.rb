@@ -23,7 +23,7 @@ module ApplicationHelper
 
   def tiny_mce_include_tag
     tag = TinyMceAssetTagHelper::TinyMceTag.new(@template, @controller,
-                                                "tiny_mce.js")
+                                                "tiny_mce_src.js")
     path = tag.public_path
     javascript_include_tag(path)
   end
