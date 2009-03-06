@@ -35,8 +35,9 @@ class ImagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update image" do
-    put :update, :id => images(:one).id, :image => { }
+  def test_should_update_image
+    put :update, :id => images(:one).id,
+                 :image => {:image_file => png("rails.png")}
     assert_redirected_to image_path(assigns(:image))
   end
 
