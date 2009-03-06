@@ -1,0 +1,7 @@
+# -*- ruby -*-
+
+@image.operate do |image|
+  image.resize '60x60', :crop => true
+  image.text "#{@image.width}x#{@image.height}"
+  image.shadow
+end

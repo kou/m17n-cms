@@ -12,11 +12,6 @@ class ImagesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:images)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   def test_should_create_image
     assert_difference('Image.count') do
       post :create, :image => {:image_file => png("rails.png")}
@@ -28,17 +23,6 @@ class ImagesControllerTest < ActionController::TestCase
   test "should show image" do
     get :show, :id => images(:one).id
     assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => images(:one).id
-    assert_response :success
-  end
-
-  def test_should_update_image
-    put :update, :id => images(:one).id,
-                 :image => {:image_file => png("rails.png")}
-    assert_redirected_to image_path(assigns(:image))
   end
 
   test "should destroy image" do

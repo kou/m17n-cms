@@ -1,0 +1,3 @@
+@image.operate do |image|
+  image.resize '60x60'
+end

@@ -3,6 +3,7 @@ class ImagesController < ApplicationController
   # GET /images.xml
   def index
     @images = Image.find(:all)
+    @image = Image.new(params[:image])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,20 +25,14 @@ class ImagesController < ApplicationController
     end
   end
 
-  # GET /images/new
-  # GET /images/new.xml
-  def new
-    @image = Image.new
+  def thumbnail
+    @image = Image.find(params[:id])
 
     respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @image }
+      format.png
+      format.jpg
+      format.gif
     end
-  end
-
-  # GET /images/1/edit
-  def edit
-    @image = Image.find(params[:id])
   end
 
   # POST /images
@@ -51,24 +46,10 @@ class ImagesController < ApplicationController
         format.html { redirect_to(@image) }
         format.xml  { render :xml => @image, :status => :created, :location => @image }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @image.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /images/1
-  # PUT /images/1.xml
-  def update
-    @image = Image.find(params[:id])
-
-    respond_to do |format|
-      if @image.update_attributes(params[:image])
-        flash[:notice] = 'Image was successfully updated.'
-        format.html { redirect_to(@image) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
+        format.html do
+          @images = Image.find(:all)
+          render :action => "index"
+        end
         format.xml  { render :xml => @image.errors, :status => :unprocessable_entity }
       end
     end

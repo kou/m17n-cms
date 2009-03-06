@@ -1,40 +1,31 @@
-<h1>Listing images</h1>
+<h1><%= t("Image list") %></h1>
 
-<%= javascript_tag(<<-EOC)
-function select_image(image_path) {
-  var image_dialog_editor = window.parent.image_dialog_window;
-  var image_source_form = image_dialog_editor.document.getElementById('src');
-  var target_window = window.parent;
+<% form_for(@image, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
 
-  image_source_form.value = image_path;
-  setTimeout(function () {
-    var editor = target_window.tinymce.EditorManager.activeEditor;
-    editor.windowManager.close(window);
-  },
-  0);
-}
-EOC
-%>
-<table>
-  <tr>
-    <th>Filename</th>
-    <th>Width</th>
-    <th>Height</th>
-  </tr>
-
-<% for image in @images %>
-  <tr>
-    <td><%=h image.filename %></td>
-    <td><%=h image.width %></td>
-    <td><%=h image.height %></td>
-    <td><%= link_to 'Show', image %></td>
-    <td><%= link_to 'Edit', edit_image_path(image) %></td>
-    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
-    <td><%= link_to_function("Select", "select_image(#{formatted_image_path(image, :png).to_json})") %></td>
-  </tr>
+  <p>
+    <%= f.label("image_file", t("Image file")) %>:
+    <%= f.file_field :image_file %>
+  </p>
+  <p>
+    <%= f.submit(t("Upload")) %>
+  </p>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New image', new_image_path %>
+<div class="image-list">
+  <ul>
+<% @images.each do |image| -%>
+    <li>
+      <div class="image-thumbnail">
+        <%= link_to_function(image_tag(formatted_thumbnail_image_path(image, :png)),
+                             "select_image(#{formatted_image_path(image, :png).to_json})") %>
+      </div>
+      <p>
+	<%= link_to(t("Destroy"), image,
+                    :confirm => t("Are you sure?"), :method => :delete) %>
+      </p>
+    </li>
+<% end -%>
+  </ul>
+  <hr class="clear" />
+</div>

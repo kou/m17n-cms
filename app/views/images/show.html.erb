@@ -1,23 +1,10 @@
-<p>
-  <b>Image:</b>
-  <%= image_tag(formatted_image_path(@image, :png)) %>
-</p>
+<h1><%=h @image.filename %></h1>
 
 <p>
-  <b>Filename:</b>
-  <%=h @image.filename %>
+  <%= link_to_function(image_tag(formatted_image_path(@image, :png)),
+                       "select_image(#{formatted_image_path(@image, :png).to_json})") %>
 </p>
 
-<p>
-  <b>Width:</b>
-  <%=h @image.width %>
-</p>
+<p>(<%= @image.width %>x<%= @image.height %>)</p>
 
-<p>
-  <b>Height:</b>
-  <%=h @image.height %>
-</p>
-
-
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<%= link_to(t('Index'), images_path) %>

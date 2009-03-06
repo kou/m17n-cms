@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :images
+  map.resources :images, :member => {:thumbnail => :get}
 
   map.resources :sites, :member => {:upload => :post, :upload_status => :get}
 

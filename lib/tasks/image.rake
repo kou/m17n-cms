@@ -8,7 +8,7 @@ end
 
 namespace :image do
   svgs = Dir[File.join(RAILS_ROOT, "public", "images",
-                       "{documents,tiny_mce}", "*.svg")]
+                       "{documents,tiny_mce,.}", "*.svg")]
   generated_images = svgs.collect do |svg|
     svg.gsub(/\.svg\z/, ".png")
   end

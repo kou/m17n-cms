@@ -1,3 +1,8 @@
+html
+{
+  background-color: white;
+}
+
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
@@ -232,6 +237,46 @@ div.main-content div.index
 div#ftp-upload-status
 {
   margin: 1em;
+}
+
+div.image-main img
+{
+  border: none;
+}
+
+div.image-list
+{
+  padding-top: 20px;
+  padding-left: 20px;
+  background: url(../images/top-left-border.png) no-repeat 5px 5px;
+}
+
+hr.clear
+{
+  visibility: hidden;
+  clear: both;
+}
+
+div.image-list ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+div.image-list ul li
+{
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.image-list ul li p
+{
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 /* TinyMCE */

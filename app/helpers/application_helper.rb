@@ -36,6 +36,6 @@ module ApplicationHelper
     site_title = Site.default.title || t("M17N CMS")
     controller_title = t("title.controller.#{controller.controller_name}")
     action_title = t("title.action.#{controller.action_name}")
-    "#{site_title} - #{controller_title} - #{action_title}"
+    h("#{site_title} - #{controller_title} - #{action_title}")
   end
 end

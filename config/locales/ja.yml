@@ -39,12 +39,16 @@ ja:
   "(example: ftp.example.com)": "（例: ftp.example.com）"
   "(example: /my-site)": "（例: /my-site）"
 
+  "Image list": "画像一覧"
+  "Image file": "画像ファイル"
+
   Show: 表示
   Edit: 編集
   Destroy: 削除
   Update: 更新
   Create: 作成
   Upload: アップロード
+  Index: 一覧
 
   "Are you sure?": 本当に実行しますか？
   Pages: ページ一覧
