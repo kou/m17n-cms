@@ -7,6 +7,14 @@ class PagesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:pages)
   end
 
+  def test_should_get_index_page_when_no_pages
+    Page.destroy_all
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:pages)
+    assert_equal(["index"], Page.find(:all).collect(&:name))
+  end
+
   test "should get new" do
     get :new
     assert_response :success

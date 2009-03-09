@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   # GET /pages.xml
   def index
     @pages = Page.find(:all, :order => "name")
+    @pages = [Page.create(:name => "index")] if @pages.empty?
 
     respond_to do |format|
       format.html # index.html.erb
