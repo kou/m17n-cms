@@ -6,8 +6,11 @@ class Site < ActiveRecord::Base
     end
   end
 
-  attr_accessor :ftp_user, :ftp_password
   def blank_configuration?
-    title.blank? and ftp_user.blank? and ftp_password.blank?
+    title.blank? and !have_ftp_configuration?
+  end
+
+  def have_ftp_configuration?
+    !ftp_host.blank? and !ftp_path.blank?
   end
 end

@@ -10,7 +10,7 @@
     <dd><%=h @site.ftp_path %></dd>
   </dl>
 
-<% if @site.ftp_host and @site.ftp_path -%>
+<% if @site.have_ftp_configuration? -%>
   <h3><%= t("Upload") %></h3>
   <% @ftp.password = nil -%>
   <% form_for(@ftp,

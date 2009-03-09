@@ -28,8 +28,8 @@ class SitesControllerTest < ActionController::TestCase
 
   def test_hide_upload_form_when_no_ftp_configuration
     default = sites(:default)
-    default.update_attributes!(:ftp_host => nil,
-                               :ftp_path => nil)
+    default.update_attributes!(:ftp_host => "",
+                               :ftp_path => "")
     get :show, :id => default.id
     assert_response :success
     assert_select("form#new_ftp", 0)
