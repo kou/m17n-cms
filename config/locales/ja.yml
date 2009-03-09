@@ -58,6 +58,9 @@ ja:
   "Start": "開始"
   "Finished": "終了"
 
+  "Success": "成功しました"
+  "Failure": "失敗しました"
+
   "Started static HTML generation": "静的HTMLの生成を開始しました"
   "Copying images...": "画像をコピーしています…"
   "Copying icons...": "アイコンをコピーしています…"

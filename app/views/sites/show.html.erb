@@ -44,7 +44,6 @@ var executer = new PeriodicalExecuter(
                        method: "get",
                        onFailure: function (request) {
                          executer.stop();
-                         $('ftp-upload-status').innerHTML = #{t("Finished").to_json};
                        }
                      });
   },
@@ -61,6 +60,7 @@ Ext.onReady(function() {
     title: #{t("Site Information").to_json},
     region: 'center',
     contentEl: 'site-info',
+    autoScroll: true,
     tbar: [
       {
          text: #{t("Edit").to_json},

@@ -30,7 +30,7 @@ class FtpUploader
     Net::FTP.open(site.ftp_host, ftp_user, ftp_password) do |ftp|
       # remove_old_contents(ftp, site.ftp_path)
 
-      ftp.mkdir(site.ftp_path)
+      mkdir_p(ftp, site.ftp_path)
       ftp.chdir(site.ftp_path)
 
       log(t("Putting static HTML..."))
@@ -39,7 +39,7 @@ class FtpUploader
         next if relative_path.to_s == "."
         Find.prune if relative_path.basename.to_s == ".svn"
         if path.directory?
-          ftp.mkdir(relative_path.to_s)
+          mkdir_p(ftp, relative_path.to_s)
         else
           ftp.putbinaryfile(path.to_s, relative_path.to_s)
         end
@@ -71,6 +71,13 @@ class FtpUploader
       end
       ftp.chdir("..")
       ftp.rmdir(path)
+    end
+  end
+
+  def mkdir_p(ftp, path)
+    begin
+      ftp.mkdir(path)
+    rescue Net::FTPError
     end
   end
 end

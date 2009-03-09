@@ -90,36 +90,69 @@ class SitesController < ApplicationController
     @ftp = Ftp.new(params[:ftp])
     @ftp_upload_status_message = t("Start")
 
+    FileUtils.rm_f(upload_status_files)
     fork do
       STDIN.reopen("/dev/null")
-      STDOUT.reopen(upload_status_file, "w")
+      STDOUT.reopen(upload_progress_file, "w")
       STDERR.reopen("/dev/null", "w")
+      puts(t("Start"))
       ENV["M17N_CMS_LOCALE"] = I18n.locale.to_s
       ENV["M17N_CMS_VERBOSE"] = "true"
       ENV["M17N_CMS_FTP_USER"] = @ftp.user
       ENV["M17N_CMS_FTP_PASSWORD"] = @ftp.password
+      success = false
       Dir.chdir(RAILS_ROOT) do
-        system("rake", "-s", "ftp:upload")
+        success = system("rake -s ftp:upload 2>&1")
       end
       STDOUT.reopen("/dev/null", "w")
-      sleep(2)
-      FileUtils.rm_f(upload_status_file)
+      if success
+        FileUtils.touch(upload_success_file)
+      else
+        FileUtils.touch(upload_failure_file)
+      end
       exit!(0)
     end
     render(:action => :show)
   end
 
   def upload_status
-    if File.exist?(upload_status_file)
-      @status = File.read(upload_status_file)
-      render(:layout => false)
-    else
+    @status = ""
+    if File.exist?(upload_progress_file)
+      @status << File.read(upload_progress_file)
+    end
+    if File.exist?(upload_success_file)
+      @status << t("Success")
+      FileUtils.rm_f(upload_status_files)
+    elsif File.exist?(upload_failure_file)
+      @status << t("Failure")
+      FileUtils.rm_f(upload_status_files)
+    end
+
+    if @status.blank?
       head(:not_found)
+    else
+      render(:layout => false)
     end
   end
 
   private
-  def upload_status_file
-    status = File.join(RAILS_ROOT, "tmp", "ftp-upload-status")
+  def upload_status_path(name)
+    File.join(RAILS_ROOT, "tmp", "ftp-upload-#{name}")
+  end
+
+  def upload_status_files
+    [upload_progress_file, upload_success_file, upload_failure_file]
+  end
+
+  def upload_progress_file
+    upload_status_path("progress")
+  end
+
+  def upload_success_file
+    upload_status_path("success")
+  end
+
+  def upload_failure_file
+    upload_status_path("failure")
   end
 end
