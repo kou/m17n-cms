@@ -35,6 +35,7 @@ ja:
   "FTP user": "FTPユーザ"
   "FTP password": "FTPパスワード"
 
+  "Site Title": "サイト名"
   "(example: My Site)": "（例: 私のサイト）"
   "(example: ftp.example.com)": "（例: ftp.example.com）"
   "(example: /my-site)": "（例: /my-site）"
