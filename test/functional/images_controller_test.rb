@@ -17,7 +17,8 @@ class ImagesControllerTest < ActionController::TestCase
       post :create, :image => {:image_file => png("rails.png")}
     end
 
-    assert_redirected_to image_path(assigns(:image))
+    assert_redirected_to(formatted_image_path(assigns(:image),
+                                              :format => "html"))
   end
 
   test "should show image" do
