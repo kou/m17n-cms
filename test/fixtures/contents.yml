@@ -6,7 +6,9 @@ index_ja:
   title: ようこそ
   body: |
     <p>はじめまして</p>
-    <a href="../introduction-ja">紹介</a>
+    <p><a href="../introduction-ja">紹介</a></p>
+    <p>画像<img src="../../images/1.png" alt="Rails" width="50" height="64" /></p>
+    <p>顔文字<img title="Tongue out" src="../../tiny_mce/plugins/emotions/img/smiley-tongue-out.gif" border="0" alt="Tongue out" /></p>
 
 index_zh:
   page: index

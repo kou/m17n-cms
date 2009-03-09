@@ -22,13 +22,13 @@ class ImagesControllerTest < ActionController::TestCase
   end
 
   test "should show image" do
-    get :show, :id => images(:one).id
+    get :show, :id => images(:rails).id
     assert_response :success
   end
 
   test "should destroy image" do
     assert_difference('Image.count', -1) do
-      delete :destroy, :id => images(:one).id
+      delete :destroy, :id => images(:rails).id
     end
 
     assert_redirected_to images_path

@@ -11,6 +11,12 @@ class StaticGeneratorTest < ActiveSupport::TestCase
     @m17n_cms_output_dir_env = ENV["M17N_CMS_OUTPUT_DIR"]
     ENV["M17N_CMS_OUTPUT_DIR"] = nil
     FileUtils.rm_rf(StaticGenerator.output_dir)
+
+    FileUtils.rm_rf(Image.image_directory)
+    rails_image = images(:rails)
+    FileUtils.mkdir_p(File.dirname(rails_image.file_path))
+    FileUtils.cp(File.join(fixture_path, "images", "rails.png"),
+                 rails_image.file_path)
   end
 
   def teardown
@@ -35,14 +41,18 @@ class StaticGeneratorTest < ActiveSupport::TestCase
     assert_contain(Site.default.title)
     assert_have_selector("div#main")
     assert_select("div#main", 1) do |main|
-      assert_equal(<<-EOH.chomp, main[0].to_s)
+      expected_html = <<-EOH
 <div id="main">
 <h2>ようこそ</h2>
 <p>はじめまして</p>
-<a href="introduction-ja.html">紹介</a>
+<p><a href="introduction-ja.html">紹介</a></p>
+<p>画像<img src="images/uploaded/1.png" alt="Rails" width="50" height="64" /></p>
+<p>顔文字<img title="Tongue out" src="images/emotions/smiley-tongue-out.gif" border="0" alt="Tongue out" /></p>
 
 </div>
 EOH
+      assert_equal(HTML::Document.new(expected_html).root.children[0],
+                   main[0])
     end
 
     index = pages(:index)
@@ -51,8 +61,13 @@ EOH
     not_available_html = File.join(StaticGenerator.output_dir,
                                    "index.html.#{not_available_language}")
     assert_false(File.exist?(not_available_html))
+
+    image = File.join(StaticGenerator.output_dir,
+                      "images", "uploaded", "1.png")
+    assert_true(File.exist?(image))
   end
 
+  private
   def response_from_page_or_rjs
     html_document.root
   end

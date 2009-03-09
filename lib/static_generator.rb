@@ -16,7 +16,7 @@ class StaticGenerator
   end
 
   def generate
-    log(t("Starting static HTML generation..."))
+    log(t("Started static HTML generation"))
 
     ensure_output_dir
     copy_assets
@@ -49,12 +49,32 @@ class StaticGenerator
     log(t("Copying images..."))
     output_image_dir = File.join(@output_dir, "images")
     FileUtils.mkdir_p(output_image_dir)
+    copy_icons(output_image_dir)
+    copy_emotions(output_image_dir)
+    copy_uploaded_images(output_image_dir)
+  end
+
+  def copy_icons(output_image_dir)
+    log(t("Copying icons..."))
     icons_dir = File.join(ActionView::Helpers::AssetTagHelper::ASSETS_DIR,
                           "images", "icons")
     FileUtils.cp_r(icons_dir, output_image_dir)
+  end
+
+  def copy_emotions(output_image_dir)
+    log(t("Copying emotion images..."))
     emotions_dir = File.join(TinyMceAssetTagHelper::TINY_MCE_DIR,
-                             "plugins", "emotions")
-    FileUtils.cp_r(emotions_dir, output_image_dir)
+                             "plugins", "emotions", "img")
+    FileUtils.cp_r(emotions_dir, File.join(output_image_dir, "emotions"))
+  end
+
+  def copy_uploaded_images(output_image_dir)
+    log(t("Copying uploaded images..."))
+    output_uploaded_image_dir = File.join(output_image_dir, "uploaded")
+    FileUtils.mkdir_p(output_uploaded_image_dir)
+    Image.find(:all).each do |image|
+      FileUtils.cp(image.file_path, output_uploaded_image_dir)
+    end
   end
 
   def copy_stylesheets
@@ -116,9 +136,16 @@ class StaticGenerator
     end
 
     def normalize_image_src(prefix, value)
-      if /\A.*\/tiny_mce\/plugins\// =~ value
+      relative_top_path = "../../"
+      escaped_relative_top_path = Regexp.escape(relative_top_path)
+      case value
+      when /\A#{escaped_relative_top_path}tiny_mce\/plugins\/emotions\/img\//
         relative_image_path = $POSTMATCH
-        "#{prefix}=\"images/#{relative_image_path}\""
+        "#{prefix}=\"images/emotions/#{relative_image_path}\""
+      when /\A#{escaped_relative_top_path}images\/(\d+)\.(.+)\z/
+        image_id = $1
+        image_format = $2
+        "#{prefix}=\"images/uploaded/#{image_id}.#{image_format}\""
       else
         nil
       end
