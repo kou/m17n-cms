@@ -9,6 +9,11 @@ class SitesController < ApplicationController
   # GET /sites/1.xml
   def show
     @site = Site.find(params[:id])
+    if @site.blank_configuration?
+      redirect_to(edit_site_path(@site))
+      return
+    end
+
     @ftp = Ftp.new(params[:ftp])
     @ftp_upload_status_message = nil
 

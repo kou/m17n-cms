@@ -35,6 +35,15 @@ class SitesControllerTest < ActionController::TestCase
     assert_select("form#new_ftp", 0)
   end
 
+  def test_redirect_to_edit_when_no_configuration
+    default = sites(:default)
+    default.update_attributes!(:title => nil,
+                               :ftp_host => nil,
+                               :ftp_path => nil)
+    get(:show, :id => default.id)
+    assert_redirected_to(edit_site_path(default))
+  end
+
   test "should get edit" do
     get :edit, :id => sites(:default).id
     assert_response :success
