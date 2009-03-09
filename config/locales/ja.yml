@@ -12,6 +12,9 @@ ja:
   vi: ベトナム語
   zh: 中国語
 
+  "Site Title": "サイト名"
+  "M17N CMS": "多言語コンテンツ管理システム"
+
   Admin: 管理
   "Page Admin": ページ管理
   "Page Administration": ページ管理
@@ -35,7 +38,6 @@ ja:
   "FTP user": "FTPユーザ"
   "FTP password": "FTPパスワード"
 
-  "Site Title": "サイト名"
   "(example: My Site)": "（例: 私のサイト）"
   "(example: ftp.example.com)": "（例: ftp.example.com）"
   "(example: /my-site)": "（例: /my-site）"
