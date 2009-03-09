@@ -66,6 +66,9 @@ ja:
   "Copying CSS...": "CSSをコピーしています…"
   "Generating static HTML...": "静的HTMLを生成しています…"
   "Finished static HTML generation": "静的HTMLの生成が完了しました"
+
+  "FTP configurations are missing: {{missing_configurations}}": "未設定のFTPの項目があります: {{missing_configurations}}"
+  "Abort uploading.": "アップロードを中断します。"
   "Logging into FTP server...": "FTPサーバにログインしています…"
   "Removing old contents...": "古いコンテンツの削除しています…"
   "Putting static HTML...": "静的HTMLを送信しています…"

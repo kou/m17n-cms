@@ -9,15 +9,26 @@ class FtpUploader
   end
 
   def upload
-    static_html_dir = Pathname(StaticGenerator.output_dir)
     site = Site.default
     ftp_user = ENV["M17N_CMS_FTP_USER"]
     ftp_password = ENV["M17N_CMS_FTP_PASSWORD"]
 
+    missing_configurations = []
+    missing_configurations << t("FTP host") if site.ftp_host.blank?
+    missing_configurations << t("FTP path") if site.ftp_path.blank?
+    missing_configurations << t("FTP user") if ftp_user.blank?
+    missing_configurations << t("FTP password") if ftp_password.blank?
+    unless missing_configurations.empty?
+      log(t("FTP configurations are missing: {{missing_configurations}}",
+            {:missing_configurations => missing_configurations.join(', ')}))
+      log(t("Abort uploading."))
+      return
+    end
+
+    static_html_dir = Pathname(StaticGenerator.output_dir)
     log(t("Logging into FTP server..."))
     Net::FTP.open(site.ftp_host, ftp_user, ftp_password) do |ftp|
-      log(t("Removing old contents..."))
-      rm_rf(ftp, site.ftp_path)
+      # remove_old_contents(ftp, site.ftp_path)
 
       ftp.mkdir(site.ftp_path)
       ftp.chdir(site.ftp_path)
@@ -38,6 +49,11 @@ class FtpUploader
   end
 
   private
+  def remove_old_contents(ftp, path)
+    log(t("Removing old contents..."))
+    rm_rf(ftp, path)
+  end
+
   def rm_rf(ftp, path)
     begin
       ftp.list(path)
