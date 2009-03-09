@@ -20,9 +20,19 @@ class SitesControllerTest < ActionController::TestCase
     assert_redirected_to site_path(assigns(:site))
   end
 
-  test "should show site" do
+  def test_show_site
     get :show, :id => sites(:default).id
     assert_response :success
+    assert_select("form#new_ftp")
+  end
+
+  def test_hide_upload_form_when_no_ftp_configuration
+    default = sites(:default)
+    default.update_attributes!(:ftp_host => nil,
+                               :ftp_path => nil)
+    get :show, :id => default.id
+    assert_response :success
+    assert_select("form#new_ftp", 0)
   end
 
   test "should get edit" do

@@ -10,6 +10,7 @@
     <dd><%=h @site.ftp_path %></dd>
   </dl>
 
+<% if @site.ftp_host and @site.ftp_path -%>
   <h3><%= t("Upload") %></h3>
   <% @ftp.password = nil -%>
   <% form_for(@ftp,
@@ -29,7 +30,8 @@
     </p>
   <% end %>
   <div id="ftp-upload-status"><%=h @ftp_upload_status_message %></div>
-<% if @ftp_upload_status_message %>
+
+  <% if @ftp_upload_status_message %>
   <%= javascript_tag(<<-EOC);
 var executer = new PeriodicalExecuter(
   function () {
@@ -49,6 +51,7 @@ var executer = new PeriodicalExecuter(
   1);
 EOC
 %>
+  <% end %>
 <% end %>
 </div>
 
