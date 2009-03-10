@@ -1,0 +1,106 @@
+<div id="image-upload" class="main-content">
+  <p>
+    画像のアップロード方法と画像挿入方法を説明します。
+  </p>
+  <div class="index">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#upload">アップロード</a></li>
+      <li><a href="#insert">挿入</a></li>
+    </ul>
+  </div>
+
+  <h2 id="upload">アップロード</h2>
+  <p>
+    画像のアップロードはツールバーのボタンから行います。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-button-with-mark.png",
+                  :title => "画像編集ボタン") %>
+  </p>
+  <p>
+    ボタンをクリックすると挿入する画像を指定するダイアログが開きます。
+  </p>
+  <p>
+    ダイアログの中には画像を選択するボタンがあります。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-dialog-with-mark.png",
+                  :title => "画像編集ダイアログ") %>
+  </p>
+  <p>
+    画像を選択するボタンをクリックすると、画像一覧画面が開きます。
+    画像一覧画面から画像をアップロードすることができます。
+    画像をアップロードするためには「参照」ボタンをクリックします。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-form-with-mark.png",
+                  :title => "画像アップロードフォーム") %>
+  </p>
+  <p>
+    「参照」ボタンをクリックするとパソコン内にある画像を選択することができます。
+    (1)アップロードしたい画像をクリックして選択し、(2)「開く」ボタンをクリックします。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-select-with-mark.png",
+                  :title => "画像選択") %>
+  </p>
+  <p>
+    画像を選択すると画像一覧画面に戻ります。
+    画像一覧画面にある「アップロード」ボタンをクリックすると、アップロードが始まります。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-upload-with-mark.png",
+                  :title => "画像アップロード") %>
+  </p>
+  <p>
+    画像のアップロードが完了するとアップロードした画像が表示されます。
+    「一覧」リンクをクリックすると画像一覧画面に戻ることができます。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-uploaded-with-mark.png",
+                  :title => "アップロードされた画像") %>
+  </p>
+  <p>
+    画像一覧画面にはアップロードされた画像のサムネイル（元の画像を小さくした画像）が表示されます。
+    サムネイルをクリックすると、その画像を挿入することができます。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-list-with-mark.png",
+                  :title => "画像一覧") %>
+  </p>
+
+  <h2 id="insert">挿入</h2>
+  <p>
+    画像一覧画面で画像を選択すると、選択された画像がプレビュー画面(1)に表示されます。
+    間違って違う画像を選んでしまった場合は、もう一度、画像選択ボタン(2)をクリックし、画像一覧画面を開いて、正しい画像を選択してください。
+  </p>
+  <p>
+    <%= image_tag("documents/upload-image-selected-with-mark.png",
+                  :title => "選択された画像") %>
+  </p>
+  <p>
+    画像が正しいことを確認したら、(1)に画像の説明を入力し、「挿入」ボタン(2)をクリックし、画像を挿入します。
+  <p>
+    <%= image_tag("documents/upload-image-description-with-mark.png",
+                  :title => "画像の説明を入力") %>
+  </p>
+  <p>
+    挿入ボタンをクリックすると、ダイアログが閉じて画像が挿入されます。
+  <p>
+    <%= image_tag("documents/upload-image-inserted-with-mark.png",
+                  :title => "画像が挿入された") %>
+  </p>
+</div>
+
+<%= javascript_tag(<<-EOC
+Ext.onReady(function() {
+  content = new Ext.Panel({
+    title: #{t("Image upload").to_json},
+    region: 'center',
+    contentEl: 'image-upload',
+    autoScroll: true
+  });
+});
+EOC
+) %>

@@ -101,7 +101,7 @@
   <p>
     コンテンツはトップページから作成することができます。
     「名前」にページの内容が想像できそうな語句を指定して「作成」ボタンをクリックしてください。
-    使える文字はアルファベットと数字と「-」や「_」などいくつかの記号だけです。日本語は指定できません。指定できない理由については<%= link_to("上級者向けの使い方", usage_for_the_experienced_path) %>を見てください。
+    使える文字はアルファベットと数字と「-」や「_」などいくつかの記号だけです。日本語は指定できません。指定できない理由については<%= link_to(t("Experienced usage"), experienced_usage_document_path) %>を見てください。
   </p>
   <p>
     <%= image_tag("documents/new-page-form.png",
@@ -203,14 +203,14 @@
   <p>TODO</p>
 
   <h2 id="upload">アップロード</h2>
-  <p>TODO</p>
+  <p><%= link_to(t("Image upload"), image_upload_document_path) %></p>
 </div>
 
 
 <%= javascript_tag(<<-EOC
 Ext.onReady(function() {
   content = new Ext.Panel({
-    title: #{t("Usage").to_json},
+    title: #{t("General usage").to_json},
     region: 'center',
     contentEl: 'usage',
     autoScroll: true

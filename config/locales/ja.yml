@@ -19,9 +19,13 @@ ja:
   "Page Administration": ページ管理
   "Site Admin": サイト管理
   "Site Information": サイト情報
+
   Documents: ドキュメント
   Usage: 使い方
-  "Usage for the experienced": 上級者向けの使い方
+  "General usage": 一般的な使い方
+  "Image upload": 画像アップロード
+  "FTP upload": FTPアップロード
+  "Experienced usage": 上級者向けの使い方
   "Contents Management": コンテンツ管理
 
   Name: 名前
@@ -97,5 +101,4 @@ ja:
       new: 作成
       show: 表示
       edit: 編集
-      usage: 使用法
       upload: アップロード
