@@ -91,6 +91,10 @@
     <%= image_tag("documents/upload-image-inserted-with-mark.png",
                   :title => "画像が挿入された") %>
   </p>
+
+  <p>
+    <%= link_to(document_page_title("usage"), general_usage_document_path) %>へ戻る。
+  </p>
 </div>
 
 <%= render(:partial => "panel",

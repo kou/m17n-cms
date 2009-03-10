@@ -14,6 +14,10 @@ module DocumentsHelper
     url_for(:controller => "documents", :action => "image")
   end
 
+  def ruby_document_path
+    url_for(:controller => "documents", :action => "ruby")
+  end
+
   def ftp_upload_document_path
     url_for(:controller => "documents", :action => "ftp")
   end
@@ -28,6 +32,8 @@ module DocumentsHelper
       t("General usage")
     when "image"
       t("Image upload")
+    when "ruby"
+      t("Ruby")
     when "ftp"
       t("FTP upload")
     when "experienced"

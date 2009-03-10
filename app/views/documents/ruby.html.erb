@@ -1,0 +1,43 @@
+<div id="ruby" class="main-content">
+  <p>
+    ふりがなのふりかたを説明します。
+  </p>
+
+  <p>
+    ふりがなをふるにはツールバーのボタン(2)を使います。
+    ボタンはふりがなをふりたい範囲を選択(1)すると使えるようになります。
+  </p>
+  <p>
+    <%= image_tag("documents/ruby-edit-button-with-mark.png",
+                  :title => "ふりがな編集ボタン") %>
+  </p>
+  <p>
+    ボタンをクリックするとふりがなを指定するダイアログが開きます。
+  </p>
+  <p>
+    <%= image_tag("documents/ruby-edit-dialog-with-mark.png",
+                  :title => "ふりがな編集ダイアログ") %>
+  </p>
+  <p>
+    ダイアログの中でふりがなを指定し(1)、挿入ボタン(2)をクリックします。
+  </p>
+  <p>
+    <%= image_tag("documents/ruby-edit-fill-form-with-mark.png",
+                  :title => "ふりがな入力済み") %>
+  </p>
+  <p>
+    挿入ボタンをクリックすると、ふりがながふられます(1)。
+    ふりがなの編集は「ふりがな編集」ボタン(2)から行えます。
+  </p>
+  <p>
+    <%= image_tag("documents/ruby-edit-finished-with-mark.png",
+                  :title => "ふりがな設定") %>
+  </p>
+
+  <p>
+    <%= link_to(document_page_title("usage"), general_usage_document_path) %>へ戻る。
+  </p>
+</div>
+
+<%= render(:partial => "panel",
+           :locals => {:content_element_id => "ruby"}) %>
