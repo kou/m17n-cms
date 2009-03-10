@@ -11,9 +11,10 @@
       <ul>
         <li><a href="#create-page">ページの作成方法</a></li>
         <li><a href="#edit-content">コンテンツの編集方法</a></li>
-      </li>
+        <li><a href="#image">画像</a></li>
+      </ul>
       <li><a href="#confirm-contents">コンテンツ確認</a></li>
-      <li><a href="#upload">アップロード</a></li>
+      <li><a href="#next-step">次のステップ</a></li>
     </ul>
   </div>
 
@@ -199,22 +200,22 @@
     <li>保存ボタン</li>
   </ol>
 
-  <h2 id="confirm-content">コンテンツ確認</h2>
+  <h2 id="image">画像</h2>
+  <p>
+    画像をアップロード・挿入する方法は<%= link_to(document_page_title("image"), image_upload_document_path) %>を見てください。
+  </p>
+
+  <h2 id="confirm-contents">コンテンツ確認</h2>
   <p>TODO</p>
 
-  <h2 id="upload">アップロード</h2>
-  <p><%= link_to(t("Image upload"), image_upload_document_path) %></p>
+  <h2 id="next-step">次のステップ</h2>
+  <p>
+    コンテンツを編集する機能だけを使う人はここまでの内容で十分利用することができます。まずは<%= link_to(t("top page", :default => "トップページ"), root_path) %>に移動しましょう。
+  </p>
+  <p>
+    ページを作成したり、作成したコンテンツをFTPでアップロードする人は<%= link_to(document_page_title("experienced"), experienced_usage_document_path) %>に進んでください。
+  </p>
 </div>
 
-
-<%= javascript_tag(<<-EOC
-Ext.onReady(function() {
-  content = new Ext.Panel({
-    title: #{t("General usage").to_json},
-    region: 'center',
-    contentEl: 'usage',
-    autoScroll: true
-  });
-});
-EOC
-) %>
+<%= render(:partial => "panel",
+           :locals => {:content_element_id => "usage"}) %>

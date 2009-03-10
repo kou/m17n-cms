@@ -2,7 +2,7 @@ module DocumentsHelper
   def title
     return super unless controller.is_a?(DocumentsController)
     page_title = document_page_title(controller.action_name)
-    return super if sub_title.blank?
+    return super if page_title.blank?
     h("#{site_title} - #{page_title}")
   end
 

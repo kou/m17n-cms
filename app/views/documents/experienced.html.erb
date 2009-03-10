@@ -1,17 +1,25 @@
-<div id="usage-for-the-experienced" class="main-content">
-  <p>
-    上級者向けにこのサイトの使い方を説明します。まずは、通常の使い方<%= link_to(t("Usage"), usage_path) %>を見てください。
+<div id="experienced-usage" class="main-content">
+    <p>
+    上級者向けにこのサイトの使い方を説明します。もし、まだ読んでいないのであれば、まずは<%= link_to(document_page_title("usage"), general_usage_document_path) %>を読んでください。
   </p>
   <div class="index">
     <h2>目次</h2>
     <ul>
+      <li><a href="#ftp">FTP</a></li>
       <li><a href="#page-name">ページ名</a></li>
     </ul>
   </div>
 
+  <h2 id="ftp">FTP</h2>
+  <p>
+    作成したコンテンツをFTPでアップロードする方法については<%= link_to(document_page_title("ftp"), ftp_upload_document_path) %>を読んでください。
+  </p>
+
   <h2 id="page-name">ページ名</h2>
   <p>
-    ページ名について説明します。
+    ページ名について説明します。新しくページを作成しない場合はこの部分は飛ばして構いません。簡単にいうと、「ページ名はアルファベットと数字だけを使って下さい」ということです。
+  </p>
+  <p>
     まず、ページ名とURLの関係を示した以下の図を見てください。
     コンテンツのURLでは、ページ名が共有されていることに注意してください。
   </p>
@@ -46,15 +54,5 @@
   </p>
 </div>
 
-
-<%= javascript_tag(<<-EOC
-Ext.onReady(function() {
-  content = new Ext.Panel({
-    title: #{t("Usage for the experienced").to_json},
-    region: 'center',
-    contentEl: 'usage-for-the-experienced',
-    autoScroll: true
-  });
-});
-EOC
-) %>
+<%= render(:partial => "panel",
+           :locals => {:content_element_id => "experienced-usage"}) %>

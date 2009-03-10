@@ -1,0 +1,97 @@
+<div id="ftp-upload" class="main-content">
+  <p>
+    作成したコンテンツをFTPでアップロードする方法について説明します。
+  </p>
+  <div class="index">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#configuration">基本設定</a></li>
+      <li><a href="#upload">アップロード</a></li>
+    </ul>
+  </div>
+
+  <h2 id="configuration">基本設定</h2>
+  <p>
+    FTPでアップロードする前に以下の情報を設定する必要があります。
+  </p>
+  <ul>
+    <li>FTPホスト</li>
+    <li>FTPパス</li>
+  </ul>
+  <p>
+    まず、サイト管理画面に移動します。
+    ページ右上にある「サイト管理」リンクからサイト管理画面に移動することができます。
+  </p>
+  <p>
+    <%= image_tag("documents/site-edit-with-mark.png",
+                  :title => "サイト管理画面") %>
+  </p>
+  <p>
+    サイト情報が設定されていない場合は図のようにサイト情報を編集する画面に移動します。ここで、以下の情報を設定します。
+  </p>
+  <ol>
+    <li>サイトのタイトル</li>
+    <li>FTPホスト</li>
+    <li>FTPパス</li>
+  </ol>
+  <p>
+    <%= image_tag("documents/site-fill-form-with-mark.png",
+                  :title => "サイト管理画面") %>
+  </p>
+  <p>
+    サイトの情報を入力したら「更新」ボタン(4)をクリックして保存します。
+  </p>
+
+  <h2 id="upload">アップロード</h2>
+  <p>
+    FTPの情報を保存すると、FTPでアップロードするためのフォームが表示されます。
+  </p>
+  <p>
+    <%= image_tag("documents/site-upload-form-with-mark.png",
+                  :title => "サイト情報表示画面") %>
+  </p>
+  <p>
+    FTPでアップロードするためには以下の情報を入力する必要があります。
+  </p>
+  <ol>
+    <li>FTPユーザ</li>
+    <li>FTPパスワード</li>
+  </ol>
+  <p>
+    <%= image_tag("documents/site-fill-upload-form-with-mark.png",
+                  :title => "FTPアカウント入力") %>
+  </p>
+  <p>
+    FTPユーザとFTPパスワードを入力したら「アップロード」ボタン(3)をクリックして、アップロードを開始します。
+  </p>
+  <p>
+    アップロードを開始すると進行状況が表示されます。
+  <p>
+    <%= image_tag("documents/site-upload-progress1-with-mark.png",
+                  :title => "FTPアップロード進行状況1") %>
+  </p>
+  <p>
+    <%= image_tag("documents/site-upload-progress2-with-mark.png",
+                  :title => "FTPアップロード進行状況2") %>
+  </p>
+  <p>
+    最後に「成功しました」とでていれば成功です。
+  </p>
+  <p>
+    <%= image_tag("documents/site-upload-success-with-mark.png",
+                  :title => "FTPアップロード成功") %>
+  </p>
+  <p>
+    最後に「失敗しました」とでていれば失敗です。
+  </p>
+  <p>
+    <%= image_tag("documents/site-upload-failure-with-mark.png",
+                  :title => "FTPアップロード失敗") %>
+  </p>
+  <p>
+    FTPの設定情報（ホスト名、パス、ユーザ、パスワード）を確認してください。
+  </p>
+</div>
+
+<%= render(:partial => "panel",
+           :locals => {:content_element_id => "ftp-upload"}) %>

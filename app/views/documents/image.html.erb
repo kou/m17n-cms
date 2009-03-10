@@ -93,14 +93,5 @@
   </p>
 </div>
 
-<%= javascript_tag(<<-EOC
-Ext.onReady(function() {
-  content = new Ext.Panel({
-    title: #{t("Image upload").to_json},
-    region: 'center',
-    contentEl: 'image-upload',
-    autoScroll: true
-  });
-});
-EOC
-) %>
+<%= render(:partial => "panel",
+           :locals => {:content_element_id => "image-upload"}) %>
