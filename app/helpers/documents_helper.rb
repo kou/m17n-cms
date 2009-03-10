@@ -1,19 +1,9 @@
 module DocumentsHelper
   def title
     return super unless controller.is_a?(DocumentsController)
-    case controller.action_name
-    when "usage"
-      sub_title = t("General usage")
-    when "image"
-      sub_title = t("Image upload")
-    when "ftp"
-      sub_title = t("FTP upload")
-    when "experienced"
-      sub_title = t("Experienced usage")
-    else
-      return super
-    end
-    h("#{site_title} - #{sub_title}")
+    page_title = document_page_title(controller.action_name)
+    return super if sub_title.blank?
+    h("#{site_title} - #{page_title}")
   end
 
   def general_usage_document_path
@@ -30,5 +20,20 @@ module DocumentsHelper
 
   def experienced_usage_document_path
     url_for(:controller => "documents", :action => "experienced")
+  end
+
+  def document_page_title(action_name)
+    case action_name
+    when "usage"
+      t("General usage")
+    when "image"
+      t("Image upload")
+    when "ftp"
+      t("FTP upload")
+    when "experienced"
+      t("Experienced usage")
+    else
+      nil
+    end
   end
 end
