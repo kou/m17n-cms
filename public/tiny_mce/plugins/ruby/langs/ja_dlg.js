@@ -1,5 +1,5 @@
 tinyMCE.addI18n('ja.ruby_dlg',{
-title:"\u30eb\u30d3",
+title:""\u3075\u308a\u304c\u306a"",
 general_props:"\u4e00\u822c",
-ruby:"\u30eb\u30d3"
+ruby:"\u3075\u308a\u304c\u306a"
 });

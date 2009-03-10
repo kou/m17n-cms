@@ -1,3 +1,3 @@
 tinyMCE.addI18n('ja.ruby',{
-desc:"\u30eb\u30d3"
+desc:"\u3075\u308a\u304c\u306a"
 });
