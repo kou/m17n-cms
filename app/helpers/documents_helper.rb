@@ -29,7 +29,7 @@ module DocumentsHelper
   def document_page_title(action_name)
     case action_name
     when "usage"
-      t("General usage")
+      t("Basic usage")
     when "image"
       t("Image upload")
     when "ruby"
