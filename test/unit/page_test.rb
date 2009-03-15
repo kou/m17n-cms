@@ -33,18 +33,36 @@ class PageTest < ActiveSupport::TestCase
     assert_equal(content.title, "new-page")
   end
 
-  def test_name_validation_blank
-    page = pages(:index)
-    page.name = ""
-    assert_not_valid(["名前 を入力してください。"], page)
+  def test_name_validation
+    assert_valid_name("new-page")
+    assert_valid_name("page1")
+
+    page = assert_valid_name("ｗｅｌｃｏｍｅ")
+    assert_equal("welcome", page.name)
+
+    page = assert_valid_name(" new_page ")
+    assert_equal("new_page", page.name)
+
+    assert_not_valid_name(["名前 を入力してください。"], "")
+    assert_not_valid_name(["名前 が重複しています。"], pages(:introduction).name)
+    assert_not_valid_name(["名前 にスペースが入っています。"], "new page")
+    assert_not_valid_name(["名前 に記号が入っています。"], "page?")
+    assert_not_valid_name(["名前 に記号が入っています。"], "/")
+    assert_not_valid_name(["名前 に日本語が入っています。"], "ページ")
   end
 
-  def test_name_validation_duplicated
-    page = Page.new(:name => "new-page")
+  private
+  def assert_valid_name(value)
+    page = Page.find(pages(:index))
+    page.name = value
     assert_valid(page)
-    page.save!
+    page
+  end
 
-    duplicated_name_page = Page.new(:name => "new-page")
-    assert_not_valid(["名前 が重複しています。"], duplicated_name_page)
+  def assert_not_valid_name(expected_errors, value)
+    page = Page.find(pages(:index))
+    page.name = value
+    assert_not_valid(expected_errors, page)
+    page
   end
 end
