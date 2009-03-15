@@ -50,6 +50,8 @@ module ContentsHelper
     page.sorted_contents.collect do |content|
       data = {
         "iconCls" => "language-icon-#{content.language}",
+        "tooltip" => t(content.language),
+        "tooltipType" => "title",
       }
       if current_content == content
         data["disabled"] = true
