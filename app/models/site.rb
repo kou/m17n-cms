@@ -9,6 +9,7 @@ class Site < ActiveRecord::Base
   end
 
   validates_format_of :ftp_host, :with => URI::HOST, :allow_blank => true
+  validates_format_of :ftp_path, :with => URI::ABS_PATH, :allow_blank => true
 
   def blank_configuration?
     title.blank? and !have_ftp_configuration?

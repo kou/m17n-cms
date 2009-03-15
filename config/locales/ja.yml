@@ -93,6 +93,7 @@ ja:
         published: 公開
       site:
         ftp_host: "FTPホスト"
+        ftp_path: "FTPパス"
 
   title:
     controller:
