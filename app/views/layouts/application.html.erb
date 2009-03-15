@@ -51,9 +51,9 @@ Ext.onReady(function() {
     },
     tbar: [
       {
-         text: #{t('Create').to_json},
+         text: #{t('Page Admin').to_json},
          handler: function() {
-           document.location = #{new_page_path.to_json};
+           document.location = #{pages_path.to_json};
          }
       }
     ]

@@ -25,12 +25,6 @@ Ext.onReady(function() {
   content = new Ext.Panel({
     title: #{t("Page Administration").to_json},
     region: 'center',
-    tbar: [
-      {
-        text: #{t('Create').to_json},
-        handler: function() {document.location = #{new_page_path.to_json}}
-      }
-    ],
     contentEl: 'page-administration'
   });
 });
