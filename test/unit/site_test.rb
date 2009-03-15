@@ -20,9 +20,19 @@ class SiteTest < ActiveSupport::TestCase
     site = assert_valid_attribute(:ftp_host, " ftp.example.com ")
     assert_equal("ftp.example.com", site.ftp_host)
 
-    assert_not_valid_attribute(["FTPホスト は不正な値です。"],
+    site = assert_valid_attribute(:ftp_host,
+                                  "ｆｔｐ．ｅｘａｍｐｌｅ．ｃｏｍ")
+    assert_equal("ftp.example.com", site.ftp_host)
+
+    assert_not_valid_attribute(["FTPホスト にスペースが入っています。"],
                                :ftp_host,
                                "example com")
+    assert_not_valid_attribute(["FTPホスト に記号が入っています。"],
+                               :ftp_host,
+                               "example.com?")
+    assert_not_valid_attribute(["FTPホスト に日本語が入っています。"],
+                               :ftp_host,
+                               "あいうえお")
   end
 
   def test_ftp_path_validation

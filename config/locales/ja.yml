@@ -94,6 +94,11 @@ ja:
       site:
         ftp_host: "FTPホスト"
         ftp_path: "FTPパス"
+    errors:
+      messages:
+        have_space: "にスペースが入っています。"
+        have_symbol: "に記号が入っています。"
+        have_japanese: "に日本語が入っています。"
 
   title:
     controller:
