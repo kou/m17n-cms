@@ -49,6 +49,18 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def assert_valid(object)
+    unless object.valid?
+      flunk("#{object}: #{object.errors.inspect}")
+    end
+  end
+
+  def assert_not_valid(expected_errors, object)
+    assert_not_predicate(object, :valid?)
+    assert_equal(expected_errors.sort,
+                 object.errors.full_messages.sort)
+  end
 end
 
 class ActionController::TestUploadedFile

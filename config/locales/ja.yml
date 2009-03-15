@@ -91,6 +91,8 @@ ja:
       page:
         name: 名前
         published: 公開
+      site:
+        ftp_host: "FTPホスト"
 
   title:
     controller:
