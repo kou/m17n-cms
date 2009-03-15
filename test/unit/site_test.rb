@@ -17,6 +17,9 @@ class SiteTest < ActiveSupport::TestCase
     assert_valid_attribute(:ftp_host, "ftp.example.com")
     assert_valid_attribute(:ftp_host, "ftp")
 
+    site = assert_valid_attribute(:ftp_host, " ftp.example.com ")
+    assert_equal("ftp.example.com", site.ftp_host)
+
     assert_not_valid_attribute(["FTPホスト は不正な値です。"],
                                :ftp_host,
                                "example com")
@@ -28,12 +31,12 @@ class SiteTest < ActiveSupport::TestCase
     assert_valid_attribute(:ftp_path, "/")
     assert_valid_attribute(:ftp_path, "/directory/")
 
+    site = assert_valid_attribute(:ftp_path, "relative-path")
+    assert_equal("/relative-path", site.ftp_path)
+
     assert_not_valid_attribute(["FTPパス は不正な値です。"],
                                :ftp_path,
                                "/have space")
-    assert_not_valid_attribute(["FTPパス は不正な値です。"],
-                               :ftp_path,
-                               "relative-path")
   end
 
   private
