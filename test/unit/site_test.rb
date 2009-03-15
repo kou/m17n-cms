@@ -44,9 +44,21 @@ class SiteTest < ActiveSupport::TestCase
     site = assert_valid_attribute(:ftp_path, "relative-path")
     assert_equal("/relative-path", site.ftp_path)
 
-    assert_not_valid_attribute(["FTPパス は不正な値です。"],
+    site = assert_valid_attribute(:ftp_path, " /surrounded-by-spaces ")
+    assert_equal("/surrounded-by-spaces", site.ftp_path)
+
+    site = assert_valid_attribute(:ftp_path, "／ｚｅｎｋａｋｕ")
+    assert_equal("/zenkaku", site.ftp_path)
+
+    assert_not_valid_attribute(["FTPパス にスペースが入っています。"],
                                :ftp_path,
                                "/have space")
+    assert_not_valid_attribute(["FTPパス に記号が入っています。"],
+                               :ftp_path,
+                               "/path?")
+    assert_not_valid_attribute(["FTPパス に日本語が入っています。"],
+                               :ftp_path,
+                               "/パス")
   end
 
   private

@@ -10,8 +10,7 @@ class Site < ActiveRecord::Base
     end
   end
 
-  validate :validate_ftp_host
-  validates_format_of :ftp_path, :with => URI::ABS_PATH, :allow_blank => true
+  validate :validate_ftp_host, :validate_ftp_path
 
   before_validation :repair_ftp_host, :repair_ftp_path
 
@@ -24,10 +23,8 @@ class Site < ActiveRecord::Base
   end
 
   private
-  def repair_ftp_host
-    return if ftp_host.blank?
-    normalized_ftp_host = ftp_host.gsub(/　/u, ' ')
-    normalized_ftp_host = ftp_host.gsub(/[Ａ-Ｚａ-ｚ。．ー]/u) do |zenkaku|
+  def zenkaku_to_hankaku(string)
+    string.gsub(/[Ａ-Ｚａ-ｚ。．ー／　]/u) do |zenkaku|
       case zenkaku
       when /[Ａ-Ｚ]/
         [zenkaku.unpack("U")[0] - "Ａ".unpack("U")[0] + "A".unpack("U")[0]].pack("U")
@@ -37,32 +34,59 @@ class Site < ActiveRecord::Base
         "."
       when "ー"
         "-"
+      when "　"
+        " "
+      when "／"
+        "/"
       else
         zenkaku
       end
     end
+  end
+
+  def repair_ftp_host
+    return if ftp_host.blank?
+    normalized_ftp_host = zenkaku_to_hankaku(ftp_host)
     normalized_ftp_host = normalized_ftp_host.strip
     self.ftp_host = normalized_ftp_host
   end
 
   def repair_ftp_path
     return if ftp_path.blank?
-    self.ftp_path = ftp_path.strip
-    self.ftp_path = "/#{ftp_path}" unless ftp_path.starts_with?("/")
+    normalized_ftp_path = zenkaku_to_hankaku(ftp_path)
+    normalized_ftp_path = normalized_ftp_path.strip
+    unless normalized_ftp_path.starts_with?("/")
+      normalized_ftp_path = "/#{normalized_ftp_path}"
+    end
+    self.ftp_path = normalized_ftp_path
   end
 
   def validate_ftp_host
     return if ftp_host.blank?
     return if URI::HOST =~ ftp_host
-    case ftp_host
+    add_invalid_ascii_value_error(:ftp_host, ftp_host)
+  end
+
+  def validate_ftp_path
+    return if ftp_path.blank?
+    return if URI::ABS_PATH =~ ftp_path
+    add_invalid_ascii_value_error(:ftp_path, ftp_path, :accept_slash => true)
+  end
+
+  def add_invalid_ascii_value_error(key, value, options={})
+    case value
     when /\s/
-      errors.add(:ftp_host, :have_space, :value => ftp_host)
-    when /[?:;'"!@\#$%^&*()\-_+=\\|~`\[\]{}]/
-      errors.add(:ftp_host, :have_symbol, :value => ftp_host)
+      errors.add(key, :have_space, :value => value)
+    when /[?:;'"!@\#$%^&*()\-_+=|~`\[\]{}]/
+      errors.add(key, :have_symbol, :value => value)
     when /[^a-zA-Z0-9]/
-      errors.add(:ftp_host, :have_japanese, :value => ftp_host)
+      errors.add(key, :have_japanese, :value => value)
     else
-      errors.add(:ftp_host, :invalid, :value => ftp_host)
+      if /\\/ =~ value and !options[:accept_slash]
+        errors.add(key, :have_symbol, :value => value)
+      else
+        errors.add(key, :invalid, :value => value)
+      end
     end
   end
 end
