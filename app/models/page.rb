@@ -10,6 +10,9 @@ class Page < ActiveRecord::Base
   end
   named_scope :sorted, :order => "name"
 
+  validates_presence_of :name
+  validates_uniqueness_of :name
+
   def sorted_contents
     AVAILABLE_LANGUAGES.collect do |language|
       contents.find_or_create_by_language(language)

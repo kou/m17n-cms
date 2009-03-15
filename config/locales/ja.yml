@@ -102,6 +102,7 @@ ja:
         have_space: "にスペースが入っています。"
         have_symbol: "に記号が入っています。"
         have_japanese: "に日本語が入っています。"
+        taken: "が重複しています。"
       template:
         header:
           one: "{{model}}に問題があります。"

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'test_helper'
 
 class PageTest < ActiveSupport::TestCase
@@ -30,5 +31,20 @@ class PageTest < ActiveSupport::TestCase
     page = Page.create!(:name => "new-page")
     content = page.find_or_create_by_language("ja")
     assert_equal(content.title, "new-page")
+  end
+
+  def test_name_validation_blank
+    page = pages(:index)
+    page.name = ""
+    assert_not_valid(["名前 を入力してください。"], page)
+  end
+
+  def test_name_validation_duplicated
+    page = Page.new(:name => "new-page")
+    assert_valid(page)
+    page.save!
+
+    duplicated_name_page = Page.new(:name => "new-page")
+    assert_not_valid(["名前 が重複しています。"], duplicated_name_page)
   end
 end
