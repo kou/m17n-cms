@@ -87,6 +87,7 @@ ja:
   activerecord:
     models:
       page: ページ
+      site: サイト
     attributes:
       page:
         name: 名前
@@ -99,6 +100,10 @@ ja:
         have_space: "にスペースが入っています。"
         have_symbol: "に記号が入っています。"
         have_japanese: "に日本語が入っています。"
+      template:
+        header:
+          one: "{{model}}に問題があります。"
+          other:  "{{model}}に{{count}}個の問題があります。"
 
   title:
     controller:
