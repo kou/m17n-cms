@@ -1,0 +1,24 @@
+<%
+  messages = [flash[:notice], flash[:error], flash[:warning]].compact
+  unless messages.blank?
+%>
+<div id="flash-box" style="display: none;"
+     onclick="new Effect.Fade(this, {duration: 0.1, from: 0.7});">
+  <p><%= messages.flatten.join("<br />") %></p>
+  <%= javascript_tag(visual_effect(:appear, 'flash-box',
+                                   :duration => 0.5,
+                                   :to => 0.7,
+                                   :queue => {
+                                     :position => :end,
+                                     :scope => :folder
+                                   }) +
+                     visual_effect(:fade, 'flash-box',
+                                   :duration => 0.5,
+                                   :delay => 8,
+                                   :from => 0.7,
+                                   :queue => {
+                                     :position => :end,
+                                     :scope => :folder
+                                   })) %>
+</div>
+<% end -%>

@@ -46,6 +46,8 @@ ja:
   "(example: ftp.example.com)": "（例: ftp.example.com）"
   "(example: /my-site)": "（例: /my-site）"
 
+  "Site was successfully updated.": "サイトの更新に成功しました。"
+
   "Image list": "画像一覧"
   "Image file": "画像ファイル"
 

@@ -279,6 +279,25 @@ div.image-list ul li p
   text-align: center;
 }
 
+div#flash-box
+{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border: 2px solid #99BBE8;
+  background-color: white;
+  width: 100%;
+  margin: 0px auto;
+  padding: 1em 2em;
+}
+
+div#flash-box p
+{
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+
 /* TinyMCE */
 .defaultSkin span.mce_ruby
 {

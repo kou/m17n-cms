@@ -46,7 +46,7 @@ class SitesController < ApplicationController
 
     respond_to do |format|
       if @site.save
-        flash[:notice] = 'Site was successfully created.'
+        flash[:notice] = t('Site was successfully created.')
         format.html { redirect_to(@site) }
         format.xml  { render :xml => @site, :status => :created, :location => @site }
       else
@@ -63,7 +63,7 @@ class SitesController < ApplicationController
 
     respond_to do |format|
       if @site.update_attributes(params[:site])
-        flash[:notice] = 'Site was successfully updated.'
+        flash[:notice] = t('Site was successfully updated.')
         format.html { redirect_to(@site) }
         format.xml  { head :ok }
       else
