@@ -42,7 +42,7 @@ class ImagesController < ApplicationController
 
     respond_to do |format|
       if @image.save
-        flash[:notice] = 'Image was successfully created.'
+        flash[:notice] = t('Image was successfully uploaded.')
         format.html { redirect_to(formatted_image_path(@image, :html)) }
         format.xml  { render :xml => @image, :status => :created, :location => @image }
       else

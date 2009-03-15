@@ -54,7 +54,7 @@ class ContentsController < ApplicationController
 
     respond_to do |format|
       if @content.save
-        flash[:notice] = 'Content was successfully created.'
+        flash[:notice] = t('Content was successfully created.')
         format.html { redirect_to(@content) }
         format.xml  { render :xml => @content, :status => :created, :location => @content }
       else
@@ -71,7 +71,7 @@ class ContentsController < ApplicationController
 
     respond_to do |format|
       if @content.update_attributes(params[:content])
-        flash[:notice] = 'Content was successfully updated.'
+        flash[:notice] = t('Content was successfully updated.')
         format.html { redirect_to(@content) }
         format.xml  { head :ok }
       else
