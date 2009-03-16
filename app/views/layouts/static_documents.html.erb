@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<% lang = I18n.locale -%>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="<%= lang %>" lang="<%= lang %>">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= title %></title>
+  <%= stylesheet_link_tag('static-documents') %>
+</head>
+<body>
+<h1><%= title %></h1>
+<div id="menu">
+  <ul>
+    <li><a href="./">トップページ</a></li>
+    <li><a href="usage.html">基本的な使い方</a></li>
+    <li><a href="ruby.html">ふりがなのふりかた</a></li>
+    <li><a href="image.html">画像のアップロード</a></li>
+    <li><a href="ftp.html">FTPでのアップロード</a></li>
+    <li><a href="experienced.html">上級者向けの使い方</a></li>
+  </ul>
+</div>
+<div id="body">
+<%= normalize_body(yield) %>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+h1
+{
+  float: left;
+  width: 70%;
+}
+
+div#menu
+{
+  float: right;
+  padding-right: 10px;
+  border: 2px solid #99BBE8;
+  background-color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
+div#body
+{
+  clear: left;
+}
