@@ -84,19 +84,11 @@ class StaticDocumentGenerator
       h("ドキュメント - #{page_title || '一覧'}")
     end
 
-    def content_path(content)
-      content.html_path
-    end
-
-    def static_content_path(content)
-      content.html_path
-    end
-
-    def root_path
-      "./"
-    end
-
     def normalize_body(body)
+      remove_root_link(fix_link(body))
+    end
+
+    def fix_link(body)
       body.gsub(/(<(img|a)\s.*?(?:src|href))="(.+?)"/) do |matched_text|
         prefix = $1
         tag = $2
@@ -109,6 +101,12 @@ class StaticDocumentGenerator
         else
           matched_text
         end
+      end
+    end
+
+    def remove_root_link(body)
+      body.gsub(/<a\s.*?href="\/">(.+?)<\/a>/) do |matched_text|
+        $1
       end
     end
 
