@@ -1,0 +1,34 @@
+#!/bin/sh
+
+umask 066
+
+if [ $# != 1 ]; then
+    echo "Usage: $0 BACKUP_DIR"
+fi
+
+backup_dir=$1
+
+script_dir=$PWD/`dirname $0`
+rails_root=`dirname $script_dir`
+backup_target_dirs="public/images/uploaded"
+today=`date +%Y%m%d`
+limit=+30
+
+output_file=uploaded-images-${today}.tar.bz2
+
+files=`find ${backup_dir} -type f -mtime ${limit} -print`
+if [ "x${files}" != "x" ]; then
+  echo "delete old backup files ..."
+  ls -lah ${files}
+  rm ${files}
+fi
+
+tar cfj ${backup_dir}/${output_file} -C ${rails_root} ${backup_target_dirs}
+
+sql_backup_file=${backup_dir}/data-${today}.sql
+
+db_config="ActiveRecord::Base.configurations[RAILS_ENV]"
+db_name=`ruby $rails_root/script/runner "print $db_config['database']"`
+
+sqlite3 $db_name .dump > ${sql_backup_file}
+gzip -f ${sql_backup_file}
