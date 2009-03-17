@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="551.57141"
-   height="552.67078"
+   height="574.271"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.46"
@@ -114,8 +114,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="341.08473"
-     inkscape:cy="244.82088"
+     inkscape:cx="277.59634"
+     inkscape:cy="307.73168"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -143,7 +143,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#4e9a06;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2383"
        width="548.57141"
-       height="549.67078"
+       height="571.271"
        x="88.571426"
        y="218.07646" />
     <text
@@ -161,7 +161,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2389"
        width="231.64001"
-       height="448.32199"
+       height="471.522"
        x="103.14286"
        y="300.93362" />
     <text
@@ -178,7 +178,7 @@
     <rect
        y="299.92346"
        x="351.12256"
-       height="448.32199"
+       height="471.522"
        width="231.64"
        id="rect2395"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -219,13 +219,13 @@
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="125.71201"
-       y="466.81787"
+       y="486.81787"
        id="text2427"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan2429"
          x="125.71201"
-         y="466.81787">http://.../site/page1-ja.html</tspan></text>
+         y="486.81787">http://.../site/page1-ja.html</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 212.44349,352.64591 L 235.17192,365.27282"
@@ -233,11 +233,11 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 126.26907,473.03715 L 213.14219,473.03715"
+       d="M 126.26907,493.03715 L 213.14219,493.03715"
        id="path3991" />
     <path
        id="path3995"
-       d="M 220.26907,473.03715 L 259.15994,473.03715"
+       d="M 220.26907,493.03715 L 259.15994,493.03715"
        style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
@@ -255,33 +255,37 @@
          sodipodi:role="line"
          id="tspan4003"
          x="126"
-         y="413.2193">コンテンツ（日本語）</tspan></text>
+         y="413.2193">コンテンツ</tspan><tspan
+         sodipodi:role="line"
+         x="126"
+         y="431.2193"
+         id="tspan3735">（やさしいにほんご）</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4005"
        width="202.41409"
-       height="153.80423"
+       height="173.004"
        x="116.85715"
        y="391.79074" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="126.5"
-       y="442.93362"
+       y="462.93362"
        id="text4007"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="126.5"
-         y="442.93362"
+         y="462.93362"
          id="tspan4015">タイトル: こんにちは</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4011"
-       y="428.93362"
+       y="448.93362"
        x="126.5"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="428.93362"
+         y="448.93362"
          x="126.5"
          id="tspan4013"
          sodipodi:role="line">言<tspan
@@ -310,43 +314,43 @@
        sodipodi:nodetypes="cc" />
     <path
        id="path4029"
-       d="M 179.53738,424.14086 C 179.53738,424.14086 231.2263,423.12118 251.55062,428.84717 C 267.62789,433.37663 269.99244,452.83919 269.99244,452.83919"
+       d="M 179.53738,444.14086 C 179.53738,444.14086 231.2263,443.12118 251.55062,448.84717 C 267.62789,453.37663 269.99244,472.83919 269.99244,472.83919"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="csc" />
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 264.8405,473.03715 L 276.93695,473.03715"
+       d="M 264.8405,493.03715 L 276.93695,493.03715"
        id="path4031" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 120,483.79075 L 315.71429,483.79075"
+       d="M 120,503.79075 L 315.71429,503.79075"
        id="path4033" />
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="126.14645"
-       y="504.76904"
+       y="524.76904"
        id="text4035"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="126.14645"
-         y="504.76904"
+         y="524.76904"
          id="tspan4037">こんにちは</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="127.14285"
-       y="536.64789"
+       y="556.64789"
        id="text4039"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4041"
          x="127.14285"
-         y="536.64789">…ページの内容…</tspan></text>
+         y="556.64789">…ページの内容…</tspan></text>
     <g
-       id="g4666"
-       transform="translate(0,-48)">
+       id="g3671"
+       transform="translate(0,20)">
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
@@ -354,105 +358,97 @@
          height="9"
          id="image4109"
          x="128.57141"
-         y="560.03857" />
+         y="512.03857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
          width="15"
          height="8"
          id="image4176"
-         x="147.79022"
-         y="560.53857" />
+         x="147.67863"
+         y="512.53857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
          width="15"
          height="10"
          id="image4243"
-         x="167.00905"
-         y="559.53857" />
+         x="166.78586"
+         y="511.53857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
          width="15"
          height="9"
          id="image4310"
-         x="186.22787"
-         y="560.03857" />
+         x="185.89307"
+         y="512.03857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
          width="15"
          height="10"
          id="image4377"
-         x="205.44669"
-         y="559.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         width="15"
-         height="7"
-         id="image4444"
-         x="224.6655"
-         y="561.03857" />
+         x="205.00031"
+         y="511.53857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
          width="15"
          height="10"
          id="image4511"
-         x="243.88432"
-         y="559.53857" />
+         x="224.10753"
+         y="511.53857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
          width="15"
          height="10"
          id="image4595"
-         x="263.10315"
-         y="559.53857" />
+         x="243.21474"
+         y="511.53857" />
       <image
          xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
          sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
          width="15"
          height="10"
          id="image4662"
-         x="282.32196"
-         y="559.53857" />
+         x="262.32196"
+         y="511.53857" />
     </g>
     <text
        sodipodi:linespacing="100%"
        id="text4713"
-       y="628.81787"
+       y="648.81787"
        x="125.71201"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="628.81787"
+         y="648.81787"
          x="125.71201"
          id="tspan4715"
-         sodipodi:role="line">http://.../site/page1-en.html</tspan></text>
+         sodipodi:role="line">http://.../site/page1-zh.html</tspan></text>
     <path
        id="path4717"
-       d="M 126.26907,635.03715 L 213.14219,635.03715"
+       d="M 126.26907,655.03715 L 213.14219,655.03715"
        style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 220.26907,635.03715 L 259.15994,635.03715"
+       d="M 220.26907,655.03715 L 259.15994,655.03715"
        id="path4719" />
     <text
        sodipodi:linespacing="100%"
        id="text4721"
-       y="575.2193"
+       y="595.2193"
        x="126"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="575.2193"
+         y="595.2193"
          x="126"
          id="tspan4723"
-         sodipodi:role="line">コンテンツ（英語）</tspan></text>
+         sodipodi:role="line">コンテンツ（中国語）</tspan></text>
     <rect
-       y="553.79077"
+       y="573.79077"
        x="116.85715"
        height="153.80423"
        width="202.41409"
@@ -461,165 +457,89 @@
     <text
        sodipodi:linespacing="100%"
        id="text4727"
-       y="604.93359"
+       y="624.93359"
        x="126.5"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         id="tspan4729"
-         y="604.93359"
+         sodipodi:role="line"
+         id="tspan3654"
          x="126.5"
-         sodipodi:role="line">タイトル: Hello</tspan></text>
+         y="624.93359">タイトル: 你好</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="126.5"
-       y="590.93359"
+       y="610.93359"
        id="text4731"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4733"
          x="126.5"
-         y="590.93359">言<tspan
+         y="610.93359">言<tspan
    id="tspan4735"
-   style="font-size:14px">語</tspan>: en</tspan></text>
+   style="font-size:14px">語</tspan>: zh</tspan></text>
     <path
        id="path4743"
-       d="M 264.8405,635.03715 L 280.97756,635.03715"
+       d="M 264.8405,655.03715 L 280.97756,655.03715"
        style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
        id="path4745"
-       d="M 120,645.79075 L 315.71429,645.79075"
+       d="M 120,665.79075 L 315.71429,665.79075"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        sodipodi:linespacing="100%"
        id="text4747"
-       y="666.76904"
+       y="686.76904"
        x="126.14645"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         id="tspan4749"
-         y="666.76904"
+         sodipodi:role="line"
+         id="tspan3656"
          x="126.14645"
-         sodipodi:role="line">Hello</tspan></text>
+         y="686.76904">你好</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4751"
-       y="698.64789"
+       y="718.64789"
        x="127.14285"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="698.64789"
+         y="718.64789"
          x="127.14285"
          id="tspan4753"
-         sodipodi:role="line">…page content…</tspan></text>
-    <g
-       transform="translate(0,114)"
-       id="g4755">
-      <image
-         y="560.03857"
-         x="128.57141"
-         id="image4757"
-         height="9"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif" />
-      <image
-         y="560.53857"
-         x="147.79022"
-         id="image4759"
-         height="8"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif" />
-      <image
-         y="559.53857"
-         x="167.00905"
-         id="image4761"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif" />
-      <image
-         y="560.03857"
-         x="186.22787"
-         id="image4763"
-         height="9"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
-      <image
-         y="559.53857"
-         x="205.44669"
-         id="image4765"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif" />
-      <image
-         y="561.03857"
-         x="224.6655"
-         id="image4767"
-         height="7"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif" />
-      <image
-         y="559.53857"
-         x="243.88432"
-         id="image4769"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif" />
-      <image
-         y="559.53857"
-         x="263.10315"
-         id="image4771"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif" />
-      <image
-         y="559.53857"
-         x="282.32196"
-         id="image4773"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
-    </g>
+         sodipodi:role="line">…ページの内容…</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4779"
        y="234.14943"
-       x="-745.46283"
+       x="-765.46283"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"
        transform="matrix(0,-1,1,0,0,0)"><tspan
          y="234.14943"
-         x="-745.46283"
+         x="-765.46283"
          id="tspan4781"
          sodipodi:role="line">…</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4801"
-       y="466.81787"
+       y="486.81787"
        x="375.71201"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="466.81787"
+         y="486.81787"
          x="375.71201"
          id="tspan4803"
          sodipodi:role="line">http://.../site/page2-ja.html</tspan></text>
     <path
        id="path4805"
-       d="M 376.26907,473.03715 L 463.14219,473.03715"
+       d="M 376.26907,493.03715 L 463.14219,493.03715"
        style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 470.26907,473.03715 L 509.15994,473.03715"
+       d="M 470.26907,493.03715 L 509.15994,493.03715"
        id="path4807" />
     <text
        sodipodi:linespacing="100%"
@@ -631,325 +551,177 @@
          y="413.2193"
          x="376"
          id="tspan4811"
-         sodipodi:role="line">コンテンツ（日本語）</tspan></text>
+         sodipodi:role="line">コンテンツ</tspan><tspan
+         y="431.2193"
+         x="376"
+         sodipodi:role="line"
+         id="tspan3737">（やさしいにほんご）</tspan></text>
     <rect
        y="391.79074"
        x="366.85715"
-       height="153.80423"
+       height="173.004"
        width="202.41409"
        id="rect4813"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        sodipodi:linespacing="100%"
        id="text4815"
-       y="442.93362"
+       y="462.93362"
        x="376.5"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
          id="tspan4817"
-         y="442.93362"
+         y="462.93362"
          x="376.5"
          sodipodi:role="line">タイトル: ようこそ</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="376.5"
-       y="428.93362"
+       y="448.93362"
        id="text4819"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4821"
          x="376.5"
-         y="428.93362">言<tspan
+         y="448.93362">言<tspan
    id="tspan4823"
    style="font-size:14px">語</tspan>: ja</tspan></text>
     <path
        id="path4831"
-       d="M 514.8405,473.03715 L 526.93695,473.03715"
+       d="M 514.8405,493.03715 L 526.93695,493.03715"
        style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
        id="path4833"
-       d="M 370,483.79075 L 565.71429,483.79075"
+       d="M 370,503.79075 L 565.71429,503.79075"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        sodipodi:linespacing="100%"
        id="text4835"
-       y="504.76904"
+       y="524.76904"
        x="376.14645"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
          id="tspan4837"
-         y="504.76904"
+         y="524.76904"
          x="376.14645"
          sodipodi:role="line">ようこそ</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4839"
-       y="536.64789"
+       y="556.64789"
        x="377.14285"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="536.64789"
+         y="556.64789"
          x="377.14285"
          id="tspan4841"
          sodipodi:role="line">…ページの内容…</tspan></text>
-    <g
-       transform="translate(250,-48)"
-       id="g4843">
-      <image
-         y="560.03857"
-         x="128.57141"
-         id="image4845"
-         height="9"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif" />
-      <image
-         y="560.53857"
-         x="147.79022"
-         id="image4847"
-         height="8"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif" />
-      <image
-         y="559.53857"
-         x="167.00905"
-         id="image4849"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif" />
-      <image
-         y="560.03857"
-         x="186.22787"
-         id="image4851"
-         height="9"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
-      <image
-         y="559.53857"
-         x="205.44669"
-         id="image4853"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif" />
-      <image
-         y="561.03857"
-         x="224.6655"
-         id="image4855"
-         height="7"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif" />
-      <image
-         y="559.53857"
-         x="243.88432"
-         id="image4857"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif" />
-      <image
-         y="559.53857"
-         x="263.10315"
-         id="image4859"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif" />
-      <image
-         y="559.53857"
-         x="282.32196"
-         id="image4861"
-         height="10"
-         width="15"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
-    </g>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="375.71201"
-       y="628.81787"
+       y="648.81787"
        id="text4863"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4865"
          x="375.71201"
-         y="628.81787">http://.../site/page2-en.html</tspan></text>
+         y="648.81787">http://.../site/page2-zh.html</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 376.26907,635.03715 L 463.14219,635.03715"
+       d="M 376.26907,655.03715 L 463.14219,655.03715"
        id="path4867" />
     <path
        id="path4869"
-       d="M 470.26907,635.03715 L 509.15994,635.03715"
+       d="M 470.26907,655.03715 L 509.15994,655.03715"
        style="fill:none;fill-rule:evenodd;stroke:#f57900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="376"
-       y="575.2193"
+       y="595.2193"
        id="text4871"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4873"
          x="376"
-         y="575.2193">コンテンツ（英語）</tspan></text>
+         y="595.2193">コンテンツ（中国語）</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4875"
        width="202.41409"
        height="153.80423"
        x="366.85715"
-       y="553.79077" />
+       y="573.79077" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="376.5"
-       y="604.93359"
+       y="624.93359"
        id="text4877"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
+         id="tspan3658"
          x="376.5"
-         y="604.93359"
-         id="tspan4879">タイトル: Welcome</tspan></text>
+         y="624.93359">タイトル: 欢迎</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text4881"
-       y="590.93359"
+       y="610.93359"
        x="376.5"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="590.93359"
+         y="610.93359"
          x="376.5"
          id="tspan4883"
          sodipodi:role="line">言<tspan
    style="font-size:14px"
-   id="tspan4885">語</tspan>: en</tspan></text>
+   id="tspan4885">語</tspan>: zh</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 514.8405,635.03715 L 532.49279,635.03715"
+       d="M 514.8405,655.03715 L 532.49279,655.03715"
        id="path4889" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 370,645.79075 L 565.71429,645.79075"
+       d="M 370,665.79075 L 565.71429,665.79075"
        id="path4891" />
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="376.14645"
-       y="666.76904"
+       y="686.76904"
        id="text4893"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
+         id="tspan3660"
          x="376.14645"
-         y="666.76904"
-         id="tspan4895">Welcome</tspan></text>
+         y="686.76904">欢迎</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="377.14285"
-       y="698.64789"
+       y="718.64789"
        id="text4897"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4899"
          x="377.14285"
-         y="698.64789">…page content…</tspan></text>
-    <g
-       id="g4901"
-       transform="translate(250,114)">
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
-         width="15"
-         height="9"
-         id="image4903"
-         x="128.57141"
-         y="560.03857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
-         width="15"
-         height="8"
-         id="image4905"
-         x="147.79022"
-         y="560.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
-         width="15"
-         height="10"
-         id="image4907"
-         x="167.00905"
-         y="559.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-         width="15"
-         height="9"
-         id="image4909"
-         x="186.22787"
-         y="560.03857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
-         width="15"
-         height="10"
-         id="image4911"
-         x="205.44669"
-         y="559.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-         width="15"
-         height="7"
-         id="image4913"
-         x="224.6655"
-         y="561.03857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
-         width="15"
-         height="10"
-         id="image4915"
-         x="243.88432"
-         y="559.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
-         width="15"
-         height="10"
-         id="image4917"
-         x="263.10315"
-         y="559.53857" />
-      <image
-         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-         width="15"
-         height="10"
-         id="image4919"
-         x="282.32196"
-         y="559.53857" />
-    </g>
+         y="718.64789">…ページの内容…</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
-       x="-745.46283"
+       x="-765.46283"
        y="484.14941"
        id="text4921"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan4923"
-         x="-745.46283"
+         x="-765.46283"
          y="484.14941">…</tspan></text>
     <text
        sodipodi:linespacing="100%"
@@ -1002,57 +774,261 @@
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 203.34159,446.29423 L 169.00692,488.19453"
+       d="M 203.34159,466.29423 L 169.00692,508.19453"
        id="path3314" />
     <path
        sodipodi:nodetypes="csc"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 427.53738,424.14086 C 427.53738,424.14086 479.2263,423.12118 499.55062,428.84717 C 515.62789,433.37663 517.99244,452.83919 517.99244,452.83919"
+       d="M 427.53738,444.14086 C 427.53738,444.14086 479.2263,443.12118 499.55062,448.84717 C 515.62789,453.37663 517.99244,472.83919 517.99244,472.83919"
        id="path3322" />
     <path
        id="path3324"
-       d="M 451.34159,446.29423 L 417.00692,488.19453"
+       d="M 451.34159,466.29423 L 417.00692,508.19453"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
        id="path3326"
-       d="M 431.53738,588.14086 C 431.53738,588.14086 483.2263,587.12118 503.55062,592.84717 C 519.62789,597.37663 521.99244,616.83919 521.99244,616.83919"
+       d="M 431.53738,608.14086 C 431.53738,608.14086 483.2263,607.12118 503.55062,612.84717 C 519.62789,617.37663 521.99244,636.83919 521.99244,636.83919"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="csc" />
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 455.34159,610.29423 L 421.00692,652.19453"
+       d="M 455.34159,630.29423 L 421.00692,672.19453"
        id="path3328" />
     <path
        sodipodi:nodetypes="csc"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 181.53738,588.14086 C 181.53738,588.14086 233.2263,587.12118 253.55062,592.84717 C 269.62789,597.37663 271.99244,616.83919 271.99244,616.83919"
+       d="M 181.53738,608.14086 C 181.53738,608.14086 233.2263,607.12118 253.55062,612.84717 C 269.62789,617.37663 271.99244,636.83919 271.99244,636.83919"
        id="path3330" />
     <path
        id="path3332"
-       d="M 205.34159,610.29423 L 171.00692,652.19453"
+       d="M 205.34159,630.29423 L 171.00692,672.19453"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
        sodipodi:nodetypes="csss"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 239.19474,523.06979 C 239.19474,523.06979 281.98678,532.41183 294.85121,543.95341 C 308.08611,555.82737 317.4029,583.62028 317.98361,606.18914 C 318.51044,626.66396 309.6993,651.01561 309.6993,651.01561"
+       d="M 271.96523,542.73803 C 271.96523,542.73803 285.59817,549.52513 297.62913,561.9331 C 310.61149,575.32229 317.61211,599.85759 317.98361,626.18914 C 318.27255,646.6687 309.6993,671.01561 309.6993,671.01561"
        id="path3334" />
     <path
        id="path3336"
-       d="M 188.25886,686.11604 C 188.25886,686.11604 135.09891,694.42147 123.40333,681.69689 C 116.78588,674.49722 119.66727,644.5743 119.58201,632.4805 C 119.44497,613.04155 120.74462,596.32298 121.44696,586.95064 C 123.10941,564.76614 126.07318,539.76467 126.07318,539.76467"
+       d="M 188.25886,706.11604 C 188.25886,706.11604 135.09891,714.42147 123.40333,701.69689 C 116.78588,694.49722 119.66727,664.5743 119.58201,652.4805 C 119.44497,633.04155 120.74462,616.32298 121.44696,606.95064 C 123.10941,584.76614 126.07318,559.76467 126.07318,559.76467"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="cssss" />
     <path
-       id="path3338"
-       d="M 489.19474,523.06979 C 489.19474,523.06979 531.98678,532.41183 544.85121,543.95341 C 558.08611,555.82737 567.4029,583.62028 567.98361,606.18914 C 568.51044,626.66396 559.6993,651.01561 559.6993,651.01561"
-       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:nodetypes="csss" />
-    <path
        sodipodi:nodetypes="cssss"
        style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 438.25886,686.11604 C 438.25886,686.11604 385.09891,694.42147 373.40333,681.69689 C 366.78588,674.49722 369.66727,644.5743 369.58201,632.4805 C 369.44497,613.04155 370.74462,596.32298 371.44696,586.95064 C 373.10941,564.76614 376.07318,539.76467 376.07318,539.76467"
+       d="M 438.25886,706.11604 C 438.25886,706.11604 385.09891,714.42147 373.40333,701.69689 C 366.78588,694.49722 369.66727,664.5743 369.58201,652.4805 C 369.44497,633.04155 370.74462,616.32298 371.44696,606.95064 C 373.10941,584.76614 376.07318,559.76467 376.07318,559.76467"
        id="path3340" />
+    <g
+       id="g3681"
+       transform="translate(0,180)">
+      <image
+         y="512.03857"
+         x="128.57141"
+         id="image3683"
+         height="9"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif" />
+      <image
+         y="512.53857"
+         x="147.67863"
+         id="image3685"
+         height="8"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif" />
+      <image
+         y="511.53857"
+         x="166.78586"
+         id="image3687"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif" />
+      <image
+         y="512.03857"
+         x="185.89307"
+         id="image3689"
+         height="9"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
+      <image
+         y="511.53857"
+         x="205.00031"
+         id="image3691"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif" />
+      <image
+         y="511.53857"
+         x="224.10753"
+         id="image3693"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif" />
+      <image
+         y="511.53857"
+         x="243.21474"
+         id="image3695"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif" />
+      <image
+         y="511.53857"
+         x="262.32196"
+         id="image3697"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
+    </g>
+    <g
+       transform="translate(248,180)"
+       id="g3699">
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
+         width="15"
+         height="9"
+         id="image3701"
+         x="128.57141"
+         y="512.03857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
+         width="15"
+         height="8"
+         id="image3703"
+         x="147.67863"
+         y="512.53857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
+         width="15"
+         height="10"
+         id="image3705"
+         x="166.78586"
+         y="511.53857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+         width="15"
+         height="9"
+         id="image3707"
+         x="185.89307"
+         y="512.03857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
+         width="15"
+         height="10"
+         id="image3709"
+         x="205.00031"
+         y="511.53857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
+         width="15"
+         height="10"
+         id="image3711"
+         x="224.10753"
+         y="511.53857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
+         width="15"
+         height="10"
+         id="image3713"
+         x="243.21474"
+         y="511.53857" />
+      <image
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+         width="15"
+         height="10"
+         id="image3715"
+         x="262.32196"
+         y="511.53857" />
+    </g>
+    <g
+       id="g3717"
+       transform="translate(248,20)">
+      <image
+         y="512.03857"
+         x="128.57141"
+         id="image3719"
+         height="9"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/bn-icon.gif" />
+      <image
+         y="512.53857"
+         x="147.67863"
+         id="image3721"
+         height="8"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/en-icon.gif" />
+      <image
+         y="511.53857"
+         x="166.78586"
+         id="image3723"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/es-icon.gif" />
+      <image
+         y="512.03857"
+         x="185.89307"
+         id="image3725"
+         height="9"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
+      <image
+         y="511.53857"
+         x="205.00031"
+         id="image3727"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ko-icon.gif" />
+      <image
+         y="511.53857"
+         x="224.10753"
+         id="image3729"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ru-icon.gif" />
+      <image
+         y="511.53857"
+         x="243.21474"
+         id="image3731"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/vi-icon.gif" />
+      <image
+         y="511.53857"
+         x="262.32196"
+         id="image3733"
+         height="10"
+         width="15"
+         sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+         xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
+    </g>
+    <path
+       id="path3739"
+       d="M 521.96523,542.73803 C 521.96523,542.73803 535.59817,549.52513 547.62913,561.9331 C 560.61149,575.32229 567.61211,599.85759 567.98361,626.18914 C 568.27255,646.6687 559.6993,671.01561 559.6993,671.01561"
+       style="fill:none;fill-rule:evenodd;stroke:#a40000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="csss" />
   </g>
 </svg>

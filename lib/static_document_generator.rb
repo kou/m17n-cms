@@ -79,6 +79,10 @@ class StaticDocumentGenerator
   end
 
   module StaticHelper
+    def javascript_tag(javascript)
+      ""
+    end
+
     def title
       page_title = document_page_title(controller.action_name)
       h("ドキュメント - #{page_title || '一覧'}")
