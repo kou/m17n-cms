@@ -1,10 +1,12 @@
+<% tbar ||= [].to_json %>
 <%= javascript_tag(<<-EOC
 Ext.onReady(function() {
   content = new Ext.Panel({
     title: #{document_page_title(controller.action_name).to_json},
     region: 'center',
     contentEl: #{content_element_id.to_json},
-    autoScroll: true
+    autoScroll: true,
+    tbar: #{tbar}
   });
 });
 EOC

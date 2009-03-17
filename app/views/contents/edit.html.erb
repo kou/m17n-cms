@@ -12,8 +12,15 @@
 <%
   if @content.language == "ja"
     ruby_plugin = ",ruby"
+    ruby_help_toolbar_item = ",
+    {
+      text: #{document_page_title('ruby').to_json},
+      href: #{ruby_document_path.to_json}
+    }
+"
   else
     ruby_plugin = ""
+    ruby_help_toolbar_item = ""
   end
 -%>
 <%= javascript_tag(<<-EOC
@@ -26,6 +33,15 @@ Ext.onReady(function() {
     "-"
   ]
   toolbar = toolbar.concat(#{content_edit_toolbar_data(@content).to_json});
+  toolbar = toolbar.concat([
+    "-",
+    #{t("Usage").to_json} + ":",
+    {
+      text: #{document_page_title('image').to_json},
+      href: #{image_upload_document_path.to_json}
+    }
+    #{ruby_help_toolbar_item}
+  ]);
   toolbarItemsSetLinkHandler(toolbar);
 
   content = new Ext.Panel({
@@ -50,7 +66,7 @@ Ext.onReady(function() {
 
     // Theme options
     theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
-    theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,|,forecolor,backcolor",
+    theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,code,|,insertdate,inserttime,|,forecolor,backcolor",
     theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,ltr,rtl,|,fullscreen",
     theme_advanced_buttons4 : "styleprops,|#{ruby_plugin},cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,pagebreak",
     theme_advanced_toolbar_location : "top",

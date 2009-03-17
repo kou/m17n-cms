@@ -221,4 +221,27 @@
 </div>
 
 <%= render(:partial => "panel",
-           :locals => {:content_element_id => "usage"}) %>
+           :locals => {
+             :content_element_id => "usage",
+             :tbar => "
+               [
+                 {
+                   text: #{document_page_title('image').to_json},
+                   handler: function () {
+                     document.location = #{image_upload_document_path.to_json};
+                   }
+                 },
+                 {
+                   text: #{document_page_title('ruby').to_json},
+                   handler: function () {
+                     document.location = #{ruby_document_path.to_json};
+                   }
+                 },
+                 {
+                   text: #{document_page_title('ftp').to_json},
+                   handler: function () {
+                     document.location = #{ftp_upload_document_path.to_json};
+                   }
+                 }
+               ]",
+           }) %>

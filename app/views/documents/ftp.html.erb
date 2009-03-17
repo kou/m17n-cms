@@ -94,4 +94,34 @@
 </div>
 
 <%= render(:partial => "panel",
-           :locals => {:content_element_id => "ftp-upload"}) %>
+           :locals => {
+             :content_element_id => "ftp-upload",
+             :tbar => "
+               [
+                 {
+                   text: #{t('Site Admin').to_json},
+                   handler: function () {
+                     document.location = #{site_path(Site.default).to_json};
+                   }
+                 },
+                 '-',
+                 {
+                   text: #{document_page_title('usage').to_json},
+                   handler: function () {
+                     document.location = #{general_usage_document_path.to_json};
+                   }
+                 },
+                 {
+                   text: #{document_page_title('image').to_json},
+                   handler: function () {
+                     document.location = #{image_upload_document_path.to_json};
+                   }
+                 },
+                 {
+                   text: #{document_page_title('ruby').to_json},
+                   handler: function () {
+                     document.location = #{ruby_document_path.to_json};
+                   }
+                 }
+               ]",
+           }) %>

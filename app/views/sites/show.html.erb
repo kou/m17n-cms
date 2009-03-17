@@ -63,6 +63,13 @@ Ext.onReady(function() {
     autoScroll: true,
     tbar: [
       {
+         text: #{t("Usage").to_json},
+         handler: function () {
+           document.location = #{ftp_upload_document_path.to_json};
+         }
+      },
+      "-",
+      {
          text: #{t("Edit").to_json},
          handler: function () {
            document.location = #{edit_site_path(@site).to_json};
