@@ -8,7 +8,8 @@ fi
 
 backup_dir=$1
 
-script_dir=$PWD/`dirname $0`
+script_dir=`dirname $0`
+script_dir=`(cd $script_dir; pwd)`
 rails_root=`dirname $script_dir`
 backup_target_dirs="public/images/uploaded"
 today=`date +%Y%m%d`
