@@ -24,13 +24,13 @@ class SiteTest < ActiveSupport::TestCase
                                   "ｆｔｐ．ｅｘａｍｐｌｅ．ｃｏｍ")
     assert_equal("ftp.example.com", site.ftp_host)
 
-    assert_not_valid_attribute(["FTPホスト にスペースが入っています。"],
+    assert_not_valid_attribute(["FTPホストにスペースが入っています。"],
                                :ftp_host,
                                "example com")
-    assert_not_valid_attribute(["FTPホスト に記号が入っています。"],
+    assert_not_valid_attribute(["FTPホストに記号が入っています。"],
                                :ftp_host,
                                "example.com?")
-    assert_not_valid_attribute(["FTPホスト に日本語が入っています。"],
+    assert_not_valid_attribute(["FTPホストに日本語が入っています。"],
                                :ftp_host,
                                "あいうえお")
   end
@@ -50,13 +50,13 @@ class SiteTest < ActiveSupport::TestCase
     site = assert_valid_attribute(:ftp_path, "／ｚｅｎｋａｋｕ")
     assert_equal("/zenkaku", site.ftp_path)
 
-    assert_not_valid_attribute(["FTPパス にスペースが入っています。"],
+    assert_not_valid_attribute(["FTPパスにスペースが入っています。"],
                                :ftp_path,
                                "/have space")
-    assert_not_valid_attribute(["FTPパス に記号が入っています。"],
+    assert_not_valid_attribute(["FTPパスに記号が入っています。"],
                                :ftp_path,
                                "/path?")
-    assert_not_valid_attribute(["FTPパス に日本語が入っています。"],
+    assert_not_valid_attribute(["FTPパスに日本語が入っています。"],
                                :ftp_path,
                                "/パス")
   end

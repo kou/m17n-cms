@@ -43,12 +43,12 @@ class PageTest < ActiveSupport::TestCase
     page = assert_valid_name(" new_page ")
     assert_equal("new_page", page.name)
 
-    assert_not_valid_name(["名前 を入力してください。"], "")
-    assert_not_valid_name(["名前 が重複しています。"], pages(:introduction).name)
-    assert_not_valid_name(["名前 にスペースが入っています。"], "new page")
-    assert_not_valid_name(["名前 に記号が入っています。"], "page?")
-    assert_not_valid_name(["名前 に記号が入っています。"], "/")
-    assert_not_valid_name(["名前 に日本語が入っています。"], "ページ")
+    assert_not_valid_name(["名前を入力してください。"], "")
+    assert_not_valid_name(["名前が重複しています。"], pages(:introduction).name)
+    assert_not_valid_name(["名前にスペースが入っています。"], "new page")
+    assert_not_valid_name(["名前に記号が入っています。"], "page?")
+    assert_not_valid_name(["名前に記号が入っています。"], "/")
+    assert_not_valid_name(["名前に日本語が入っています。"], "ページ")
   end
 
   private

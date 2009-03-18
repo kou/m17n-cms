@@ -17,8 +17,7 @@ class ImagesControllerTest < ActionController::TestCase
       post :create, :image => {:image_file => png("rails.png")}
     end
 
-    assert_redirected_to(formatted_image_path(assigns(:image),
-                                              :format => "html"))
+    assert_redirected_to(image_path(assigns(:image), :format => "html"))
   end
 
   test "should show image" do
@@ -36,7 +35,7 @@ class ImagesControllerTest < ActionController::TestCase
 
   private
   def png(file)
-    path = File.join(Test::Unit::TestCase.fixture_path, 'images', file)
+    path = File.join(ActiveSupport::TestCase.fixture_path, 'images', file)
     ActionController::TestUploadedFile.new(path, 'image/png', :binary)
   end
 end

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 require 'English'
 require 'action_controller/test_process'
 
@@ -61,14 +62,11 @@ class StaticDocumentGenerator
   def prepare_objects
     DocumentsController.helper(StaticHelper)
     DocumentsController.layout("static_documents")
-    ActionView::Helpers::AssetTagHelper::AssetTag.module_eval do
-      include StaticHelper::AssetPath
-    end
   end
 
   def generate_document(action)
     controller = DocumentsController.new
-    request = ActionController::TestRequest.new("lang" => I18n.locale.to_s)
+    request = ActionController::TestRequest.new
     request.action = action
     response = ActionController::TestResponse.new
     controller.process(request, response)
@@ -140,24 +138,10 @@ class StaticDocumentGenerator
       end.compact
     end
 
-    module AssetPath
-      class << self
-        def included(base)
-          base.class_eval do
-            alias_method_chain :compute_public_path, :static
-          end
-        end
-      end
-
-      PROTOCOL_REGEXP = ActionView::Helpers::AssetTagHelper::AssetTag::ProtocolRegexp
-      def compute_public_path_with_static(source)
-        source += ".#{extension}" if missing_extension?(source)
-        if PROTOCOL_REGEXP =~ source
-          source
-        else
-          "#{directory}/#{source}"
-        end
-      end
+    def compute_public_path(source, dir, ext=nil, include_host=true)
+      path = super
+      path = path[1..-1] if path[0] == ?/ and source[0] != ?/
+      path
     end
   end
 end

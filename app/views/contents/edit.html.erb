@@ -78,7 +78,7 @@ Ext.onReady(function() {
     // content_css : "css/content.css",
 
     // Drop lists for link/image/media/template dialogs
-    external_link_list_url : #{formatted_links_content_path(@content, "js").to_json},
+    external_link_list_url : #{links_content_path(@content, :format => "js").to_json},
 
     image_upload_url: #{images_url.to_json},
 

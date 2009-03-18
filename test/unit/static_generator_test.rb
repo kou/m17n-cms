@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+
 require 'test_helper'
+require 'static_generator'
 
 class StaticGeneratorTest < ActiveSupport::TestCase
   include Webrat::Matchers

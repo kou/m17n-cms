@@ -17,8 +17,8 @@
 <% @images.each do |image| -%>
     <li>
       <div class="image-thumbnail">
-        <%= link_to_function(image_tag(formatted_thumbnail_image_path(image, :png)),
-                             "select_image(#{formatted_image_path(image, :png).to_json})") %>
+        <%= link_to_function(image_tag(thumbnail_image_path(image, :format => :png)),
+                             "select_image(#{image_path(image, :format => :png).to_json})") %>
       </div>
       <p>
 	<%= link_to(t("Destroy"), image,

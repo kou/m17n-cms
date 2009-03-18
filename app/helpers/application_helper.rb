@@ -1,13 +1,20 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  def extjs_path(source)
+    compute_public_path(source, "extjs")
+  end
+
+  def tiny_mce_path(source)
+    compute_public_path(source, "tiny_mce")
+  end
+
   def extjs_include_tag
     tags = [
             "resources/css/ext-all.css",
             "adapter/prototype/ext-prototype-adapter.js",
             "ext-all-debug.js",
            ].collect do |source|
-      tag = ExtjsAssetTagHelper::ExtjsTag.new(@template, @controller, source)
-      path = tag.public_path
+      path = extjs_path(source)
       case path.sub(/\?.*\z/, '')
       when /\.css\z/
         stylesheet_link_tag(path)
@@ -22,10 +29,7 @@ module ApplicationHelper
   end
 
   def tiny_mce_include_tag
-    tag = TinyMceAssetTagHelper::TinyMceTag.new(@template, @controller,
-                                                "tiny_mce_src.js")
-    path = tag.public_path
-    javascript_include_tag(path)
+    javascript_include_tag(tiny_mce_path("tiny_mce_src.js"))
   end
 
   def icon_tag(language)

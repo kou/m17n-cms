@@ -86,16 +86,13 @@ class StaticGenerator
 
   def prepare_objects
     ContentsController.helper(StaticHelper)
-    ActionView::Helpers::AssetTagHelper::AssetTag.module_eval do
-      include StaticHelper::AssetPath
-    end
   end
 
   def generate_content(content)
     controller = ContentsController.new
-    request = ActionController::TestRequest.new("id" => content.id,
-                                                "lang" => I18n.locale.to_s)
+    request = ActionController::TestRequest.new
     request.action = "static"
+    request.path_parameters["id"] = content.id
     response = ActionController::TestResponse.new
     controller.process(request, response)
 
@@ -161,24 +158,10 @@ class StaticGenerator
       end
     end
 
-    module AssetPath
-      class << self
-        def included(base)
-          base.class_eval do
-            alias_method_chain :compute_public_path, :static
-          end
-        end
-      end
-
-      PROTOCOL_REGEXP = ActionView::Helpers::AssetTagHelper::AssetTag::ProtocolRegexp
-      def compute_public_path_with_static(source)
-        source += ".#{extension}" if missing_extension?(source)
-        if PROTOCOL_REGEXP =~ source
-          source
-        else
-          "#{directory}/#{source}"
-        end
-      end
+    def compute_public_path(source, dir, ext=nil, include_host=true)
+      path = super
+      path = path[1..-1] if path[0] == ?/ and source[0] != ?/
+      path
     end
   end
 end
