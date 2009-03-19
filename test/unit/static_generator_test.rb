@@ -4,6 +4,7 @@ require 'test_helper'
 require 'static_generator'
 
 class StaticGeneratorTest < ActiveSupport::TestCase
+  include ActionController::Assertions::SelectorAssertions
   include Webrat::Matchers
   include ERB::Util
 
