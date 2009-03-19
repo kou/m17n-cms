@@ -31,7 +31,7 @@
 		init : function(editor, url) {
 			ImageUpload.editor = editor;
 			ImageUpload.url = url;
-			editor.settings.file_browser_callback = ImageUpload.file_browser_callback;
+			editor.settings.theme_advanced_image_image_browser_callback = ImageUpload.file_browser_callback;
 		},
 
 		getInfo : function() {
