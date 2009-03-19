@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="551.57141"
-   height="263.76712"
+   height="235.267"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.46"
@@ -113,9 +113,9 @@
      objecttolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="252.19196"
-     inkscape:cy="212.14852"
+     inkscape:zoom="0.7"
+     inkscape:cx="312.65319"
+     inkscape:cy="-5.9724655"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -143,7 +143,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#4e9a06;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2383"
        width="548.57141"
-       height="260.76712"
+       height="232.267"
        x="88.571426"
        y="218.07646" />
     <text
@@ -161,7 +161,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2389"
        width="231.64001"
-       height="194.7737"
+       height="171.774"
        x="103.14286"
        y="266.93362" />
     <text
@@ -196,14 +196,26 @@
          sodipodi:role="line"
          x="126"
          y="323.2193"
-         id="tspan3034">コンテンツ（日本語）</tspan></text>
+         id="tspan3034">コンテンツ</tspan><tspan
+         sodipodi:role="line"
+         x="126"
+         y="341.2193"
+         id="tspan2429">（やさしいにほんご）</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4005"
        width="202.05695"
-       height="29.875645"
+       height="49.276001"
        x="116.85715"
        y="301.79074" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2433"
+       width="15.404843"
+       height="9.2807846"
+       x="198.74751"
+       y="96.055351"
+       transform="translate(87.071426,216.57646)" />
     <image
        y="312.75287"
        x="286.01358"
@@ -213,15 +225,7 @@
        sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
        xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
     <image
-       y="353.75287"
-       x="286.10205"
-       id="image4444"
-       height="7"
-       width="15"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif" />
-    <image
-       y="392.75287"
+       y="370.75287"
        x="286.01358"
        id="image4662"
        height="10"
@@ -232,45 +236,27 @@
        sodipodi:linespacing="100%"
        id="text4779"
        y="234.14943"
-       x="-451.46283"
+       x="-429.46283"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"
        transform="matrix(0,-1,1,0,0,0)"><tspan
          y="234.14943"
-         x="-451.46283"
+         x="-429.46283"
          id="tspan4781"
          sodipodi:role="line">…</tspan></text>
     <text
        sodipodi:linespacing="100%"
-       id="text2555"
-       y="363.2193"
-       x="126"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
-       xml:space="preserve"><tspan
-         y="363.2193"
-         x="126"
-         id="tspan2557"
-         sodipodi:role="line">コンテンツ（英語）</tspan></text>
-    <rect
-       y="341.79074"
-       x="116.85715"
-       height="29.875645"
-       width="202.05695"
-       id="rect2559"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="100%"
        id="text2563"
-       y="403.2193"
+       y="381.2193"
        x="126"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        xml:space="preserve"><tspan
-         y="403.2193"
+         y="381.2193"
          x="126"
          id="tspan2565"
          sodipodi:role="line">コンテンツ（中国語）</tspan></text>
     <rect
-       y="381.79074"
+       y="359.79074"
        x="116.85715"
        height="29.875645"
        width="202.05695"
@@ -279,7 +265,7 @@
     <rect
        y="266.93362"
        x="353.14285"
-       height="194.7737"
+       height="171.774"
        width="231.64001"
        id="rect2571"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#f57900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -304,14 +290,25 @@
          y="323.2193"
          x="376"
          id="tspan2579"
-         sodipodi:role="line">コンテンツ（日本語）</tspan></text>
+         sodipodi:role="line">コンテンツ</tspan><tspan
+         y="341.2193"
+         x="376"
+         sodipodi:role="line"
+         id="tspan2431">（やさしいにほんご）</tspan></text>
     <rect
        y="301.79074"
        x="366.85715"
-       height="29.875645"
+       height="49.276001"
        width="202.05695"
        id="rect2581"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="312.63181"
+       x="535.81897"
+       height="9.2807846"
+       width="15.404843"
+       id="rect3211"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <image
        xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
        sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
@@ -321,68 +318,42 @@
        x="536.01355"
        y="312.75287" />
     <image
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ms-icon.gif"
-       width="15"
-       height="7"
-       id="image2585"
-       x="536.10205"
-       y="353.75287" />
-    <image
        xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
        sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
        width="15"
        height="10"
        id="image2587"
        x="536.01355"
-       y="392.75287" />
+       y="370.75287" />
     <text
        transform="matrix(0,-1,1,0,0,0)"
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#c4a000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
-       x="-451.46283"
+       x="-429.46283"
        y="484.14941"
        id="text2589"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan2591"
-         x="-451.46283"
+         x="-429.46283"
          y="484.14941">…</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
        x="376"
-       y="363.2193"
-       id="text2593"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         id="tspan2595"
-         x="376"
-         y="363.2193">コンテンツ（英語）</tspan></text>
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2597"
-       width="202.05695"
-       height="29.875645"
-       x="366.85715"
-       y="341.79074" />
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:'IPA Pゴシック';-inkscape-font-specification:'IPA Pゴシック'"
-       x="376"
-       y="403.2193"
+       y="381.2193"
        id="text2599"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan2601"
          x="376"
-         y="403.2193">コンテンツ（中国語）</tspan></text>
+         y="381.2193">コンテンツ（中国語）</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2603"
        width="202.05695"
        height="29.875645"
        x="366.85715"
-       y="381.79074" />
+       y="359.79074" />
   </g>
 </svg>
