@@ -31,5 +31,5 @@ sql_backup_file=${backup_dir}/data-${today}.sql
 db_config="ActiveRecord::Base.configurations[RAILS_ENV]"
 db_name=`ruby $rails_root/script/runner "print $db_config['database']"`
 
-sqlite3 $db_name .dump > ${sql_backup_file}
+sqlite3 $rails_root/$db_name .dump > ${sql_backup_file}
 gzip -f ${sql_backup_file}
