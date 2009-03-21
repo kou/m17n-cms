@@ -32,8 +32,13 @@ module ApplicationHelper
     javascript_include_tag(tiny_mce_path("tiny_mce_src.js"))
   end
 
-  def icon_tag(language)
-    image_tag("icons/#{language}-icon.gif", :alt => language)
+  def language_to_country(language)
+    LANGUAGE_TO_COUNTRY[language] || language
+  end
+
+  def language_icon_tag(language)
+    image_tag("icons/country/#{language_to_country(language)}.png",
+              :alt => language)
   end
 
   def site_title

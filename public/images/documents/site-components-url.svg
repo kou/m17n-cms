@@ -113,16 +113,16 @@
      objecttolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="347.35052"
-     inkscape:cy="192.01647"
+     inkscape:zoom="1.6448439"
+     inkscape:cx="242.94025"
+     inkscape:cy="365.50808"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="812"
-     inkscape:window-height="649"
-     inkscape:window-x="216"
-     inkscape:window-y="219" />
+     inkscape:window-width="843"
+     inkscape:window-height="650"
+     inkscape:window-x="26"
+     inkscape:window-y="264" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -139,13 +139,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-87.071426,-216.57646)">
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:0.85009557;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect3436"
-       width="15.127905"
-       height="8.9569054"
-       x="285.42847"
-       y="402.82501" />
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#4e9a06;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2383"
@@ -317,16 +310,16 @@
        id="image4310"
        height="9"
        width="15"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png" />
     <image
        y="505.75287"
        x="285.51358"
        id="image4662"
        height="10"
        width="15"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png" />
     <text
        sodipodi:linespacing="100%"
        id="text4779"
@@ -520,24 +513,17 @@
        d="M 510.8405,475.03715 L 522.93695,475.03715"
        style="fill:none;fill-rule:evenodd;stroke:#c4a000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
-    <rect
-       y="402.8237"
-       x="533.52722"
-       height="8.9595222"
-       width="15.030521"
-       id="rect3438"
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:0.84747875;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <image
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
        width="15"
        height="9"
        id="image3134"
        x="533.51355"
        y="402.75287" />
     <image
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
        width="15"
        height="10"
        id="image3138"

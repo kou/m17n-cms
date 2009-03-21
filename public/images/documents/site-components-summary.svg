@@ -113,14 +113,14 @@
      objecttolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="312.65319"
-     inkscape:cy="-5.9724655"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="227.10682"
+     inkscape:cy="78.509775"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="812"
-     inkscape:window-height="649"
+     inkscape:window-width="843"
+     inkscape:window-height="650"
      inkscape:window-x="268"
      inkscape:window-y="155" />
   <metadata
@@ -208,30 +208,22 @@
        height="49.276001"
        x="116.85715"
        y="301.79074" />
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect2433"
-       width="15.404843"
-       height="9.2807846"
-       x="198.74751"
-       y="96.055351"
-       transform="translate(87.071426,216.57646)" />
     <image
        y="312.75287"
        x="286.01358"
        id="image4310"
        height="9"
        width="15"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif" />
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png" />
     <image
        y="370.75287"
        x="286.01358"
        id="image4662"
        height="10"
        width="15"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif" />
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png" />
     <text
        sodipodi:linespacing="100%"
        id="text4779"
@@ -302,24 +294,17 @@
        width="202.05695"
        id="rect2581"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#c4a000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       y="312.63181"
-       x="535.81897"
-       height="9.2807846"
-       width="15.404843"
-       id="rect3211"
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000100;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <image
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/ja-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/jp.png"
        width="15"
        height="9"
        id="image2583"
        x="536.01355"
        y="312.75287" />
     <image
-       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
-       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/zh-icon.gif"
+       xlink:href="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
+       sodipodi:absref="/home/kou/work/ruby/m17n-cms/public/images/icons/country/cn.png"
        width="15"
        height="10"
        id="image2587"
