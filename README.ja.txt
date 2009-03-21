@@ -32,3 +32,5 @@ M17N CMSは静的なHTMLのサイト用のコンテンツ管理システムで�
 * public_html/javascripts/ ただしaplication.jsを除く（つまりPrototype Javascript frameworkのこと）: MITライセンス。http://www.prototypejs.org/を見てください。
 * vendor/plugins/rails-i18n/: MITライセンス？
 * vendor/plugins/fleximage/: MITライセンス
+* vendor/plugins/active_form/: MITライセンス
+* vendor/plugins/exception_notification/: MITライセンス

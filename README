@@ -30,3 +30,5 @@ GPLv3 or AGPLv3 excepted the following softwares:
 * public_html/javascripts/ except aplication.js (i.e. Prototype Javascript framework): MIT license. See http://www.prototypejs.org/.
 * vendor/plugins/rails-i18n/: MIT license?
 * vendor/plugins/fleximage/: MIT license
+* vendor/plugins/active_form/: MIT license
+* vendor/plugins/exception_notification/: MIT license
