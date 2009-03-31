@@ -3,6 +3,8 @@
 AVAILABLE_LANGUAGES = [
  "bn", # ベンガル語
  "es", # スペイン語
+ "fr", # フランス語
+ "id", # インドネシア語
  "ja", # 日本語
  "ko", # 韓国語
  "ms", # マレー語
@@ -20,8 +22,10 @@ LANGUAGE_TO_COUNTRY = {
  "zh" => "cn", # 中国
 }
 
-
 langs = Dir[File.join(RAILS_ROOT, "public", "tiny_mce", "langs", "*.js")]
 TINY_MCE_AVAILABLE_LANGUAGES = langs.collect do |path|
   File.basename(path, ".*")
 end
+TINY_MCE_FALLBACK_LANGUAGES = {
+  "id" => "ms",
+}

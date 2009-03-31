@@ -109,6 +109,16 @@ span.tab-language-icon
   background-image: url(../images/icons/country/es.png) !important;
 }
 
+.language-icon-fr
+{
+  background-image: url(../images/icons/country/fr.png) !important;
+}
+
+.language-icon-id
+{
+  background-image: url(../images/icons/country/id.png) !important;
+}
+
 .language-icon-ja
 {
   background-image: url(../images/icons/country/jp.png) !important;

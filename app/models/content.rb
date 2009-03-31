@@ -5,7 +5,7 @@ class Content < ActiveRecord::Base
     if TINY_MCE_AVAILABLE_LANGUAGES.include?(language)
       language
     else
-      "en"
+      TINY_MCE_FALLBACK_LANGUAGES[language] || "en"
     end
   end
 
