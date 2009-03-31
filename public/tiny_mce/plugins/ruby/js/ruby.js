@@ -51,6 +51,7 @@ function init() {
 
 function setAllCommonAttribs(element) {
 	var dom = SXE.inst.dom;
+	var editor = tinymce.EditorManager.activeEditor;
 	var parentheses = [];
 	var text = null;
 	var base = null;
@@ -87,6 +88,8 @@ function setAllCommonAttribs(element) {
 
 	element.insertBefore(dom.create("rp", {}, "("), text);
 	dom.insertAfter(dom.create("rp", {}, ")"), text);
+	dom.insertAfter(dom.create("span", {"class": "mceItemHidden"}, "&nbsp;"),
+					element);
 }
 
 function insertRuby() {
